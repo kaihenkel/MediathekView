@@ -606,7 +606,6 @@
                 </executions>
                 <configuration>
                     <mainClass>mediathek.Main</mainClass>
-                    <compilerArgs>--enable-preview</compilerArgs>
                 </configuration>
             </plugin>
         </plugins>
