@@ -5,6 +5,12 @@
 - Datenbanksupport für Nutzung auf Systemen mit wenig Arbeitsspeicher entfernt. MV benötigt mindestens 768MB RAM um halbwegs zu laufen.
 - Menüeintrag "Downloads/Alle Downloads um xx:yy Uhr starten" in "Downloads/Alle Downloads zeitverzögert starten..." umbenannt.
 - Infodialog hinzugefügt wenn keine Downloads für ein zeitverzögertes Starten vorliegen.
+- **FEATURE:** Die Filter "Sender" und "Thema" werden nun gespeichert
+- **FEATURE:** In den Einstellungen unter Allgemein ist eine neue Option "Filter sofort speichern" die es erlaubt einzustellen,
+  ob Änderungen an einem Filter sofort gespeichert werden sollen oder erst beim manuellen Speichern mit dem neuen
+  "Alle Filter Änderungen speichern" Knopf im Filter Dialog.
+- Die neuen Buttons "Alle Filter Änderungen speichern" und "Alle Filter Änderungen zurücksetzen" gelten für **alle** Filter.
+  Es werden also alle Änderungen aller Filter zurückgesetzt oder gespeichert.
 
 <u>**13.7.1**</u>
 
