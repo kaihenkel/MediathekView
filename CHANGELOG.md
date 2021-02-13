@@ -8,9 +8,8 @@
 - **FEATURE:** Die Filter "Sender" und "Thema" werden nun gespeichert
 - **FEATURE:** In den Einstellungen unter Allgemein ist eine neue Option "Filter sofort speichern" die es erlaubt einzustellen,
   ob Änderungen an einem Filter sofort gespeichert werden sollen oder erst beim manuellen Speichern mit dem neuen
-  "Alle Filter Änderungen speichern" Knopf im Filter Dialog.
-- Die neuen Buttons "Alle Filter Änderungen speichern" und "Alle Filter Änderungen zurücksetzen" gelten für **alle** Filter.
-  Es werden also alle Änderungen aller Filter zurückgesetzt oder gespeichert.
+  "Filter Änderungen speichern" Knopf im Filter Dialog.
+- Ist "Filter sofort speichern" nicht aktiv werden Filter Änderungen zurückgesetzt, wenn MediathekView beendet wird oder der Filter gewechselt wird.
 
 <u>**13.7.1**</u>
 
