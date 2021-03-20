@@ -1,6 +1,6 @@
 package mediathek.controller.starter;
 
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.controller.starter.DirectHttpDownload.HttpDownloadState;
 import mediathek.daten.DatenDownload;
 import mediathek.gui.dialog.DialogContinueDownload;

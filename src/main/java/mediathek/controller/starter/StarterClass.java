@@ -1,7 +1,7 @@
 package mediathek.controller.starter;
 
-import mediathek.config.Daten;
-import mediathek.config.Konstanten;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.constants.Konstanten;
 import mediathek.controller.history.SeenHistoryController;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.DatenFilm;

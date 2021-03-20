@@ -2,7 +2,7 @@ package mediathek.gui.tabs.tab_film
 
 import javafx.application.Platform
 import javafx.scene.control.Alert
-import mediathek.config.Konstanten
+import mediathek.client.desktop.constants.Konstanten
 import mediathek.controller.history.SeenHistoryController
 import mediathek.daten.DatenFilm
 import mediathek.daten.FilmResolution
@@ -47,7 +47,8 @@ class JDownloadHelper {
         } catch (e: Exception) {
             logger.error("downloadUrl", e)
             Platform.runLater {
-                FXErrorDialog.showErrorDialog(Konstanten.PROGRAMMNAME, "Download nicht möglich",
+                FXErrorDialog.showErrorDialog(
+                    Konstanten.PROGRAMMNAME, "Download nicht möglich",
                         "Die URL konnte nicht mit JDownloader geladen werden.\n" +
                                 "Bitte wenden Sie sich bei Bedarf an das Forum.", e)
             }

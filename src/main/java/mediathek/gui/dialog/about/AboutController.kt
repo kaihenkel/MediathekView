@@ -5,7 +5,7 @@ import javafx.fxml.FXMLLoader
 import javafx.scene.control.Hyperlink
 import javafx.scene.control.Label
 import javafx.scene.layout.AnchorPane
-import mediathek.config.Konstanten
+import mediathek.client.desktop.constants.Konstanten
 import mediathek.gui.actions.UrlHyperlinkAction
 import mediathek.mainwindow.MediathekGui
 import org.apache.logging.log4j.LogManager

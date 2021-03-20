@@ -2,7 +2,7 @@ package mediathek.javafx.InfoLabel;
 
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.daten.DownloadStartInfo;
 
 public class ActiveDownloadsLabel extends Label {

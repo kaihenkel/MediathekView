@@ -1,7 +1,7 @@
 package mediathek.mac;
 
-import mediathek.config.Daten;
-import mediathek.config.Konstanten;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.constants.Konstanten;
 import mediathek.gui.actions.ShowAboutAction;
 import mediathek.gui.messages.DownloadFinishedEvent;
 import mediathek.gui.messages.DownloadStartEvent;

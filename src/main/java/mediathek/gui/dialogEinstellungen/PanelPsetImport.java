@@ -2,8 +2,8 @@ package mediathek.gui.dialogEinstellungen;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.config.Config;
-import mediathek.config.Daten;
+import mediathek.client.desktop.config.CliConfig;
+import mediathek.util.mv.Daten;
 import mediathek.daten.ListePset;
 import mediathek.daten.ListePsetVorlagen;
 import mediathek.gui.PanelVorlage;
@@ -67,7 +67,7 @@ public class PanelPsetImport extends PanelVorlage {
         });
         jTableVorlagen.getSelectionModel().addListSelectionListener(new BeobTableSelect());
         jTableVorlagen.setModel(new TModel(new Object[][]{}, ListePsetVorlagen.PGR_COLUMN_NAMES));
-        if (!Config.isDebugModeEnabled()) {
+        if (!CliConfig.isDebugModeEnabled()) {
             jTableVorlagen.getColumnModel().getColumn(jTableVorlagen.convertColumnIndexToView(ListePsetVorlagen.PGR_VERSION_NR)).setMinWidth(0);
             jTableVorlagen.getColumnModel().getColumn(jTableVorlagen.convertColumnIndexToView(ListePsetVorlagen.PGR_VERSION_NR)).setPreferredWidth(0);
             jTableVorlagen.getColumnModel().getColumn(jTableVorlagen.convertColumnIndexToView(ListePsetVorlagen.PGR_VERSION_NR)).setMaxWidth(0);
@@ -98,7 +98,7 @@ public class PanelPsetImport extends PanelVorlage {
 
     private void tabelleLaden() {
         jTableVorlagen.setModel(listePsetVorlagen.getTModel(jComboBoxBs.getSelectedItem().toString()));
-        if (!Config.isDebugModeEnabled()) {
+        if (!CliConfig.isDebugModeEnabled()) {
             jTableVorlagen.getColumnModel().getColumn(jTableVorlagen.convertColumnIndexToView(ListePsetVorlagen.PGR_VERSION_NR)).setMinWidth(0);
             jTableVorlagen.getColumnModel().getColumn(jTableVorlagen.convertColumnIndexToView(ListePsetVorlagen.PGR_VERSION_NR)).setPreferredWidth(0);
             jTableVorlagen.getColumnModel().getColumn(jTableVorlagen.convertColumnIndexToView(ListePsetVorlagen.PGR_VERSION_NR)).setMaxWidth(0);

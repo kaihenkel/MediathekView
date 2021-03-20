@@ -21,7 +21,7 @@ import static mediathek.tool.FilterConfiguration.FilterConfigurationKeys.*;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.params.provider.Arguments.arguments;
 
-class FilterConfigTest {
+class FilterCliConfigTest {
 
   private static Stream<Arguments> clearFilterTestSource() {
     FilterConfiguration filterConfig = new FilterConfiguration(new XMLConfiguration());

@@ -1,6 +1,6 @@
 package mediathek.tool.cellrenderer;
 
-import mediathek.config.MVColor;
+import mediathek.client.desktop.constants.MVColor;
 import mediathek.controller.starter.Start;
 import mediathek.gui.messages.GeoStateChangedEvent;
 import mediathek.tool.ApplicationConfiguration;

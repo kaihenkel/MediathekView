@@ -8,7 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.text.*;
-import mediathek.config.Konstanten;
+import mediathek.client.desktop.constants.Konstanten;
 import mediathek.daten.DatenFilm;
 import mediathek.gui.actions.UrlHyperlinkAction;
 import mediathek.gui.dialog.DialogFilmBeschreibung;

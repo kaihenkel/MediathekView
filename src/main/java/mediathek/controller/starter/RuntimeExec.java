@@ -22,7 +22,7 @@ package mediathek.controller.starter;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
-import mediathek.config.Config;
+import mediathek.client.desktop.config.CliConfig;
 import mediathek.gui.messages.DownloadProgressChangedEvent;
 import mediathek.tool.MVFilmSize;
 import mediathek.tool.MessageBus;
@@ -158,7 +158,7 @@ public class RuntimeExec {
                 while ((inStr = buff.readLine()) != null) {
                     GetPercentageFromErrorStream(inStr);
                     // only print stream info when enhanced log mode enabled
-                    if (Config.isEnhancedLoggingEnabled()) {
+                    if (CliConfig.isEnhancedLoggingEnabled()) {
                         logger.trace("  >> {}}: {}}", titel, inStr);
                     }
                 }

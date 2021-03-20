@@ -4,7 +4,7 @@ import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.scene.layout.HBox;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.gui.messages.DownloadInfoUpdateAvailableEvent;
 import mediathek.gui.messages.TimerEvent;
 import mediathek.gui.messages.UpdateStatusBarLeftDisplayEvent;

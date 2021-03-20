@@ -2,7 +2,7 @@ package mediathek.gui.dialogEinstellungen;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.daten.GeoblockingField;
 import mediathek.file.GetFile;
 import mediathek.gui.dialog.DialogHilfe;

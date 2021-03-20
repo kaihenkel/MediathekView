@@ -1,6 +1,6 @@
 package mediathek.gui.history
 
-import mediathek.config.Daten
+import mediathek.util.mv.Daten
 import java.awt.event.ActionEvent
 import javax.swing.AbstractAction
 import javax.swing.Action

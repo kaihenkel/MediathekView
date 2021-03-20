@@ -1,6 +1,6 @@
 package mediathek.tool;
 
-import mediathek.config.MVConfig;
+import mediathek.client.desktop.config.MVConfig;
 
 import java.awt.*;
 

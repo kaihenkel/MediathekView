@@ -30,8 +30,8 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.javafx.IconNode;
-import mediathek.config.Daten;
-import mediathek.config.MVConfig;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.controller.history.SeenHistoryController;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.DatenFilm;
@@ -66,7 +66,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 import static javafx.scene.input.MouseButton.PRIMARY;
-import static mediathek.config.MVColor.*;
+import static mediathek.client.desktop.constants.MVColor.*;
 
 
 /**

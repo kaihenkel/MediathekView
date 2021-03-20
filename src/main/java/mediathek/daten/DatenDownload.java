@@ -1,8 +1,8 @@
 package mediathek.daten;
 
-import mediathek.config.Konstanten;
-import mediathek.config.MVConfig;
-import mediathek.config.StandardLocations;
+import mediathek.client.desktop.constants.Konstanten;
+import mediathek.client.desktop.config.MVConfig;
+import mediathek.client.desktop.config.StandardLocations;
 import mediathek.controller.history.SeenHistoryController;
 import mediathek.controller.starter.Start;
 import mediathek.daten.abo.DatenAbo;

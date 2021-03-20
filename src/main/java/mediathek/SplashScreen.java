@@ -9,7 +9,7 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import mediathek.config.Konstanten;
+import mediathek.client.desktop.constants.Konstanten;
 import mediathek.javafx.tool.JavaFxUtils;
 import mediathek.tool.TimerPool;
 import mediathek.tool.UIProgressState;

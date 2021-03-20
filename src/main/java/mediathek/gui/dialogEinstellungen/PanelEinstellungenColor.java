@@ -1,7 +1,7 @@
 package mediathek.gui.dialogEinstellungen;
 
-import mediathek.config.Daten;
-import mediathek.config.MVColor;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.constants.MVColor;
 import mediathek.mainwindow.MediathekGui;
 import mediathek.tool.MVC;
 import mediathek.tool.cellrenderer.CellRendererColor;
@@ -17,7 +17,7 @@ import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-import static mediathek.config.MVColor.*;
+import static mediathek.client.desktop.constants.MVColor.*;
 
 public class PanelEinstellungenColor extends JPanel {
     public PanelEinstellungenColor() {

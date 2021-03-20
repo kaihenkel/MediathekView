@@ -3,7 +3,7 @@ package mediathek.javafx.filterpanel;
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.Scene;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
 import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.gui.messages.TableModelChangeEvent;

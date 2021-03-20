@@ -1,6 +1,6 @@
 package mediathek.gui.actions;
 
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.gui.history.AboHistoryDialog;
 
 import javax.swing.*;

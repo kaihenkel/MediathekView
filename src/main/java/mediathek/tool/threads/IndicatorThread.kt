@@ -1,6 +1,6 @@
 package mediathek.tool.threads
 
-import mediathek.config.Daten
+import mediathek.util.mv.Daten
 import mediathek.controller.starter.Start
 import mediathek.daten.DatenDownload
 

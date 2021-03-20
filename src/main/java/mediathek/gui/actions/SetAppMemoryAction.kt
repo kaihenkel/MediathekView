@@ -1,6 +1,6 @@
 package mediathek.gui.actions
 
-import mediathek.config.Konstanten
+import mediathek.client.desktop.constants.Konstanten
 import mediathek.mainwindow.MediathekGui
 import mediathek.tool.MVFunctionSys
 import mediathek.tool.javafx.FXErrorDialog
@@ -35,7 +35,8 @@ class SetAppMemoryAction : AbstractAction() {
                     }
                 } catch (ex: IOException) {
                     logger.error(ex)
-                    FXErrorDialog.showErrorDialogWithoutParent(Konstanten.PROGRAMMNAME, "Schreibvorgang fehlgeschlagen",
+                    FXErrorDialog.showErrorDialogWithoutParent(
+                        Konstanten.PROGRAMMNAME, "Schreibvorgang fehlgeschlagen",
                             """
                                 Die Datei '${optionsPath.normalize().toAbsolutePath()}' konnte nicht geschrieben werden.
                                 Bitte wenden Sie sich bei Fragen an das Forum!
@@ -52,7 +53,8 @@ class SetAppMemoryAction : AbstractAction() {
                 Desktop.getDesktop().open(optionsPath.normalize().toAbsolutePath().toFile())
             } catch (ex: Exception) {
                 logger.error("Failed to open vm options file", ex)
-                FXErrorDialog.showErrorDialogWithoutParent(Konstanten.PROGRAMMNAME, "Datei konnte nicht geöffnet werden",
+                FXErrorDialog.showErrorDialogWithoutParent(
+                    Konstanten.PROGRAMMNAME, "Datei konnte nicht geöffnet werden",
                         """
                             Es trat ein Fehler beim Öffnen der Datei auf.
                             Diese Funktion wird nur durch die offiziellen MediathekView-Apps unterstützt.

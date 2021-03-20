@@ -2,7 +2,7 @@ package mediathek.tool.cellrenderer;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.config.MVColor;
+import mediathek.client.desktop.constants.MVColor;
 import mediathek.controller.starter.Start;
 import mediathek.daten.DatenDownload;
 import mediathek.tool.table.MVTable;

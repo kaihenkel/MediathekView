@@ -1,6 +1,6 @@
 package mediathek.tool.table;
 
-import mediathek.config.MVConfig;
+import mediathek.client.desktop.config.MVConfig;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

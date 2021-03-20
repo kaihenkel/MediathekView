@@ -2,7 +2,7 @@ package mediathek.gui.dialog.reset;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.daten.ListePsetVorlagen;
 import mediathek.file.GetFile;
 import mediathek.gui.dialog.DialogHilfe;

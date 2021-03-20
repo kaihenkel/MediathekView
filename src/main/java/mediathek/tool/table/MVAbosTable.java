@@ -1,6 +1,6 @@
 package mediathek.tool.table;
 
-import mediathek.config.MVConfig;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.daten.abo.DatenAbo;
 import mediathek.tool.models.TModelAbo;
 

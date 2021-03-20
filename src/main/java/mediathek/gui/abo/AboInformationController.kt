@@ -3,7 +3,7 @@ package mediathek.gui.abo
 import javafx.fxml.FXML
 import javafx.fxml.Initializable
 import javafx.scene.control.Label
-import mediathek.config.Daten
+import mediathek.util.mv.Daten
 import mediathek.gui.messages.AboListChangedEvent
 import mediathek.javafx.tool.JavaFxUtils
 import mediathek.tool.MessageBus

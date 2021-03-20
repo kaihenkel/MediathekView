@@ -2,7 +2,7 @@ package mediathek.gui.dialogEinstellungen;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.config.MVConfig;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.controller.SenderFilmlistLoadApprover;
 import mediathek.gui.messages.FilmListImportTypeChangedEvent;
 import mediathek.mainwindow.MediathekGui;

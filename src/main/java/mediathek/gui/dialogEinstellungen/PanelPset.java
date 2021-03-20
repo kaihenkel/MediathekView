@@ -1,7 +1,7 @@
 package mediathek.gui.dialogEinstellungen;
 
-import mediathek.config.Daten;
-import mediathek.config.MVConfig;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.gui.PanelVorlage;
 
 import javax.swing.*;

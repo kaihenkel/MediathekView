@@ -1,8 +1,8 @@
 package mediathek.gui.dialogEinstellungen;
 
-import mediathek.config.Daten;
-import mediathek.config.Konstanten;
-import mediathek.config.MVConfig;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.constants.Konstanten;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.gui.PanelVorlage;
 import mediathek.gui.dialogEinstellungen.allgemein.PanelEinstellungen;
 import mediathek.mainwindow.MediathekGui;

@@ -1,6 +1,6 @@
 package mediathek.controller.history;
 
-import mediathek.config.StandardLocations;
+import mediathek.client.desktop.config.StandardLocations;
 import mediathek.gui.messages.history.AboHistoryChangedEvent;
 import mediathek.tool.FileUtils;
 import mediathek.tool.MessageBus;

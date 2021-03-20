@@ -5,7 +5,7 @@ import ca.odell.glazedlists.EventList;
 import ca.odell.glazedlists.javafx.EventObservableList;
 import javafx.application.Platform;
 import javafx.collections.ObservableList;
-import mediathek.config.Konstanten;
+import mediathek.client.desktop.constants.Konstanten;
 import mediathek.tool.GermanStringSorter;
 import org.jetbrains.annotations.NotNull;
 

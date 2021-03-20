@@ -1,7 +1,7 @@
 package mediathek.javafx;
 
 import javafx.concurrent.Task;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.tool.FilmListUpdateType;
 import mediathek.tool.GuiFunktionen;
 

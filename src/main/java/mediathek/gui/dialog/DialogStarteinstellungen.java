@@ -1,7 +1,7 @@
 package mediathek.gui.dialog;
 
-import mediathek.config.Daten;
-import mediathek.config.MVConfig;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.daten.ListePset;
 import mediathek.daten.ListePsetVorlagen;
 import mediathek.gui.dialogEinstellungen.PanelEinstellungenGeo;

@@ -1,8 +1,8 @@
 package mediathek.daten.blacklist;
 
 import com.google.common.base.Stopwatch;
-import mediathek.config.Daten;
-import mediathek.config.MVConfig;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.daten.DatenFilm;
 import mediathek.daten.ListeFilme;
 import mediathek.gui.messages.BlacklistChangedEvent;

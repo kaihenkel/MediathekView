@@ -1,6 +1,6 @@
 package mediathek.gui;
 
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 
 import javax.swing.*;
 

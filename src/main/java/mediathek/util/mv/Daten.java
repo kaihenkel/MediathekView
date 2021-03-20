@@ -1,4 +1,4 @@
-package mediathek.config;
+package mediathek.util.mv;
 
 import com.google.common.util.concurrent.*;
 import javafx.scene.control.Alert;
@@ -6,6 +6,10 @@ import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ButtonType;
 import mediathek.Main;
 import mediathek.SplashScreen;
+import mediathek.client.desktop.config.CliConfig;
+import mediathek.client.desktop.constants.Konstanten;
+import mediathek.client.desktop.constants.MVColor;
+import mediathek.client.desktop.config.StandardLocations;
 import mediathek.controller.IoXmlLesen;
 import mediathek.controller.IoXmlSchreiben;
 import mediathek.controller.history.AboHistoryController;
@@ -121,7 +125,7 @@ public class Daten {
         String strFile;
         final String filePart = File.separator + Konstanten.JSON_DATEI_FILME;
 
-        if (Config.isPortableMode())
+        if (CliConfig.isPortableMode())
             strFile = StandardLocations.getSettingsDirectory().toString() + filePart;
         else {
             if (SystemUtils.IS_OS_MAC_OSX) {

@@ -1,6 +1,6 @@
 package mediathek.tool.cellrenderer;
 
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.tool.MVC;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

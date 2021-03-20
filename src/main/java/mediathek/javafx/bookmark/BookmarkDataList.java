@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.MappingJsonFactory;
 import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.controller.history.SeenHistoryController;
 import mediathek.daten.DatenFilm;
 import mediathek.daten.ListeFilme;

@@ -2,9 +2,9 @@ package mediathek.gui.dialogEinstellungen;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.config.Daten;
-import mediathek.config.Icons;
-import mediathek.config.MVConfig;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.constants.Icons;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.gui.PanelVorlage;
 import mediathek.gui.messages.ReplaceListChangedEvent;
 import mediathek.tool.MessageBus;

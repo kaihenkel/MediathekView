@@ -2,8 +2,8 @@ package mediathek.gui.dialog;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.config.Konstanten;
-import mediathek.config.MVConfig;
+import mediathek.client.desktop.constants.Konstanten;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.daten.DatenDownload;
 import mediathek.tool.EscapeKeyHandler;
 

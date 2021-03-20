@@ -1,6 +1,6 @@
 package mediathek.gui.actions.import_actions
 
-import mediathek.config.Daten
+import mediathek.util.mv.Daten
 import mediathek.daten.abo.DatenAbo
 import mediathek.daten.blacklist.BlacklistRule
 import mediathek.gui.messages.ReplaceListChangedEvent

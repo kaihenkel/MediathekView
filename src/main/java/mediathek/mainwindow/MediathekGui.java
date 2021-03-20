@@ -15,10 +15,9 @@ import javafx.scene.control.Alert;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import mediathek.Main;
-import mediathek.config.Config;
-import mediathek.config.Daten;
-import mediathek.config.Icons;
-import mediathek.config.Konstanten;
+import mediathek.client.desktop.config.CliConfig;
+import mediathek.client.desktop.constants.Icons;
+import mediathek.client.desktop.constants.Konstanten;
 import mediathek.controller.history.SeenHistoryController;
 import mediathek.controller.starter.Start;
 import mediathek.daten.DatenDownload;
@@ -54,6 +53,7 @@ import mediathek.tool.notification.NullNotificationCenter;
 import mediathek.tool.threads.IndicatorThread;
 import mediathek.update.AutomaticFilmlistUpdate;
 import mediathek.update.ProgramUpdateCheck;
+import mediathek.util.mv.Daten;
 import net.engio.mbassy.listener.Handler;
 import org.apache.commons.configuration2.Configuration;
 import org.apache.commons.configuration2.sync.LockMode;
@@ -408,7 +408,7 @@ public class MediathekGui extends JFrame {
     }
 
     private void createMemoryMonitor() {
-        if (Config.isDebugModeEnabled())
+        if (CliConfig.isDebugModeEnabled())
             showMemoryMonitorAction.showMemoryMonitor();
     }
 
@@ -532,7 +532,7 @@ public class MediathekGui extends JFrame {
     }
 
     private void setApplicationWindowSize() {
-        if (Config.isStartMaximized() ||
+        if (CliConfig.isStartMaximized() ||
                 ApplicationConfiguration.getConfiguration().getBoolean(ApplicationConfiguration.APPLICATION_UI_MAINWINDOW_MAXIMIZED, true)) {
             setExtendedState(JFrame.MAXIMIZED_BOTH);
         } else

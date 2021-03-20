@@ -2,7 +2,7 @@ package mediathek.tool;
 
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
-import mediathek.config.Konstanten;
+import mediathek.client.desktop.constants.Konstanten;
 
 public class NoSelectionErrorDialog {
 

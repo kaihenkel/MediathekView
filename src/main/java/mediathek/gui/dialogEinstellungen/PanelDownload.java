@@ -1,6 +1,6 @@
 package mediathek.gui.dialogEinstellungen;
 
-import mediathek.config.MVConfig;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.tool.ApplicationConfiguration;
 import net.miginfocom.layout.AC;
 import net.miginfocom.layout.CC;

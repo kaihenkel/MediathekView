@@ -1,6 +1,6 @@
 package mediathek.daten.blacklist;
 
-import mediathek.config.MVConfig;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.daten.DatenFilm;
 import mediathek.tool.Filter;
 import org.apache.commons.lang3.StringUtils;

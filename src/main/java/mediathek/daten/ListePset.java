@@ -1,7 +1,7 @@
 package mediathek.daten;
 
-import mediathek.config.MVConfig;
-import mediathek.config.StandardLocations;
+import mediathek.client.desktop.config.MVConfig;
+import mediathek.client.desktop.config.StandardLocations;
 import mediathek.gui.dialog.DialogOk;
 import mediathek.gui.dialogEinstellungen.PanelProgrammPfade;
 import mediathek.gui.messages.ProgramSetChangedEvent;

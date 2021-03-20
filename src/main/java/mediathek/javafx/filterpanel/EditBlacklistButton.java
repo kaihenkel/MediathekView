@@ -2,7 +2,7 @@ package mediathek.javafx.filterpanel;
 
 import javafx.scene.control.Button;
 import javafx.scene.control.Tooltip;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.gui.dialog.DialogLeer;
 import mediathek.gui.dialogEinstellungen.PanelBlacklist;
 import org.controlsfx.glyphfont.FontAwesome;

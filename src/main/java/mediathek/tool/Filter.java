@@ -3,7 +3,7 @@ package mediathek.tool;
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
-import mediathek.config.MVColor;
+import mediathek.client.desktop.constants.MVColor;
 import mediathek.daten.DatenFilm;
 import mediathek.daten.abo.DatenAbo;
 import org.apache.commons.lang3.StringUtils;

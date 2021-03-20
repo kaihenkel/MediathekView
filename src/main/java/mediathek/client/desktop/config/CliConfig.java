@@ -17,12 +17,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.config;
+package mediathek.client.desktop.config;
 
 import picocli.CommandLine;
 
 @CommandLine.Command(name = "MediathekView")
-public class Config {
+public class CliConfig {
 
     @CommandLine.Parameters(index = "0", paramLabel = "<Pfad zum Verzeichnis>", description = "Pfad zum Einstellungsverzeichnis für Portablen Betrieb", arity = "0..1")
     public static String baseFilePath;
@@ -74,7 +74,7 @@ public class Config {
     }
 
     public static void setPortableMode(boolean portableMode) {
-        Config.portableMode = portableMode;
+        CliConfig.portableMode = portableMode;
     }
 
     public static boolean isEnhancedLoggingEnabled() {

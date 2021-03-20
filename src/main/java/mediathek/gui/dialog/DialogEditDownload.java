@@ -2,7 +2,7 @@ package mediathek.gui.dialog;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.config.Icons;
+import mediathek.client.desktop.constants.Icons;
 import mediathek.controller.starter.Start;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.DatenProg;

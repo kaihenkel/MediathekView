@@ -1,7 +1,7 @@
 package mediathek.gui.tabs;
 
 import com.thizzer.jtouchbar.JTouchBar;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.controller.history.SeenHistoryController;
 import mediathek.daten.DatenFilm;
 import mediathek.mainwindow.MediathekGui;

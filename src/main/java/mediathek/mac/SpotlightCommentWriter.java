@@ -1,7 +1,7 @@
 package mediathek.mac;
 
 import javafx.application.Platform;
-import mediathek.config.Konstanten;
+import mediathek.client.desktop.constants.Konstanten;
 import mediathek.daten.DatenDownload;
 import mediathek.tool.javafx.FXErrorDialog;
 import org.apache.commons.lang3.StringUtils;

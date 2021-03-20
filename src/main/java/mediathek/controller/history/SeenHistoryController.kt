@@ -1,7 +1,7 @@
 package mediathek.controller.history
 
 import com.google.common.collect.Sets
-import mediathek.config.Daten
+import mediathek.util.mv.Daten
 import mediathek.daten.DatenFilm
 import mediathek.gui.messages.history.DownloadHistoryChangedEvent
 import mediathek.tool.MessageBus

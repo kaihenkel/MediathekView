@@ -1,7 +1,7 @@
 package mediathek.javafx.filmtab;
 
 import javafx.scene.control.Label;
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 
 public class FilmTabDownloadInformationLabel extends Label {
     private final Daten daten;

@@ -1,7 +1,7 @@
 package mediathek.tool;
 
-import mediathek.config.Konstanten;
-import mediathek.config.StandardLocations;
+import mediathek.client.desktop.constants.Konstanten;
+import mediathek.client.desktop.config.StandardLocations;
 import mediathek.daten.GeoblockingField;
 import org.apache.commons.configuration2.Configuration;
 import org.apache.commons.configuration2.XMLConfiguration;

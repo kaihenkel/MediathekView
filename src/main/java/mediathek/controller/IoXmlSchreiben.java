@@ -19,9 +19,9 @@
  */
 package mediathek.controller;
 
-import mediathek.config.Daten;
-import mediathek.config.Konstanten;
-import mediathek.config.MVConfig;
+import mediathek.util.mv.Daten;
+import mediathek.client.desktop.constants.Konstanten;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.DatenProg;
 import mediathek.daten.DatenPset;

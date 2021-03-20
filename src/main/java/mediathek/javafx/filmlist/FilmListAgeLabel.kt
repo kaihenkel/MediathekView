@@ -5,7 +5,7 @@ import javafx.animation.KeyFrame
 import javafx.animation.Timeline
 import javafx.scene.control.Tooltip
 import javafx.util.Duration
-import mediathek.config.Daten
+import mediathek.util.mv.Daten
 import mediathek.javafx.tool.ComputedLabel
 
 /**

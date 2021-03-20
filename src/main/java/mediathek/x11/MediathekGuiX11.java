@@ -1,7 +1,7 @@
 package mediathek.x11;
 
-import mediathek.config.Konstanten;
-import mediathek.config.MVConfig;
+import mediathek.client.desktop.constants.Konstanten;
+import mediathek.client.desktop.config.MVConfig;
 import mediathek.mainwindow.MediathekGui;
 import mediathek.tool.notification.GenericNotificationCenter;
 import mediathek.tool.notification.INotificationCenter;

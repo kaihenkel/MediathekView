@@ -19,7 +19,7 @@
  */
 package mediathek.daten;
 
-import mediathek.config.Daten;
+import mediathek.util.mv.Daten;
 import mediathek.tool.GuiFunktionenProgramme;
 import mediathek.tool.MVMessageDialog;
 import org.apache.commons.lang3.SystemUtils;
