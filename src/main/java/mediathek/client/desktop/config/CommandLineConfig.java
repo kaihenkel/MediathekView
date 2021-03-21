@@ -22,7 +22,7 @@ package mediathek.client.desktop.config;
 import picocli.CommandLine;
 
 @CommandLine.Command(name = "MediathekView")
-public class CliConfig {
+public class CommandLineConfig {
 
     @CommandLine.Parameters(index = "0", paramLabel = "<Pfad zum Verzeichnis>", description = "Pfad zum Einstellungsverzeichnis für Portablen Betrieb", arity = "0..1")
     public static String baseFilePath;
@@ -74,7 +74,7 @@ public class CliConfig {
     }
 
     public static void setPortableMode(boolean portableMode) {
-        CliConfig.portableMode = portableMode;
+        CommandLineConfig.portableMode = portableMode;
     }
 
     public static boolean isEnhancedLoggingEnabled() {

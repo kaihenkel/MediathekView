@@ -1,7 +1,7 @@
 
 package mediathek.daten;
 
-import mediathek.client.desktop.constants.Konstanten;
+import mediathek.util.constants.Konstanten;
 import mediathek.util.res.GetFile;
 import mediathek.tool.NetUtils;
 import mediathek.tool.http.MVHttpClient;

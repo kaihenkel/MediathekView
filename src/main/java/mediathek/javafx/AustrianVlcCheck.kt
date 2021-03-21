@@ -6,11 +6,11 @@ import javafx.scene.control.Alert
 import javafx.scene.control.Hyperlink
 import javafx.scene.control.Label
 import javafx.scene.layout.FlowPane
-import mediathek.client.desktop.constants.Konstanten
+import mediathek.util.constants.Konstanten
 import mediathek.daten.GeoblockingField
 import mediathek.gui.actions.UrlHyperlinkAction
 import mediathek.mainwindow.MediathekGui
-import mediathek.tool.ApplicationConfiguration
+import mediathek.util.config.ApplicationConfiguration
 import org.apache.logging.log4j.LogManager
 import java.net.URISyntaxException
 

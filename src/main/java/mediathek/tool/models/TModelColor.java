@@ -1,6 +1,6 @@
 package mediathek.tool.models;
 
-import mediathek.client.desktop.constants.MVColor;
+import mediathek.util.constants.MVColor;
 import mediathek.tool.MVC;
 
 public class TModelColor extends NonEditableTableModel {

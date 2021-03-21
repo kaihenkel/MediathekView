@@ -1,7 +1,7 @@
-package mediathek.controller.starter;
+package mediathek.server.controller.starter;
 
 import mediathek.util.mv.Daten;
-import mediathek.controller.starter.DirectHttpDownload.HttpDownloadState;
+import mediathek.server.controller.starter.DirectHttpDownload.HttpDownloadState;
 import mediathek.daten.DatenDownload;
 import mediathek.gui.dialog.DialogContinueDownload;
 import mediathek.gui.dialog.MeldungDownloadfehler;
@@ -20,6 +20,7 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 

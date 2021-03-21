@@ -31,8 +31,8 @@ import javafx.stage.Stage;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.javafx.IconNode;
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.config.MVConfig;
-import mediathek.controller.history.SeenHistoryController;
+import mediathek.util.config.MVConfig;
+import mediathek.server.controller.history.SeenHistoryController;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.DatenFilm;
 import mediathek.daten.DatenPset;
@@ -43,7 +43,7 @@ import mediathek.gui.tabs.tab_film.GuiFilme;
 import mediathek.javafx.tool.JavaFxUtils;
 import mediathek.javafx.tool.TableViewColumnContextMenuHelper;
 import mediathek.mainwindow.MediathekGui;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MVC;
 import mediathek.tool.MessageBus;
 import mediathek.tool.TimerPool;
@@ -66,7 +66,7 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 
 import static javafx.scene.input.MouseButton.PRIMARY;
-import static mediathek.client.desktop.constants.MVColor.*;
+import static mediathek.util.constants.MVColor.*;
 
 
 /**

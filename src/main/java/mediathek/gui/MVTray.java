@@ -1,12 +1,12 @@
 package mediathek.gui;
 
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.constants.Icons;
+import mediathek.util.constants.Icons;
 import mediathek.daten.DownloadStartInfo;
 import mediathek.gui.messages.TimerEvent;
 import mediathek.gui.messages.TrayIconEvent;
 import mediathek.mainwindow.MediathekGui;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MessageBus;
 import mediathek.tool.notification.MessageType;
 import mediathek.tool.notification.NotificationMessage;

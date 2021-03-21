@@ -2,8 +2,8 @@ package mediathek.update;
 
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.constants.Konstanten;
+import mediathek.util.config.MVConfig;
 import mediathek.mainwindow.MediathekGui;
 import mediathek.tool.Version;
 import mediathek.tool.http.MVHttpClient;

@@ -10,7 +10,7 @@ import javafx.scene.layout.Pane;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import mediathek.client.desktop.constants.Konstanten;
+import mediathek.util.constants.Konstanten;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;

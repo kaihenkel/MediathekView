@@ -2,13 +2,13 @@ package mediathek.daten.blacklist;
 
 import com.google.common.base.Stopwatch;
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.config.MVConfig;
 import mediathek.daten.DatenFilm;
 import mediathek.daten.ListeFilme;
 import mediathek.gui.messages.BlacklistChangedEvent;
 import mediathek.javafx.filterpanel.ZeitraumSpinner;
 import mediathek.mainwindow.MediathekGui;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.Filter;
 import mediathek.tool.MessageBus;
 import org.apache.logging.log4j.LogManager;

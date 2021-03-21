@@ -2,7 +2,7 @@ package mediathek.gui.actions.export;
 
 import javafx.scene.control.Alert;
 import javafx.stage.Modality;
-import mediathek.client.desktop.constants.Konstanten;
+import mediathek.util.constants.Konstanten;
 import mediathek.javafx.tool.FXProgressPane;
 import mediathek.javafx.tool.JavaFxUtils;
 import mediathek.mainwindow.MediathekGui;

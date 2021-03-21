@@ -2,7 +2,7 @@ package mediathek.tool.listener;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.config.MVConfig;
 import mediathek.tool.table.MVTable;
 import org.jetbrains.annotations.NotNull;
 

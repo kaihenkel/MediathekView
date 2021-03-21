@@ -1,6 +1,6 @@
 package mediathek.gui.abo
 
-import mediathek.tool.ApplicationConfiguration
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.EscapeKeyHandler
 import org.apache.commons.configuration2.sync.LockMode
 import java.awt.BorderLayout

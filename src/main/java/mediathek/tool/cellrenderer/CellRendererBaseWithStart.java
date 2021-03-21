@@ -1,9 +1,9 @@
 package mediathek.tool.cellrenderer;
 
-import mediathek.client.desktop.constants.MVColor;
-import mediathek.controller.starter.Start;
+import mediathek.util.constants.MVColor;
+import mediathek.server.controller.starter.Start;
 import mediathek.gui.messages.GeoStateChangedEvent;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MessageBus;
 import net.engio.mbassy.listener.Handler;
 import org.apache.commons.configuration2.Configuration;

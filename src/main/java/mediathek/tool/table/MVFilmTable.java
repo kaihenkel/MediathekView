@@ -1,9 +1,9 @@
 package mediathek.tool.table;
 
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.config.MVConfig;
 import mediathek.daten.DatenFilm;
 import mediathek.gui.tabs.tab_film.GuiFilme;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.FilmSize;
 import mediathek.tool.models.TModelFilm;
 import org.apache.logging.log4j.LogManager;

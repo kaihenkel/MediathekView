@@ -2,12 +2,13 @@ package mediathek.gui.dialogEinstellungen;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.client.desktop.config.MVConfig;
-import mediathek.controller.SenderFilmlistLoadApprover;
+import mediathek.util.config.MVConfig;
+import mediathek.server.controller.SenderFilmlistLoadApprover;
 import mediathek.gui.messages.FilmListImportTypeChangedEvent;
 import mediathek.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import mediathek.tool.swing.MultilineLabel;
+import mediathek.util.config.ApplicationConfiguration;
 import net.engio.mbassy.listener.Handler;
 import net.miginfocom.layout.AC;
 import net.miginfocom.layout.CC;

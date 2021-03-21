@@ -1,8 +1,8 @@
 package mediathek.tool;
 
 import ca.odell.glazedlists.swing.DefaultEventComboBoxModel;
-import mediathek.client.desktop.config.MVConfig;
-import mediathek.client.desktop.config.MVConfig.Configs;
+import mediathek.util.config.MVConfig;
+import mediathek.util.config.MVConfig.Configs;
 import mediathek.daten.ListeFilme;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;

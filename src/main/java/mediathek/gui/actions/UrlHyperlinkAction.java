@@ -1,6 +1,6 @@
 package mediathek.gui.actions;
 
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.config.MVConfig;
 import mediathek.gui.dialog.DialogProgrammOrdnerOeffnen;
 import mediathek.gui.messages.ProgramLocationChangedEvent;
 import mediathek.tool.MessageBus;

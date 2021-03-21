@@ -13,10 +13,10 @@
  * You should have received a copy of the GNU General Public License along with this program. If
  * not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.controller;
+package mediathek.server.controller;
 
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.config.MVConfig;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.DatenProg;
 import mediathek.daten.DatenPset;

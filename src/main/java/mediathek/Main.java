@@ -7,11 +7,11 @@ import javafx.scene.control.Alert;
 import javafx.stage.Modality;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.client.desktop.config.CliConfig;
-import mediathek.client.desktop.config.MVConfig;
-import mediathek.client.desktop.config.StandardLocations;
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.controller.history.SeenHistoryMigrator;
+import mediathek.client.desktop.config.CommandLineConfig;
+import mediathek.util.config.MVConfig;
+import mediathek.util.config.StandardLocations;
+import mediathek.util.constants.Konstanten;
+import mediathek.server.controller.history.SeenHistoryMigrator;
 import mediathek.gui.dialog.DialogStarteinstellungen;
 import mediathek.javafx.AustrianVlcCheck;
 import mediathek.javafx.tool.JFXHiddenApplication;
@@ -24,6 +24,7 @@ import mediathek.tool.javafx.FXErrorDialog;
 import mediathek.tool.migrator.SettingsMigrator;
 import mediathek.tool.swing.SwingUIFontChanger;
 import mediathek.tool.swing.ThreadCheckingRepaintManager;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.mv.Daten;
 import mediathek.windows.MediathekGuiWindows;
 import mediathek.x11.MediathekGuiX11;
@@ -72,7 +73,7 @@ public class Main {
      * In portable mode we MUST NOT delete the files.
      */
     private static void cleanupOsxFiles() {
-        if (!CliConfig.isPortableMode()) {
+        if (!CommandLineConfig.isPortableMode()) {
             try {
                 var oldFilmList = StandardLocations.getSettingsDirectory().resolve(Konstanten.JSON_DATEI_FILME);
                 Files.deleteIfExists(oldFilmList);
@@ -119,14 +120,14 @@ public class Main {
         final String path;
         final String fileName = "/mediathekview.log";
 
-        if (!CliConfig.isPortableMode())
+        if (!CommandLineConfig.isPortableMode())
             path = StandardLocations.getSettingsDirectory().toString() + fileName;
         else
-            path = CliConfig.baseFilePath + fileName;
+            path = CommandLineConfig.baseFilePath + fileName;
 
 
         final PatternLayout consolePattern;
-        if (CliConfig.isEnhancedLoggingEnabled() || CliConfig.isDebugModeEnabled()) {
+        if (CommandLineConfig.isEnhancedLoggingEnabled() || CommandLineConfig.isDebugModeEnabled()) {
             consolePattern = PatternLayout.newBuilder().withPattern("[%-5level] [%t] %c - %msg%n").build();
         }
         else {
@@ -135,7 +136,7 @@ public class Main {
 
         var consoleAppender = ConsoleAppender.createDefaultAppenderForLayout(consolePattern);
         //for normal users only show INFO and higher messages
-        if (!CliConfig.isEnhancedLoggingEnabled() && !CliConfig.isDebugModeEnabled()) {
+        if (!CommandLineConfig.isEnhancedLoggingEnabled() && !CommandLineConfig.isDebugModeEnabled()) {
             final var thresholdFilter = ThresholdFilter.createFilter(Level.INFO, Filter.Result.ACCEPT, Filter.Result.DENY);
             consoleAppender.addFilter(thresholdFilter);
         }
@@ -150,13 +151,13 @@ public class Main {
                 .setConfiguration(config);
 
         //regular users may have DEBUG output in log file but not TRACE
-        if (!CliConfig.isEnhancedLoggingEnabled() && !CliConfig.isDebugModeEnabled()) {
+        if (!CommandLineConfig.isEnhancedLoggingEnabled() && !CommandLineConfig.isDebugModeEnabled()) {
             final var thresholdFilter = ThresholdFilter.createFilter(Level.DEBUG, Filter.Result.ACCEPT, Filter.Result.DENY);
             fileAppenderBuilder.setFilter(thresholdFilter);
         }
 
         AsyncAppender asyncAppender = null;
-        if (!CliConfig.isFileLoggingDisabled()) {
+        if (!CommandLineConfig.isFileLoggingDisabled()) {
             FileAppender fileAppender = fileAppenderBuilder.build();
             fileAppender.start();
             config.addAppender(fileAppender);
@@ -176,7 +177,7 @@ public class Main {
         final var rootLogger = loggerContext.getRootLogger();
         rootLogger.setLevel(Level.TRACE);
         rootLogger.addAppender(consoleAppender);
-        if (!CliConfig.isFileLoggingDisabled())
+        if (!CommandLineConfig.isFileLoggingDisabled())
             rootLogger.addAppender(asyncAppender);
 
         loggerContext.updateLoggers();
@@ -293,8 +294,8 @@ public class Main {
     }
 
     private static void printPortableModeInfo() {
-        if (CliConfig.isPortableMode()) {
-            logger.info("Configuring baseFilePath {} for portable mode", CliConfig.baseFilePath);
+        if (CommandLineConfig.isPortableMode()) {
+            logger.info("Configuring baseFilePath {} for portable mode", CommandLineConfig.baseFilePath);
         }
         else
             logger.info("Configuring for non-portable mode");
@@ -312,7 +313,7 @@ public class Main {
             System.exit(1);
         }
 
-        CommandLine cmd = new CommandLine(CliConfig.class);
+        CommandLine cmd = new CommandLine(CommandLineConfig.class);
         try {
             var parseResult = cmd.parseArgs(args);
             if (parseResult.isUsageHelpRequested()) {
@@ -320,15 +321,15 @@ public class Main {
                 System.exit(cmd.getCommandSpec().exitCodeOnUsageHelp());
             }
 
-            CliConfig.setPortableMode(parseResult.hasMatchedPositional(0));
-            if (CliConfig.isPortableMode()) {
-                StandardLocations.INSTANCE.setPortableBaseDirectory(CliConfig.baseFilePath);
+            CommandLineConfig.setPortableMode(parseResult.hasMatchedPositional(0));
+            if (CommandLineConfig.isPortableMode()) {
+                StandardLocations.INSTANCE.setPortableBaseDirectory(CommandLineConfig.baseFilePath);
             }
 
             setupLogging();
             printPortableModeInfo();
 
-            final int numCpus = CliConfig.getNumCpus();
+            final int numCpus = CommandLineConfig.getNumCpus();
             if (numCpus != 0) {
                 var affinity = Affinity.getAffinityImpl();
                 affinity.setDesiredCpuAffinity(numCpus);
@@ -563,7 +564,7 @@ public class Main {
                 cleanupOsxFiles();
             }
 
-            if (CliConfig.isDebugModeEnabled() || CliConfig.isInstallThreadCheckingRepaintManager()) {
+            if (CommandLineConfig.isDebugModeEnabled() || CommandLineConfig.isInstallThreadCheckingRepaintManager()) {
                 // use for debugging EDT violations
                 RepaintManager.setCurrentManager(new ThreadCheckingRepaintManager());
                 logger.info("Swing Thread checking repaint manager installed.");

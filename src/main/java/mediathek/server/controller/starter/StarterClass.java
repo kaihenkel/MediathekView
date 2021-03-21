@@ -1,8 +1,8 @@
-package mediathek.controller.starter;
+package mediathek.server.controller.starter;
 
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.controller.history.SeenHistoryController;
+import mediathek.util.constants.Konstanten;
+import mediathek.server.controller.history.SeenHistoryController;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.DatenFilm;
 import mediathek.daten.DatenPset;
@@ -10,7 +10,7 @@ import mediathek.gui.messages.ButtonStartEvent;
 import mediathek.gui.messages.DownloadProgressChangedEvent;
 import mediathek.gui.messages.StartEvent;
 import mediathek.mac.SpotlightCommentWriter;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.Datum;
 import mediathek.tool.MessageBus;
 import mediathek.tool.notification.MessageType;

@@ -8,7 +8,7 @@ import mediathek.util.res.GetFile;
 import mediathek.gui.dialog.DialogHilfe;
 import mediathek.gui.messages.BlacklistChangedEvent;
 import mediathek.gui.messages.GeoStateChangedEvent;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MessageBus;
 import org.apache.commons.configuration2.Configuration;
 import org.jdesktop.swingx.VerticalLayout;

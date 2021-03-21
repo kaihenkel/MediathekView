@@ -15,11 +15,12 @@ import javafx.scene.control.Alert;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import mediathek.Main;
-import mediathek.client.desktop.config.CliConfig;
-import mediathek.client.desktop.constants.Icons;
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.controller.history.SeenHistoryController;
-import mediathek.controller.starter.Start;
+import mediathek.client.desktop.config.CommandLineConfig;
+import mediathek.util.config.MVConfig;
+import mediathek.util.constants.Icons;
+import mediathek.util.constants.Konstanten;
+import mediathek.server.controller.history.SeenHistoryController;
+import mediathek.server.controller.starter.Start;
 import mediathek.daten.DatenDownload;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
 import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
@@ -45,6 +46,7 @@ import mediathek.javafx.*;
 import mediathek.javafx.tool.FXProgressPane;
 import mediathek.javafx.tool.JFXHiddenApplication;
 import mediathek.javafx.tool.JavaFxUtils;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.res.GetIcon;
 import mediathek.tool.*;
 import mediathek.tool.notification.GenericNotificationCenter;
@@ -76,7 +78,7 @@ import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import static mediathek.tool.ApplicationConfiguration.CONFIG_AUTOMATIC_UPDATE_CHECK;
+import static mediathek.util.config.ApplicationConfiguration.CONFIG_AUTOMATIC_UPDATE_CHECK;
 
 public class MediathekGui extends JFrame {
 
@@ -408,7 +410,7 @@ public class MediathekGui extends JFrame {
     }
 
     private void createMemoryMonitor() {
-        if (CliConfig.isDebugModeEnabled())
+        if (CommandLineConfig.isDebugModeEnabled())
             showMemoryMonitorAction.showMemoryMonitor();
     }
 
@@ -532,7 +534,7 @@ public class MediathekGui extends JFrame {
     }
 
     private void setApplicationWindowSize() {
-        if (CliConfig.isStartMaximized() ||
+        if (CommandLineConfig.isStartMaximized() ||
                 ApplicationConfiguration.getConfiguration().getBoolean(ApplicationConfiguration.APPLICATION_UI_MAINWINDOW_MAXIMIZED, true)) {
             setExtendedState(JFrame.MAXIMIZED_BOTH);
         } else

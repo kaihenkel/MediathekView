@@ -11,7 +11,7 @@ import javafx.scene.image.ImageView
 import mediathek.daten.DatenFilm
 import mediathek.gui.actions.UrlHyperlinkAction
 import mediathek.javafx.tool.JavaFxUtils
-import mediathek.tool.ApplicationConfiguration
+import mediathek.util.config.ApplicationConfiguration
 import mediathek.tool.GuiFunktionen
 import mediathek.tool.sender_icon_cache.MVSenderIconCache
 import net.miginfocom.layout.CC

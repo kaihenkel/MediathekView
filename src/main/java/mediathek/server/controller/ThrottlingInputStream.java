@@ -1,4 +1,4 @@
-package mediathek.controller;
+package mediathek.server.controller;
 
 import com.google.common.util.concurrent.RateLimiter;
 

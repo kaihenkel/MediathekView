@@ -8,7 +8,7 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
-import mediathek.client.desktop.config.CliConfig;
+import mediathek.client.desktop.config.CommandLineConfig;
 import mediathek.util.mv.Daten;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
 import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
@@ -40,7 +40,7 @@ public class StatusBarController {
             public void start(ListenerFilmeLadenEvent event) {
                 addProgressItems();
 
-                if (CliConfig.isDebugModeEnabled())
+                if (CommandLineConfig.isDebugModeEnabled())
                     Platform.runLater(() -> statusBar.setText(event.senderUrl));
             }
 
@@ -53,7 +53,7 @@ public class StatusBarController {
             public void fertig(ListenerFilmeLadenEvent event) {
                 Platform.runLater(() -> progressBar.setProgress(0d));
                 removeProgressItems();
-                if (CliConfig.isDebugModeEnabled())
+                if (CommandLineConfig.isDebugModeEnabled())
                     Platform.runLater(() -> statusBar.setText(""));
             }
         });
@@ -116,7 +116,7 @@ public class StatusBarController {
     private void setupLeftPane() {
         ObservableList<Node> leftItems = statusBar.getLeftItems();
 
-        if (CliConfig.isDebugModeEnabled()) {
+        if (CommandLineConfig.isDebugModeEnabled()) {
             leftItems.add(btnGc);
             leftItems.add(new VerticalSeparator());
         }

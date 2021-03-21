@@ -1,7 +1,7 @@
 package mediathek.tool.http;
 
-import mediathek.client.desktop.config.CliConfig;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.client.desktop.config.CommandLineConfig;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.dns.DnsSelector;
 import mediathek.tool.dns.IPvPreferenceMode;
 import okhttp3.Authenticator;
@@ -73,7 +73,7 @@ public class MVHttpClient {
     private OkHttpClient.Builder getDefaultClientBuilder() {
         var builder = new OkHttpClient.Builder();
 
-        if (CliConfig.isHttpTrafficDebuggingEnabled()) {
+        if (CommandLineConfig.isHttpTrafficDebuggingEnabled()) {
             var interceptor = new HttpLoggingInterceptor(logger::trace);
             HttpLoggingInterceptor.Level level = HttpLoggingInterceptor.Level.BASIC;
             try {

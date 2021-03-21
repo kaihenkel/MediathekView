@@ -2,8 +2,8 @@ package mediathek.gui.tabs.tab_film
 
 import javafx.application.Platform
 import javafx.scene.control.Alert
-import mediathek.client.desktop.constants.Konstanten
-import mediathek.controller.history.SeenHistoryController
+import mediathek.util.constants.Konstanten
+import mediathek.server.controller.history.SeenHistoryController
 import mediathek.daten.DatenFilm
 import mediathek.daten.FilmResolution
 import mediathek.tool.http.MVHttpClient

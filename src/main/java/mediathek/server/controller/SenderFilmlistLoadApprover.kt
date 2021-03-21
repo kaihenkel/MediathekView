@@ -1,6 +1,6 @@
-package mediathek.controller
+package mediathek.server.controller
 
-import mediathek.tool.ApplicationConfiguration
+import mediathek.util.config.ApplicationConfiguration
 import java.util.concurrent.ConcurrentHashMap
 
 /**

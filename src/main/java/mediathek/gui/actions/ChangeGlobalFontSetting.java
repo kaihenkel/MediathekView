@@ -9,7 +9,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
 import mediathek.mainwindow.MediathekGui;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.swing.LookAndFeelType;
 import mediathek.tool.swing.SwingUIFontChanger;
 import org.apache.logging.log4j.LogManager;

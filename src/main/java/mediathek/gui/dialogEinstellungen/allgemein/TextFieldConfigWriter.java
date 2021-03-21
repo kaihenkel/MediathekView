@@ -1,6 +1,6 @@
 package mediathek.gui.dialogEinstellungen.allgemein;
 
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

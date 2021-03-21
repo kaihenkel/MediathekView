@@ -21,7 +21,7 @@ package mediathek.daten;
 
 import com.google.common.base.Stopwatch;
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.config.MVConfig;
 import mediathek.daten.abo.DatenAbo;
 import mediathek.daten.abo.FilmLengthState;
 import mediathek.gui.dialog.DialogEditAbo;

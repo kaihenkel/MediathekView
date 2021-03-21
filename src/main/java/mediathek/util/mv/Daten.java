@@ -6,14 +6,14 @@ import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ButtonType;
 import mediathek.Main;
 import mediathek.SplashScreen;
-import mediathek.client.desktop.config.CliConfig;
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.client.desktop.constants.MVColor;
-import mediathek.client.desktop.config.StandardLocations;
-import mediathek.controller.IoXmlLesen;
-import mediathek.controller.IoXmlSchreiben;
-import mediathek.controller.history.AboHistoryController;
-import mediathek.controller.starter.StarterClass;
+import mediathek.client.desktop.config.CommandLineConfig;
+import mediathek.util.constants.Konstanten;
+import mediathek.util.constants.MVColor;
+import mediathek.util.config.StandardLocations;
+import mediathek.server.controller.IoXmlLesen;
+import mediathek.server.controller.IoXmlSchreiben;
+import mediathek.server.controller.history.AboHistoryController;
+import mediathek.server.controller.starter.StarterClass;
 import mediathek.daten.*;
 import mediathek.daten.blacklist.ListeBlacklist;
 import mediathek.filmlisten.FilmeLaden;
@@ -125,7 +125,7 @@ public class Daten {
         String strFile;
         final String filePart = File.separator + Konstanten.JSON_DATEI_FILME;
 
-        if (CliConfig.isPortableMode())
+        if (CommandLineConfig.isPortableMode())
             strFile = StandardLocations.getSettingsDirectory().toString() + filePart;
         else {
             if (SystemUtils.IS_OS_MAC_OSX) {

@@ -1,6 +1,6 @@
-package mediathek.controller.history;
+package mediathek.server.controller.history;
 
-import mediathek.client.desktop.config.StandardLocations;
+import mediathek.util.config.StandardLocations;
 import mediathek.tool.FileUtils;
 import mediathek.tool.sql.SqlAutoRollback;
 import mediathek.tool.sql.SqlAutoSetAutoCommit;

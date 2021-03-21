@@ -1,6 +1,6 @@
 package mediathek.tool.swing;
 
-import mediathek.client.desktop.config.CliConfig;
+import mediathek.client.desktop.config.CommandLineConfig;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -52,7 +52,7 @@ public class SwingUIFontChanger {
 
         var ui_keys = keyList.stream().distinct().sorted().toArray(String[]::new);
 
-        if (CliConfig.isDebugModeEnabled())
+        if (CommandLineConfig.isDebugModeEnabled())
             Arrays.stream(ui_keys).forEach(logger::debug);
 
         logger.info("Changing Windows font sizes to {}", size);

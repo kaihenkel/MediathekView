@@ -4,7 +4,7 @@ import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.web.WebEngine;
 import javafx.scene.web.WebView;
-import mediathek.client.desktop.constants.Konstanten;
+import mediathek.util.constants.Konstanten;
 import mediathek.gui.actions.DisposeDialogAction;
 import mediathek.gui.dialog.ButtonFlowPanel;
 import mediathek.gui.dialog.ButtonPanel;

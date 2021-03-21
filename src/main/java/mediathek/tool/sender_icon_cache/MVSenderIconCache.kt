@@ -4,7 +4,7 @@ import com.google.common.cache.CacheBuilder
 import com.google.common.cache.CacheLoader.InvalidCacheLoadException
 import com.google.common.cache.LoadingCache
 import mediathek.gui.messages.SenderIconStyleChangedEvent
-import mediathek.tool.ApplicationConfiguration
+import mediathek.util.config.ApplicationConfiguration
 import mediathek.tool.MessageBus
 import mediathek.tool.TimerPool
 import net.engio.mbassy.listener.Handler

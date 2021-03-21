@@ -1,6 +1,6 @@
 package mediathek.tool.sql
 
-import mediathek.client.desktop.config.StandardLocations
+import mediathek.util.config.StandardLocations
 import org.sqlite.SQLiteConfig
 import org.sqlite.SQLiteDataSource
 import java.nio.file.Path

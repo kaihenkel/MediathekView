@@ -17,17 +17,17 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.controller;
+package mediathek.server.controller;
 
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.constants.Konstanten;
+import mediathek.util.config.MVConfig;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.DatenProg;
 import mediathek.daten.DatenPset;
 import mediathek.daten.abo.DatenAbo;
 import mediathek.daten.blacklist.BlacklistRule;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.ReplaceList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

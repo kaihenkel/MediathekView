@@ -4,9 +4,9 @@ import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
 import com.google.common.base.Stopwatch;
-import mediathek.client.desktop.config.CliConfig;
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.controller.SenderFilmlistLoadApprover;
+import mediathek.client.desktop.config.CommandLineConfig;
+import mediathek.util.constants.Konstanten;
+import mediathek.server.controller.SenderFilmlistLoadApprover;
 import mediathek.daten.DatenFilm;
 import mediathek.daten.ListeFilme;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
@@ -16,6 +16,7 @@ import mediathek.tool.InputStreamProgressMonitor;
 import mediathek.tool.ProgressMonitorInputStream;
 import mediathek.tool.TrailerTeaserChecker;
 import mediathek.tool.http.MVHttpClient;
+import mediathek.util.config.ApplicationConfiguration;
 import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
@@ -459,7 +460,7 @@ public class FilmListReader implements AutoCloseable {
              ResponseBody body = response.body()) {
             if (response.isSuccessful() && body != null) {
                 final var endRequest = response.request();
-                if (CliConfig.isEnhancedLoggingEnabled()) {
+                if (CommandLineConfig.isEnhancedLoggingEnabled()) {
                     logger.trace("Final Endpoint URL for filmlist: {}", endRequest.url().toString());
                 }
                 ProgressMonitor monitor = new ProgressMonitor(source.toString());

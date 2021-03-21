@@ -17,9 +17,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.client.desktop.constants;
+package mediathek.util.constants;
 
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.config.MVConfig;
 import mediathek.tool.MVC;
 
 import java.awt.*;

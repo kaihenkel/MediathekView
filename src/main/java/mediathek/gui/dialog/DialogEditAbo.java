@@ -3,7 +3,7 @@ package mediathek.gui.dialog;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.constants.MVColor;
+import mediathek.util.constants.MVColor;
 import mediathek.daten.abo.AboTags;
 import mediathek.daten.abo.DatenAbo;
 import mediathek.daten.abo.FilmLengthState;

@@ -1,6 +1,6 @@
 package mediathek.gui.actions
 
-import mediathek.client.desktop.constants.Konstanten
+import mediathek.util.constants.Konstanten
 import mediathek.mainwindow.MediathekGui
 import mediathek.tool.MVFunctionSys
 import mediathek.tool.javafx.FXErrorDialog

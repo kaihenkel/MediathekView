@@ -2,8 +2,8 @@ package mediathek.gui.dialogEinstellungen;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.constants.Konstanten;
+import mediathek.util.config.MVConfig;
 import mediathek.gui.messages.ProgramLocationChangedEvent;
 import mediathek.mainwindow.MediathekGui;
 import mediathek.tool.MVMessageDialog;

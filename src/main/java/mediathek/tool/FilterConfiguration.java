@@ -11,7 +11,7 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
-import static mediathek.tool.ApplicationConfiguration.getConfiguration;
+import static mediathek.util.config.ApplicationConfiguration.getConfiguration;
 
 public class FilterConfiguration {
   protected static final String FILTER_PANEL_CURRENT_FILTER = "filter.current.filter";

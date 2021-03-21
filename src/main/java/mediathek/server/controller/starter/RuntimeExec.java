@@ -17,12 +17,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.controller.starter;
+package mediathek.server.controller.starter;
 
 import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
-import mediathek.client.desktop.config.CliConfig;
+import mediathek.client.desktop.config.CommandLineConfig;
 import mediathek.gui.messages.DownloadProgressChangedEvent;
 import mediathek.tool.MVFilmSize;
 import mediathek.tool.MessageBus;
@@ -158,7 +158,7 @@ public class RuntimeExec {
                 while ((inStr = buff.readLine()) != null) {
                     GetPercentageFromErrorStream(inStr);
                     // only print stream info when enhanced log mode enabled
-                    if (CliConfig.isEnhancedLoggingEnabled()) {
+                    if (CommandLineConfig.isEnhancedLoggingEnabled()) {
                         logger.trace("  >> {}}: {}}", titel, inStr);
                     }
                 }

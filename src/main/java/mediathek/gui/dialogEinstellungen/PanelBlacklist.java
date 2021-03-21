@@ -2,8 +2,9 @@ package mediathek.gui.dialogEinstellungen;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.config.MVConfig;
+import mediathek.util.config.MVConfig;
 import mediathek.daten.blacklist.BlacklistRule;
 import mediathek.util.res.GetFile;
 import mediathek.filmeSuchen.ListenerFilmeLaden;

@@ -1,8 +1,9 @@
-package mediathek.tool;
+package mediathek.util.config;
 
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.client.desktop.config.StandardLocations;
+import mediathek.util.constants.Konstanten;
 import mediathek.daten.GeoblockingField;
+import mediathek.tool.CustomConversionHandler;
+import mediathek.tool.TimerPool;
 import org.apache.commons.configuration2.Configuration;
 import org.apache.commons.configuration2.XMLConfiguration;
 import org.apache.commons.configuration2.event.ConfigurationEvent;

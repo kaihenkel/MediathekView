@@ -4,7 +4,7 @@ import javafx.concurrent.Task;
 import mediathek.util.mv.Daten;
 import mediathek.filmlisten.reader.FilmListReader;
 import mediathek.gui.messages.FilmListReadStartEvent;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MessageBus;
 
 public class FilmListReaderTask extends Task<Void> {

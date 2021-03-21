@@ -20,16 +20,16 @@
 package mediathek.daten;
 
 import mediathek.util.mv.Daten;
-import mediathek.client.desktop.constants.Konstanten;
-import mediathek.client.desktop.config.MVConfig;
-import mediathek.controller.starter.Start;
+import mediathek.util.constants.Konstanten;
+import mediathek.util.config.MVConfig;
+import mediathek.server.controller.starter.Start;
 import mediathek.daten.abo.DatenAbo;
 import mediathek.gui.dialog.DialogAboNoSet;
 import mediathek.gui.messages.ButtonStartEvent;
 import mediathek.gui.messages.DownloadListChangedEvent;
 import mediathek.gui.messages.DownloadQueueRankChangedEvent;
 import mediathek.gui.messages.StartEvent;
-import mediathek.tool.ApplicationConfiguration;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MessageBus;
 import mediathek.tool.models.TModelDownload;
 import org.apache.logging.log4j.LogManager;
@@ -443,7 +443,7 @@ public class ListeDownloads extends LinkedList<DatenDownload> {
     /**
      * Return a List of all not yet finished downloads.
      *
-     * @param quelle Use QUELLE_XXX constants from {@link mediathek.controller.starter.Start}.
+     * @param quelle Use QUELLE_XXX constants from {@link mediathek.server.controller.starter.Start}.
      * @return A list with all download objects.
      */
     public synchronized List<DatenDownload> getListOfStartsNotFinished(int quelle) {

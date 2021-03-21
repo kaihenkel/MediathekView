@@ -1,5 +1,6 @@
-package mediathek.client.desktop.config;
+package mediathek.util.config;
 
+import mediathek.client.desktop.config.CommandLineConfig;
 import mediathek.tool.*;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
@@ -27,7 +28,7 @@ public class MVConfig {
             }
         }
 
-        if (CliConfig.isDebugModeEnabled()) {
+        if (CommandLineConfig.isDebugModeEnabled()) {
             logger.debug("Setting FilmList import mode to MANUAL");
             GuiFunktionen.setFilmListUpdateType(FilmListUpdateType.MANUAL);
         }

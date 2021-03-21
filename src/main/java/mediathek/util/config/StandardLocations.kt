@@ -1,6 +1,6 @@
-package mediathek.client.desktop.config
+package mediathek.util.config
 
-import mediathek.client.desktop.constants.Konstanten
+import mediathek.util.constants.Konstanten
 import mediathek.filmlisten.FilmListDownloadType
 import org.apache.commons.lang3.SystemUtils
 import org.apache.logging.log4j.LogManager
