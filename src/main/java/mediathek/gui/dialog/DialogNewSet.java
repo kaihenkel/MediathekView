@@ -3,7 +3,7 @@ package mediathek.gui.dialog;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.mv.Daten;
-import mediathek.file.GetFile;
+import mediathek.util.res.GetFile;
 import mediathek.tool.EscapeKeyHandler;
 
 import javax.swing.*;

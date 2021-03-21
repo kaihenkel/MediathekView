@@ -7,7 +7,7 @@ import mediathek.controller.starter.Start;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.DatenProg;
 import mediathek.daten.FilmResolution;
-import mediathek.file.GetFile;
+import mediathek.util.res.GetFile;
 import mediathek.tool.EscapeKeyHandler;
 import mediathek.tool.MVMessageDialog;
 import org.apache.logging.log4j.LogManager;

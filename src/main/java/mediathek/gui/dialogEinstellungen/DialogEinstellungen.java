@@ -6,7 +6,7 @@ import mediathek.client.desktop.config.MVConfig;
 import mediathek.gui.PanelVorlage;
 import mediathek.gui.dialogEinstellungen.allgemein.PanelEinstellungen;
 import mediathek.mainwindow.MediathekGui;
-import mediathek.res.GetIcon;
+import mediathek.util.res.GetIcon;
 import mediathek.tool.EscapeKeyHandler;
 import mediathek.tool.GuiFunktionen;
 

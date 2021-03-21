@@ -4,7 +4,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.mv.Daten;
 import mediathek.daten.GeoblockingField;
-import mediathek.file.GetFile;
+import mediathek.util.res.GetFile;
 import mediathek.gui.dialog.DialogHilfe;
 import mediathek.gui.messages.BlacklistChangedEvent;
 import mediathek.gui.messages.GeoStateChangedEvent;

@@ -7,7 +7,7 @@ import mediathek.client.desktop.constants.MVColor;
 import mediathek.daten.abo.AboTags;
 import mediathek.daten.abo.DatenAbo;
 import mediathek.daten.abo.FilmLengthState;
-import mediathek.file.GetFile;
+import mediathek.util.res.GetFile;
 import mediathek.tool.EscapeKeyHandler;
 import mediathek.tool.FilenameUtils;
 import mediathek.tool.GuiFunktionen;

@@ -3,7 +3,7 @@ package mediathek.gui.dialogEinstellungen;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.client.desktop.config.MVConfig;
-import mediathek.file.GetFile;
+import mediathek.util.res.GetFile;
 import mediathek.gui.dialog.DialogHilfe;
 import mediathek.tool.GuiFunktionenProgramme;
 import org.apache.commons.lang3.SystemUtils;

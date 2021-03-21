@@ -45,7 +45,7 @@ import mediathek.javafx.*;
 import mediathek.javafx.tool.FXProgressPane;
 import mediathek.javafx.tool.JFXHiddenApplication;
 import mediathek.javafx.tool.JavaFxUtils;
-import mediathek.res.GetIcon;
+import mediathek.util.res.GetIcon;
 import mediathek.tool.*;
 import mediathek.tool.notification.GenericNotificationCenter;
 import mediathek.tool.notification.INotificationCenter;

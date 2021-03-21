@@ -1,4 +1,4 @@
-package mediathek.res;
+package mediathek.util.res;
 
 import javax.swing.*;
 import java.awt.*;

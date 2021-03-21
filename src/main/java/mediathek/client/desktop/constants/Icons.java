@@ -19,7 +19,7 @@
  */
 package mediathek.client.desktop.constants;
 
-import mediathek.res.GetIcon;
+import mediathek.util.res.GetIcon;
 
 import javax.swing.*;
 import java.awt.*;
