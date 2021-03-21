@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class BaseEvent {
+public interface BaseEvent {
 }

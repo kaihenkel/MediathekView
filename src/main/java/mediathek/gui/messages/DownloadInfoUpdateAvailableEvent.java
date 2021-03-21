@@ -1,5 +1,5 @@
 package mediathek.gui.messages;
 
-public class DownloadInfoUpdateAvailableEvent extends BaseEvent {
+public class DownloadInfoUpdateAvailableEvent implements BaseEvent {
 
 }

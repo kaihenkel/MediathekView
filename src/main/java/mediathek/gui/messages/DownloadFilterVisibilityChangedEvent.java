@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class DownloadFilterVisibilityChangedEvent extends BaseEvent {
+public class DownloadFilterVisibilityChangedEvent implements BaseEvent {
 }

@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class RestartDownloadEvent extends BaseEvent {
+public class RestartDownloadEvent implements BaseEvent {
 }

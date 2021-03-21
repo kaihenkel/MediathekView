@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class TimerEvent extends BaseEvent {
+public class TimerEvent implements BaseEvent {
 }

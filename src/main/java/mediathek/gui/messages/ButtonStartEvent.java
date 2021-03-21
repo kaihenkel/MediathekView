@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class ButtonStartEvent extends BaseEvent {
+public class ButtonStartEvent implements BaseEvent {
 }

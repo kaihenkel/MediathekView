@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class BandwidthMonitorStateChangedEvent extends BaseEvent {
+public class BandwidthMonitorStateChangedEvent implements BaseEvent {
 }

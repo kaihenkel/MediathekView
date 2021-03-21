@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class GeoStateChangedEvent extends BaseEvent {
+public class GeoStateChangedEvent implements BaseEvent {
 }

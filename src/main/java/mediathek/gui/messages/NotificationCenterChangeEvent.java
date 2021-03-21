@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class NotificationCenterChangeEvent extends BaseEvent {
+public class NotificationCenterChangeEvent implements BaseEvent {
 }

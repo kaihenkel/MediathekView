@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class TabVisualSettingsChangedEvent extends BaseEvent {
+public class TabVisualSettingsChangedEvent implements BaseEvent {
 }

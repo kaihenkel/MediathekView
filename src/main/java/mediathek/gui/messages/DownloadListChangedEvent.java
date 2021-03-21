@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class DownloadListChangedEvent extends BaseEvent {
+public class DownloadListChangedEvent implements BaseEvent {
 }

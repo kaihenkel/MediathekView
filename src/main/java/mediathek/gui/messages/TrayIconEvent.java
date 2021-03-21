@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class TrayIconEvent extends BaseEvent {
+public class TrayIconEvent implements BaseEvent {
 }

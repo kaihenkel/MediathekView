@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class ReplaceListChangedEvent extends BaseEvent {
+public class ReplaceListChangedEvent implements BaseEvent {
 }

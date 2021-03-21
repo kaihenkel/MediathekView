@@ -1,5 +1,5 @@
 package mediathek.gui.messages;
 
 
-public class StartEvent extends BaseEvent {
+public class StartEvent implements BaseEvent {
 }

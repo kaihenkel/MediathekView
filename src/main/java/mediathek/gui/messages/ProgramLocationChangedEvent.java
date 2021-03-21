@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class ProgramLocationChangedEvent extends BaseEvent {
+public class ProgramLocationChangedEvent implements BaseEvent {
 }

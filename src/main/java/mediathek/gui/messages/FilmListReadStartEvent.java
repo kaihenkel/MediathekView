@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class FilmListReadStartEvent extends BaseEvent {
+public class FilmListReadStartEvent implements BaseEvent {
 }

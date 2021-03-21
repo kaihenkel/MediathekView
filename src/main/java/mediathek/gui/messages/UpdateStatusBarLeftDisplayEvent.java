@@ -1,4 +1,4 @@
 package mediathek.gui.messages;
 
-public class UpdateStatusBarLeftDisplayEvent extends BaseEvent {
+public class UpdateStatusBarLeftDisplayEvent implements BaseEvent {
 }

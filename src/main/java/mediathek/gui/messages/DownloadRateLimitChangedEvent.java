@@ -1,6 +1,6 @@
 package mediathek.gui.messages;
 
-public class DownloadRateLimitChangedEvent extends BaseEvent {
+public class DownloadRateLimitChangedEvent implements BaseEvent {
     /**
      * new limit in KBytes
      */
