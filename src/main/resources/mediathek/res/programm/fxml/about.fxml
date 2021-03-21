@@ -18,7 +18,7 @@
       <children>
          <VBox>
             <children>
-                <!--fx:controller="mediathek.gui.dialog.about.AboutController"-->
+                <!--fx:controller="mediathek.client.desktop.gui.dialog.about.AboutController"-->
                 <ImageView fitHeight="196.0" fitWidth="198.0" pickOnBounds="true" preserveRatio="true">
        <Image url="/splash@2x.png"/>
     </ImageView>

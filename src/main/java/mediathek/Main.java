@@ -12,7 +12,7 @@ import mediathek.util.config.MVConfig;
 import mediathek.util.config.StandardLocations;
 import mediathek.util.constants.Konstanten;
 import mediathek.server.controller.history.SeenHistoryMigrator;
-import mediathek.gui.dialog.DialogStarteinstellungen;
+import mediathek.client.desktop.gui.dialog.DialogStarteinstellungen;
 import mediathek.javafx.AustrianVlcCheck;
 import mediathek.javafx.tool.JFXHiddenApplication;
 import mediathek.javafx.tool.JavaFxUtils;

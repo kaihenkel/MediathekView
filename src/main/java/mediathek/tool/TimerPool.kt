@@ -1,6 +1,6 @@
 package mediathek.tool
 
-import mediathek.gui.messages.TimerEvent
+import mediathek.client.desktop.gui.messages.TimerEvent
 import mediathek.tool.MessageBus.messageBus
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger

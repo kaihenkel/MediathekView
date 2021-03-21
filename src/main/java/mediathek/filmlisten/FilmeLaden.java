@@ -11,7 +11,7 @@ import mediathek.daten.ListeFilme;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
 import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.filmlisten.reader.FilmListReader;
-import mediathek.gui.actions.FilmListWriteWorkerTask;
+import mediathek.client.desktop.gui.actions.FilmListWriteWorkerTask;
 import mediathek.javafx.FilmListFilterTask;
 import mediathek.javafx.tool.FXProgressPane;
 import mediathek.javafx.tool.JFXHiddenApplication;

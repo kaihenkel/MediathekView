@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import mediathek.util.mv.Daten;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
 import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
-import mediathek.gui.messages.TableModelChangeEvent;
+import mediathek.client.desktop.gui.messages.TableModelChangeEvent;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MessageBus;
 import net.engio.mbassy.listener.Handler;

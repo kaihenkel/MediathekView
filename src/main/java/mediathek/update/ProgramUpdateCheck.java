@@ -6,7 +6,7 @@ import mediathek.util.config.MVConfig;
 import mediathek.daten.DatenPset;
 import mediathek.daten.ListePset;
 import mediathek.daten.ListePsetVorlagen;
-import mediathek.gui.dialog.DialogNewSet;
+import mediathek.client.desktop.gui.dialog.DialogNewSet;
 import mediathek.mainwindow.MediathekGui;
 import mediathek.tool.GuiFunktionenProgramme;
 import mediathek.tool.NetUtils;

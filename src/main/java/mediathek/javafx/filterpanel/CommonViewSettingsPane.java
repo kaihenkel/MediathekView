@@ -11,7 +11,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.layout.VBox;
 import javafx.util.StringConverter;
-import mediathek.gui.messages.TableModelChangeEvent;
+import mediathek.client.desktop.gui.messages.TableModelChangeEvent;
 import mediathek.tool.FilterDTO;
 import mediathek.tool.MessageBus;
 import net.engio.mbassy.listener.Handler;

@@ -3,7 +3,7 @@ package mediathek.server.controller.history
 import com.google.common.collect.Sets
 import mediathek.util.mv.Daten
 import mediathek.daten.DatenFilm
-import mediathek.gui.messages.history.DownloadHistoryChangedEvent
+import mediathek.client.desktop.gui.messages.history.DownloadHistoryChangedEvent
 import mediathek.tool.MessageBus
 import mediathek.tool.sql.SqlDatabaseConfig
 import org.apache.logging.log4j.LogManager

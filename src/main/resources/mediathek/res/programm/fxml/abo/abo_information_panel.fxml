@@ -4,7 +4,7 @@
 <?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.layout.HBox?>
 <?import mediathek.javafx.VerticalSeparator?>
-<HBox spacing="5.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediathek.gui.abo.AboInformationController">
+<HBox spacing="5.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediathek.client.desktop.gui.abo.AboInformationController">
    <Label fx:id="totalAbos">
       <tooltip>
          <Tooltip text="Anzahl aller vorhandenen Abos"/>

@@ -29,7 +29,7 @@ import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 import mediathek.util.constants.Konstanten;
-import mediathek.gui.actions.UrlHyperlinkAction;
+import mediathek.client.desktop.gui.actions.UrlHyperlinkAction;
 import mediathek.tool.EscapeKeyHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

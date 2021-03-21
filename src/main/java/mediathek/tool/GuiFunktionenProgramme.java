@@ -6,7 +6,7 @@ import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.daten.DatenPset;
 import mediathek.daten.ListePset;
-import mediathek.gui.dialogEinstellungen.DialogImportPset;
+import mediathek.client.desktop.gui.dialogEinstellungen.DialogImportPset;
 import mediathek.tool.http.MVHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;

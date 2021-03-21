@@ -9,7 +9,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import mediathek.util.mv.Daten;
 import mediathek.util.config.MVConfig;
-import mediathek.gui.messages.BlacklistChangedEvent;
+import mediathek.client.desktop.gui.messages.BlacklistChangedEvent;
 import mediathek.tool.MessageBus;
 import net.engio.mbassy.listener.Handler;
 

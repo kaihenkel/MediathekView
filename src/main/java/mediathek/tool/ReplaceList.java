@@ -1,6 +1,6 @@
 package mediathek.tool;
 
-import mediathek.gui.messages.ReplaceListChangedEvent;
+import mediathek.client.desktop.gui.messages.ReplaceListChangedEvent;
 
 import java.io.File;
 import java.util.LinkedList;

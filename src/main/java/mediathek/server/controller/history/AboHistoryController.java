@@ -1,7 +1,7 @@
 package mediathek.server.controller.history;
 
 import mediathek.util.config.StandardLocations;
-import mediathek.gui.messages.history.AboHistoryChangedEvent;
+import mediathek.client.desktop.gui.messages.history.AboHistoryChangedEvent;
 import mediathek.tool.FileUtils;
 import mediathek.tool.MessageBus;
 import okhttp3.HttpUrl;

@@ -1,8 +1,8 @@
 package mediathek.tool;
 
 import mediathek.util.config.MVConfig;
-import mediathek.gui.dialog.DialogProgrammOrdnerOeffnen;
-import mediathek.gui.messages.ProgramLocationChangedEvent;
+import mediathek.client.desktop.gui.dialog.DialogProgrammOrdnerOeffnen;
+import mediathek.client.desktop.gui.messages.ProgramLocationChangedEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

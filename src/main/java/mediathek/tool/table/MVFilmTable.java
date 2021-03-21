@@ -2,7 +2,7 @@ package mediathek.tool.table;
 
 import mediathek.util.config.MVConfig;
 import mediathek.daten.DatenFilm;
-import mediathek.gui.tabs.tab_film.GuiFilme;
+import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.FilmSize;
 import mediathek.tool.models.TModelFilm;

@@ -2,9 +2,9 @@ package mediathek.daten;
 
 import mediathek.util.config.MVConfig;
 import mediathek.util.config.StandardLocations;
-import mediathek.gui.dialog.DialogOk;
-import mediathek.gui.dialogEinstellungen.PanelProgrammPfade;
-import mediathek.gui.messages.ProgramSetChangedEvent;
+import mediathek.client.desktop.gui.dialog.DialogOk;
+import mediathek.client.desktop.gui.dialogEinstellungen.PanelProgrammPfade;
+import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
 import mediathek.tool.MessageBus;
 import mediathek.tool.models.TModel;
 import org.apache.commons.lang3.StringUtils;
