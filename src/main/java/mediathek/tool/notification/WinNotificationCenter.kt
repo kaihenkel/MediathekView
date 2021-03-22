@@ -1,7 +1,7 @@
 package mediathek.tool.notification
 
-import mediathek.config.Icons
-import mediathek.config.Konstanten
+import mediathek.util.constants.Icons
+import mediathek.util.constants.Konstanten
 import org.apache.logging.log4j.LogManager
 import org.apache.logging.log4j.Logger
 import java.awt.SystemTray

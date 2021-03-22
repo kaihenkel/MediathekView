@@ -1,5 +1,7 @@
 package mediathek.config
 
+import mediathek.util.config.StandardLocations
+import mediathek.util.constants.Konstanten
 import org.apache.commons.lang3.SystemUtils
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test

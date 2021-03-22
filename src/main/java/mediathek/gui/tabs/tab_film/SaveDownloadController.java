@@ -7,11 +7,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
-import mediathek.config.Daten;
 import mediathek.daten.DatenFilm;
 import mediathek.daten.DatenPset;
 import mediathek.javafx.tool.JavaFxUtils;
 import mediathek.tool.sender_icon_cache.MVSenderIconCache;
+import mediathek.util.mv.Daten;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

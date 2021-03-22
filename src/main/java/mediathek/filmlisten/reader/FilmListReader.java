@@ -11,7 +11,6 @@ import mediathek.daten.DatenFilm;
 import mediathek.daten.ListeFilme;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
 import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
-import mediathek.tool.ApplicationConfiguration;
 import mediathek.tool.InputStreamProgressMonitor;
 import mediathek.tool.ProgressMonitorInputStream;
 import mediathek.tool.TrailerTeaserChecker;

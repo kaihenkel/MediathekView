@@ -2,11 +2,13 @@ package mediathek.gui.dialog
 
 import jiconfont.icons.font_awesome.FontAwesome
 import jiconfont.swing.IconFontSwing
-import mediathek.config.Daten
-import mediathek.file.GetFile
+import mediathek.client.desktop.gui.dialog.DialogHilfe
+import mediathek.client.desktop.gui.mainwindow.MediathekGui
+import mediathek.util.mv.Daten
+
 import mediathek.javafx.AppTerminationIndefiniteProgress
-import mediathek.mainwindow.MediathekGui
 import mediathek.tool.EscapeKeyHandler
+import mediathek.util.res.GetFile
 import java.awt.BorderLayout
 import java.awt.event.WindowAdapter
 import java.awt.event.WindowEvent
