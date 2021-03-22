@@ -21,7 +21,7 @@ new FormModel {
 				auxiliary() {
 					"JavaCodeGenerator.variableLocal": true
 				}
-				add( new FormComponent( "mediathek.util.tools.swing.MultilineLabel" ) {
+				add( new FormComponent( "mediathek.client.desktop.tools.swing.MultilineLabel" ) {
 					name: "multilineLabel1"
 					"text": "Die Filmliste wird beim Programmstart automatisch geladen (wenn älter als 3h). Zusätzlich kann sie über den Button \"Filmliste laden\" aktualisiert werden."
 					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -1, false )
@@ -44,7 +44,7 @@ new FormModel {
 				auxiliary() {
 					"JavaCodeGenerator.variableLocal": true
 				}
-				add( new FormComponent( "mediathek.util.tools.swing.MultilineLabel" ) {
+				add( new FormComponent( "mediathek.client.desktop.tools.swing.MultilineLabel" ) {
 					name: "multilineLabel2"
 					"text": "Die Filmliste wird nur manuell über den Button \"Filmliste laden\" aus dem Internet geladen. Alternativ kann auch eine Datei zum Laden angegeben werden."
 					"font": new com.jformdesigner.model.SwingDerivedFont( null, 0, -1, false )

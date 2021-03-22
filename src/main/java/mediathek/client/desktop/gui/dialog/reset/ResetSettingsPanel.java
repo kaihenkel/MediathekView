@@ -10,7 +10,7 @@ import mediathek.util.messages.ProgramSetChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.GuiFunktionenProgramme;
 import mediathek.util.tools.MessageBus;
-import mediathek.util.tools.swing.MultilineLabel;
+import mediathek.client.desktop.tools.swing.MultilineLabel;
 import org.jdesktop.swingx.VerticalLayout;
 
 import javax.swing.*;

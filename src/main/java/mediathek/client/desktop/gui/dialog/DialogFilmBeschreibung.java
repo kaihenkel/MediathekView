@@ -17,7 +17,7 @@ import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.*;
 import mediathek.util.tools.EscapeKeyHandler;
 import mediathek.util.tools.FilenameUtils;
-import mediathek.util.tools.javafx.FXErrorDialog;
+import mediathek.client.desktop.javafx.FXErrorDialog;
 import net.miginfocom.layout.AC;
 import net.miginfocom.layout.CC;
 import net.miginfocom.layout.LC;

@@ -7,7 +7,7 @@ import mediathek.server.controller.history.SeenHistoryController
 import mediathek.util.daten.DatenFilm
 import mediathek.util.daten.FilmResolution
 import mediathek.util.tools.http.MVHttpClient
-import mediathek.util.tools.javafx.FXErrorDialog
+import mediathek.client.desktop.javafx.FXErrorDialog
 import okhttp3.FormBody
 import okhttp3.HttpUrl
 import okhttp3.HttpUrl.Companion.toHttpUrl

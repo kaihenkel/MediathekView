@@ -1,8 +1,8 @@
 package mediathek.client.desktop.os.windows;
 
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.util.tools.notification.INotificationCenter;
-import mediathek.util.tools.notification.WinNotificationCenter;
+import mediathek.client.desktop.tools.notification.INotificationCenter;
+import mediathek.client.desktop.tools.notification.WinNotificationCenter;
 import mediathek.util.tools.threads.IndicatorThread;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

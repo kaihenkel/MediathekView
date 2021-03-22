@@ -5,7 +5,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.constants.Konstanten;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.util.tools.javafx.FXErrorDialog;
+import mediathek.client.desktop.javafx.FXErrorDialog;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

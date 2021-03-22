@@ -7,7 +7,7 @@ import mediathek.util.config.MVConfig;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.Version;
 import mediathek.util.tools.http.MVHttpClient;
-import mediathek.util.tools.javafx.FXErrorDialog;
+import mediathek.client.desktop.javafx.FXErrorDialog;
 import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;

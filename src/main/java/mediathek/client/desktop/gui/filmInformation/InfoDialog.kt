@@ -13,7 +13,7 @@ import mediathek.client.desktop.gui.actions.UrlHyperlinkAction
 import mediathek.client.desktop.javafx.tool.JavaFxUtils
 import mediathek.util.config.ApplicationConfiguration
 import mediathek.util.tools.GuiFunktionen
-import mediathek.util.tools.sender_icon_cache.MVSenderIconCache
+import mediathek.client.desktop.tools.sender_icon_cache.MVSenderIconCache
 import net.miginfocom.layout.CC
 import org.apache.commons.configuration2.sync.LockMode
 import org.tbee.javafx.scene.layout.MigPane

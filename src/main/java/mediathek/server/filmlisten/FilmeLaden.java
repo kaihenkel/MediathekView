@@ -21,7 +21,7 @@ import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.tools.FilmListUpdateType;
 import mediathek.util.tools.GuiFunktionen;
 import mediathek.util.tools.http.MVHttpClient;
-import mediathek.util.tools.javafx.FXErrorDialog;
+import mediathek.client.desktop.javafx.FXErrorDialog;
 import okhttp3.HttpUrl;
 import okhttp3.Request;
 import okhttp3.Response;

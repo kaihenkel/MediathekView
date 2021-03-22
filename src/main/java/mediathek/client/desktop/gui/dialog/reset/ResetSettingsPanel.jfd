@@ -33,7 +33,7 @@ new FormModel {
 					"icon": new com.jformdesigner.model.SwingIcon( 0, "/mediathek/res/muster/button-help.png" )
 					"toolTipText": "Hilfe anzeigen"
 				} )
-				add( new FormComponent( "mediathek.util.tools.swing.MultilineLabel" ) {
+				add( new FormComponent( "mediathek.client.desktop.tools.swing.MultilineLabel" ) {
 					name: "jLabel7"
 					"text": "Es werden alle Programmsets (auch eigene) zum Abspielen und Aufzeichnen gelöscht und die Standardsets wieder angelegt.\nAbos und Blacklist bleiben erhalten."
 					"rows": 3

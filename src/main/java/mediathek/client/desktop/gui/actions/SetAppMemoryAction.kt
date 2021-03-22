@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.actions
 import mediathek.util.constants.Konstanten
 import mediathek.client.desktop.gui.mainwindow.MediathekGui
 import mediathek.util.tools.MVFunctionSys
-import mediathek.util.tools.javafx.FXErrorDialog
+import mediathek.client.desktop.javafx.FXErrorDialog
 import okio.buffer
 import okio.sink
 import org.apache.commons.lang3.SystemUtils

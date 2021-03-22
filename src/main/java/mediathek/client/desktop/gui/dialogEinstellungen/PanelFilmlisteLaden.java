@@ -7,7 +7,7 @@ import mediathek.server.controller.SenderFilmlistLoadApprover;
 import mediathek.util.messages.FilmListImportTypeChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.*;
-import mediathek.util.tools.swing.MultilineLabel;
+import mediathek.client.desktop.tools.swing.MultilineLabel;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.tools.FilmListUpdateType;
 import net.engio.mbassy.listener.Handler;

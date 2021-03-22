@@ -10,7 +10,7 @@ import javafx.scene.image.ImageView;
 import mediathek.util.daten.DatenFilm;
 import mediathek.util.daten.DatenPset;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
-import mediathek.util.tools.sender_icon_cache.MVSenderIconCache;
+import mediathek.client.desktop.tools.sender_icon_cache.MVSenderIconCache;
 import mediathek.util.daten.Daten;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

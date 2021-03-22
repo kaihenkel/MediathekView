@@ -21,7 +21,7 @@ import mediathek.client.desktop.javafx.tool.JFXHiddenApplication;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.ReplaceList;
-import mediathek.util.tools.notification.INotificationCenter;
+import mediathek.client.desktop.tools.notification.INotificationCenter;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
