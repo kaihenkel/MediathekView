@@ -7,7 +7,7 @@ import javafx.scene.control.Label
 import javafx.scene.layout.AnchorPane
 import mediathek.util.constants.Konstanten
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction
-import mediathek.mainwindow.MediathekGui
+import mediathek.client.desktop.gui.mainwindow.MediathekGui
 import org.apache.logging.log4j.LogManager
 import java.io.IOException
 import java.net.URI

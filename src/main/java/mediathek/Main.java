@@ -18,7 +18,7 @@ import mediathek.javafx.AustrianVlcCheck;
 import mediathek.javafx.tool.JFXHiddenApplication;
 import mediathek.javafx.tool.JavaFxUtils;
 import mediathek.mac.MediathekGuiMac;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import mediathek.tool.affinity.Affinity;
 import mediathek.tool.javafx.FXErrorDialog;

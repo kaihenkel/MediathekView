@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.*;
 import javafx.scene.layout.FlowPane;
 import javafx.stage.Stage;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.swing.LookAndFeelType;
 import mediathek.tool.swing.SwingUIFontChanger;

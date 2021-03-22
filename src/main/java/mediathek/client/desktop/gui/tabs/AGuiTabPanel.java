@@ -4,7 +4,7 @@ import com.thizzer.jtouchbar.JTouchBar;
 import mediathek.util.mv.Daten;
 import mediathek.server.controller.history.SeenHistoryController;
 import mediathek.daten.DatenFilm;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

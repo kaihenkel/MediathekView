@@ -2,7 +2,7 @@ package mediathek.client.desktop.gui.dialogEinstellungen.allgemein;
 
 import mediathek.util.mv.Daten;
 import mediathek.client.desktop.gui.messages.*;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MessageBus;
 import mediathek.tool.sender_icon_cache.MVSenderIconCache;

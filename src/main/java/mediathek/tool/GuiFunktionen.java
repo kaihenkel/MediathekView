@@ -4,6 +4,8 @@ import ca.odell.glazedlists.swing.DefaultEventComboBoxModel;
 import mediathek.util.config.MVConfig;
 import mediathek.util.config.MVConfig.Configs;
 import mediathek.daten.ListeFilme;
+import mediathek.filmlisten.FilmListDownloadType;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

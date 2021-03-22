@@ -7,7 +7,7 @@ import mediathek.util.mv.Daten;
 import mediathek.daten.ListePset;
 import mediathek.daten.ListePsetVorlagen;
 import mediathek.client.desktop.gui.PanelVorlage;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.GuiFunktionenProgramme;
 import mediathek.tool.TextCopyPasteHandler;
 import mediathek.tool.models.TModel;

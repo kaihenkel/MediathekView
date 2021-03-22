@@ -9,7 +9,7 @@ import mediathek.client.desktop.gui.messages.InstallTabSwitchListenerEvent;
 import mediathek.mac.tabs.TabDownloadsMac;
 import mediathek.mac.tabs.TabFilmeMac;
 import mediathek.mac.touchbar.TouchBarUtils;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.notification.INotificationCenter;
 import mediathek.tool.notification.MacNotificationCenter;
 import mediathek.tool.threads.IndicatorThread;

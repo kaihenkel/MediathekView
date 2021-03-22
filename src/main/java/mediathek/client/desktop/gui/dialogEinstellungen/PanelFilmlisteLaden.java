@@ -5,7 +5,7 @@ import jiconfont.swing.IconFontSwing;
 import mediathek.util.config.MVConfig;
 import mediathek.server.controller.SenderFilmlistLoadApprover;
 import mediathek.client.desktop.gui.messages.FilmListImportTypeChangedEvent;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import mediathek.tool.swing.MultilineLabel;
 import mediathek.util.config.ApplicationConfiguration;

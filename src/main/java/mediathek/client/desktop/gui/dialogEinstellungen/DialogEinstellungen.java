@@ -5,7 +5,7 @@ import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.client.desktop.gui.PanelVorlage;
 import mediathek.client.desktop.gui.dialogEinstellungen.allgemein.PanelEinstellungen;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.res.GetIcon;
 import mediathek.tool.EscapeKeyHandler;
 import mediathek.tool.GuiFunktionen;

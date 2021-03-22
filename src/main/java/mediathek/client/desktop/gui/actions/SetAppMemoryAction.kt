@@ -1,7 +1,7 @@
 package mediathek.client.desktop.gui.actions
 
 import mediathek.util.constants.Konstanten
-import mediathek.mainwindow.MediathekGui
+import mediathek.client.desktop.gui.mainwindow.MediathekGui
 import mediathek.tool.MVFunctionSys
 import mediathek.tool.javafx.FXErrorDialog
 import okio.buffer

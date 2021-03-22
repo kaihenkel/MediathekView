@@ -8,7 +8,7 @@ import mediathek.client.desktop.gui.dialog.MeldungDownloadfehler;
 import mediathek.client.desktop.gui.messages.DownloadFinishedEvent;
 import mediathek.client.desktop.gui.messages.DownloadListChangedEvent;
 import mediathek.client.desktop.gui.messages.DownloadStartEvent;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.MVInfoFile;
 import mediathek.tool.MVSubtitle;
 import mediathek.tool.MessageBus;

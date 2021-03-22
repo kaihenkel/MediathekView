@@ -5,7 +5,7 @@ import jiconfont.swing.IconFontSwing;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.client.desktop.gui.messages.ProgramLocationChangedEvent;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.MVMessageDialog;
 import mediathek.tool.MessageBus;
 import mediathek.tool.TextCopyPasteHandler;

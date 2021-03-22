@@ -9,7 +9,7 @@ import javafx.scene.layout.FlowPane
 import mediathek.util.constants.Konstanten
 import mediathek.daten.GeoblockingField
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction
-import mediathek.mainwindow.MediathekGui
+import mediathek.client.desktop.gui.mainwindow.MediathekGui
 import mediathek.util.config.ApplicationConfiguration
 import org.apache.logging.log4j.LogManager
 import java.net.URISyntaxException

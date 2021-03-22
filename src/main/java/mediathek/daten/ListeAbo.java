@@ -26,7 +26,7 @@ import mediathek.daten.abo.DatenAbo;
 import mediathek.daten.abo.FilmLengthState;
 import mediathek.client.desktop.gui.dialog.DialogEditAbo;
 import mediathek.client.desktop.gui.messages.AboListChangedEvent;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

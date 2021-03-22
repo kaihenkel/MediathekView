@@ -8,7 +8,7 @@ import javafx.scene.layout.Priority;
 import javafx.stage.Modality;
 import mediathek.javafx.tool.JFXHiddenApplication;
 import mediathek.javafx.tool.JavaFxUtils;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.IOException;

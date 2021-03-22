@@ -33,7 +33,7 @@ import mediathek.client.desktop.gui.toolbar.FXDownloadToolBar;
 import mediathek.javafx.descriptionPanel.DescriptionPanelController;
 import mediathek.javafx.downloadtab.DownloadTabInformationLabel;
 import mediathek.javafx.tool.JavaFxUtils;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import mediathek.tool.cellrenderer.CellRendererDownloads;
 import mediathek.tool.listener.BeobTableHeader;

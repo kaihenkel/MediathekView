@@ -13,7 +13,7 @@ import mediathek.daten.DatenPset;
 import mediathek.daten.ListePset;
 import mediathek.javafx.tool.JFXHiddenApplication;
 import mediathek.javafx.tool.JavaFxUtils;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import mediathek.tool.javafx.FXErrorDialog;
 import net.miginfocom.layout.AC;

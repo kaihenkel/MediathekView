@@ -8,7 +8,7 @@ import mediathek.daten.DatenPset;
 import mediathek.daten.ListePset;
 import mediathek.client.desktop.gui.PanelVorlage;
 import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.MessageBus;
 import mediathek.tool.TextCopyPasteHandler;
 import net.engio.mbassy.listener.Handler;

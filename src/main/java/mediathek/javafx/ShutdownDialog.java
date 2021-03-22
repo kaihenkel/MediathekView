@@ -9,7 +9,7 @@ import javafx.scene.control.ProgressIndicator;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import mediathek.javafx.tool.JFXHiddenApplication;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.ShutdownState;
 import org.tbee.javafx.scene.layout.MigPane;
 

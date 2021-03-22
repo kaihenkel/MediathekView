@@ -5,7 +5,7 @@ import mediathek.util.constants.Icons;
 import mediathek.daten.DownloadStartInfo;
 import mediathek.client.desktop.gui.messages.TimerEvent;
 import mediathek.client.desktop.gui.messages.TrayIconEvent;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MessageBus;
 import mediathek.tool.notification.MessageType;

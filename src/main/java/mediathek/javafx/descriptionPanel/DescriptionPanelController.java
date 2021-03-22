@@ -12,7 +12,7 @@ import mediathek.util.constants.Konstanten;
 import mediathek.daten.DatenFilm;
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction;
 import mediathek.client.desktop.gui.dialog.DialogFilmBeschreibung;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.GuiFunktionen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,6 +1,6 @@
 package mediathek.windows;
 
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.notification.INotificationCenter;
 import mediathek.tool.notification.WinNotificationCenter;
 import mediathek.tool.threads.IndicatorThread;

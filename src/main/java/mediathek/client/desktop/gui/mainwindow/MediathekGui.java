@@ -1,4 +1,4 @@
-package mediathek.mainwindow;
+package mediathek.client.desktop.gui.mainwindow;
 
 import javafx.application.Platform;
 import javafx.beans.property.IntegerProperty;

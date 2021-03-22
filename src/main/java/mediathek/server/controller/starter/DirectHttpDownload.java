@@ -10,7 +10,7 @@ import mediathek.daten.DatenDownload;
 import mediathek.client.desktop.gui.dialog.DialogContinueDownload;
 import mediathek.client.desktop.gui.dialog.MeldungDownloadfehler;
 import mediathek.client.desktop.gui.messages.*;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import mediathek.tool.http.MVHttpClient;
 import net.engio.mbassy.bus.MBassador;

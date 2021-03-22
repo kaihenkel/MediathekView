@@ -16,7 +16,7 @@ import mediathek.javafx.FilmListFilterTask;
 import mediathek.javafx.tool.FXProgressPane;
 import mediathek.javafx.tool.JFXHiddenApplication;
 import mediathek.javafx.tool.JavaFxUtils;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.FilmListUpdateType;
 import mediathek.tool.GuiFunktionen;

@@ -2,7 +2,7 @@ package mediathek.client.desktop.gui.dialogEinstellungen;
 
 import mediathek.util.mv.Daten;
 import mediathek.util.constants.MVColor;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.MVC;
 import mediathek.tool.cellrenderer.CellRendererColor;
 import mediathek.tool.models.TModelColor;

@@ -20,7 +20,7 @@ import mediathek.filmlisten.FilmeLaden;
 import mediathek.javafx.bookmark.BookmarkDataList;
 import mediathek.javafx.tool.JFXHiddenApplication;
 import mediathek.javafx.tool.JavaFxUtils;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.ReplaceList;
 import mediathek.tool.notification.INotificationCenter;
 import org.apache.commons.lang3.SystemUtils;

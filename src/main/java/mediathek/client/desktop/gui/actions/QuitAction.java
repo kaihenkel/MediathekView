@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.actions;
 
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

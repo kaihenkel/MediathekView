@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.actions;
 import mediathek.util.mv.Daten;
 import mediathek.client.desktop.gui.dialog.DialogLeer;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelBlacklist;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.res.GetIcon;
 
 import javax.swing.*;

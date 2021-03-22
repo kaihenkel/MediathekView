@@ -13,7 +13,7 @@ import mediathek.client.desktop.gui.actions.CreateNewAboAction;
 import mediathek.client.desktop.gui.dialog.DialogEditAbo;
 import mediathek.client.desktop.gui.messages.AboListChangedEvent;
 import mediathek.javafx.tool.JavaFxUtils;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.Datum;
 import mediathek.tool.MessageBus;
 import mediathek.tool.NoSelectionErrorDialog;

@@ -10,7 +10,7 @@ import mediathek.daten.DatenFilm;
 import mediathek.daten.DatenPset;
 import mediathek.daten.FilmResolution;
 import mediathek.client.desktop.gui.messages.DownloadListChangedEvent;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.mv.Daten;

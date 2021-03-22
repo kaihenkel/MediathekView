@@ -42,7 +42,7 @@ import mediathek.client.desktop.gui.messages.DownloadListChangedEvent;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.javafx.tool.JavaFxUtils;
 import mediathek.javafx.tool.TableViewColumnContextMenuHelper;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MVC;
 import mediathek.tool.MessageBus;

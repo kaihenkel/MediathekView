@@ -7,7 +7,7 @@ import mediathek.daten.ListePsetVorlagen;
 import mediathek.util.res.GetFile;
 import mediathek.client.desktop.gui.dialog.DialogHilfe;
 import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.GuiFunktionenProgramme;
 import mediathek.tool.MessageBus;
 import mediathek.tool.swing.MultilineLabel;

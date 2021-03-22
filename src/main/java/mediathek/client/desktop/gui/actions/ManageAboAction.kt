@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.actions
 import jiconfont.icons.font_awesome.FontAwesome
 import jiconfont.swing.IconFontSwing
 import mediathek.client.desktop.gui.abo.ManageAboDialog
-import mediathek.mainwindow.MediathekGui
+import mediathek.client.desktop.gui.mainwindow.MediathekGui
 import java.awt.event.ActionEvent
 import javax.swing.AbstractAction
 

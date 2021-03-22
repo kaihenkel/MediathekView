@@ -1,4 +1,4 @@
-package mediathek.mainwindow;
+package mediathek.client.desktop.gui.mainwindow;
 
 import mediathek.util.config.ApplicationConfiguration;
 import org.apache.commons.configuration2.Configuration;

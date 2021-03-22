@@ -39,7 +39,7 @@ import mediathek.javafx.descriptionPanel.DescriptionPanelController;
 import mediathek.javafx.filmtab.FilmTabInfoPane;
 import mediathek.javafx.filterpanel.FilmActionPanel;
 import mediathek.javafx.tool.JavaFxUtils;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import mediathek.tool.cellrenderer.CellRendererFilme;
 import mediathek.tool.listener.BeobTableHeader;

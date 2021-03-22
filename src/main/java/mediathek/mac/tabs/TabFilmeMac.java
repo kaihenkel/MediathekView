@@ -8,7 +8,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import mediathek.util.mv.Daten;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.mac.touchbar.TouchBarUtils;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.FilmListUpdateType;
 import mediathek.tool.GuiFunktionen;
 

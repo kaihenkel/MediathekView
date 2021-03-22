@@ -21,7 +21,7 @@ import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.gui.actions.ManageAboAction;
 import mediathek.client.desktop.gui.messages.FilmListWriteStartEvent;
 import mediathek.client.desktop.gui.messages.FilmListWriteStopEvent;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.*;
 import net.engio.mbassy.listener.Handler;
 import org.apache.logging.log4j.LogManager;

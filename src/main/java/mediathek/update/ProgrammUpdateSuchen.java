@@ -4,7 +4,7 @@ import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
-import mediathek.mainwindow.MediathekGui;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.Version;
 import mediathek.tool.http.MVHttpClient;
 import mediathek.tool.javafx.FXErrorDialog;
