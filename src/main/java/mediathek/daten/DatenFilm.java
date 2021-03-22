@@ -1,7 +1,7 @@
 package mediathek.daten;
 
 import mediathek.daten.abo.DatenAbo;
-import mediathek.javafx.bookmark.BookmarkData;
+import mediathek.client.desktop.javafx.bookmark.BookmarkData;
 import mediathek.tool.DatumFilm;
 import mediathek.tool.FileSize;
 import mediathek.tool.FilmSize;

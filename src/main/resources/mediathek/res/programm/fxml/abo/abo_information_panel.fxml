@@ -3,7 +3,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.layout.HBox?>
-<?import mediathek.javafx.VerticalSeparator?>
+<?import mediathek.client.desktop.javafx.VerticalSeparator?>
 <HBox spacing="5.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mediathek.client.desktop.gui.abo.AboInformationController">
    <Label fx:id="totalAbos">
       <tooltip>

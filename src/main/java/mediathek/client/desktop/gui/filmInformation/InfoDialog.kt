@@ -10,7 +10,7 @@ import javafx.scene.control.*
 import javafx.scene.image.ImageView
 import mediathek.daten.DatenFilm
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction
-import mediathek.javafx.tool.JavaFxUtils
+import mediathek.client.desktop.javafx.tool.JavaFxUtils
 import mediathek.util.config.ApplicationConfiguration
 import mediathek.tool.GuiFunktionen
 import mediathek.tool.sender_icon_cache.MVSenderIconCache

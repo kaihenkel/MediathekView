@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import mediathek.Main;
 import mediathek.util.constants.Konstanten;
-import mediathek.javafx.tool.JavaFxUtils;
+import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.tool.TimerPool;
 import mediathek.tool.UIProgressState;
 import org.apache.commons.lang3.SystemUtils;

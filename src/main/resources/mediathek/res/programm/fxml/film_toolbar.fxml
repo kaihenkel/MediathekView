@@ -3,10 +3,10 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.Region?>
-<?import mediathek.javafx.filterpanel.BlacklistButton?>
-<?import mediathek.javafx.filterpanel.EditBlacklistButton?>
-<?import mediathek.javafx.filterpanel.FXSearchControl?>
-<?import mediathek.javafx.VerticalSeparator?>
+<?import mediathek.client.desktop.javafx.filterpanel.BlacklistButton?>
+<?import mediathek.client.desktop.javafx.filterpanel.EditBlacklistButton?>
+<?import mediathek.client.desktop.javafx.filterpanel.FXSearchControl?>
+<?import mediathek.client.desktop.javafx.VerticalSeparator?>
 <?import org.controlsfx.glyphfont.*?>
 <fx:root type="ToolBar" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" stylesheets="mediathek/res/css/toolpanel.css">
     <Button mnemonicParsing="false" fx:id="btnDownloadFilmList">

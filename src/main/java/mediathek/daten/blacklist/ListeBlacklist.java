@@ -6,7 +6,7 @@ import mediathek.util.config.MVConfig;
 import mediathek.daten.DatenFilm;
 import mediathek.daten.ListeFilme;
 import mediathek.client.desktop.gui.messages.BlacklistChangedEvent;
-import mediathek.javafx.filterpanel.ZeitraumSpinner;
+import mediathek.client.desktop.javafx.filterpanel.ZeitraumSpinner;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.Filter;

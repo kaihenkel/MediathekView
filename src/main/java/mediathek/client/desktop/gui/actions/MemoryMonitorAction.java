@@ -1,7 +1,7 @@
 package mediathek.client.desktop.gui.actions;
 
-import mediathek.javafx.MemoryMonitor;
-import mediathek.javafx.tool.JavaFxUtils;
+import mediathek.client.desktop.javafx.MemoryMonitor;
+import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

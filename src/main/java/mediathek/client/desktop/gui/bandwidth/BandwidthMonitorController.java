@@ -16,7 +16,7 @@ import mediathek.util.mv.Daten;
 import mediathek.daten.DatenDownload;
 import mediathek.daten.ListeDownloads;
 import mediathek.client.desktop.gui.messages.BandwidthMonitorStateChangedEvent;
-import mediathek.javafx.tool.JavaFxUtils;
+import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.MessageBus;
 import net.engio.mbassy.listener.Handler;
