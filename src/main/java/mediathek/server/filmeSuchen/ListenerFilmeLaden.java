@@ -1,4 +1,4 @@
-package mediathek.filmeSuchen;
+package mediathek.server.filmeSuchen;
 
 import java.util.EventListener;
 

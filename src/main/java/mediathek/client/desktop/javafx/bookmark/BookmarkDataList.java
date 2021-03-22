@@ -12,8 +12,8 @@ import mediathek.util.mv.Daten;
 import mediathek.server.controller.history.SeenHistoryController;
 import mediathek.server.daten.DatenFilm;
 import mediathek.server.daten.ListeFilme;
-import mediathek.filmeSuchen.ListenerFilmeLaden;
-import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
+import mediathek.server.filmeSuchen.ListenerFilmeLaden;
+import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

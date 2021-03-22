@@ -20,8 +20,8 @@
 package mediathek.server.filmlisten;
 
 import mediathek.server.daten.ListeFilme;
-import mediathek.filmeSuchen.ListenerFilmeLaden;
-import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
+import mediathek.server.filmeSuchen.ListenerFilmeLaden;
+import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.server.filmlisten.reader.FilmListReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -1,4 +1,4 @@
-package mediathek.filmeSuchen;
+package mediathek.server.filmeSuchen;
 
 public class ListenerFilmeLadenEvent {
 

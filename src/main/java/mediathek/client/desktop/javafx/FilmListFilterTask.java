@@ -2,7 +2,7 @@ package mediathek.client.desktop.javafx;
 
 import javafx.concurrent.Task;
 import mediathek.util.mv.Daten;
-import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
+import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.gui.messages.FilmListReadStopEvent;
 import mediathek.tool.MessageBus;
 import org.apache.logging.log4j.LogManager;
