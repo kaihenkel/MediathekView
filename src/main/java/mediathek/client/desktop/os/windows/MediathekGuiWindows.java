@@ -1,4 +1,4 @@
-package mediathek.windows;
+package mediathek.client.desktop.os.windows;
 
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.notification.INotificationCenter;

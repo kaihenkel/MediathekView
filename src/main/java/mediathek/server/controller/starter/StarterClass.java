@@ -9,7 +9,7 @@ import mediathek.server.daten.DatenPset;
 import mediathek.client.desktop.gui.messages.ButtonStartEvent;
 import mediathek.client.desktop.gui.messages.DownloadProgressChangedEvent;
 import mediathek.client.desktop.gui.messages.StartEvent;
-import mediathek.mac.SpotlightCommentWriter;
+import mediathek.client.desktop.os.mac.SpotlightCommentWriter;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.tool.Datum;
 import mediathek.tool.MessageBus;

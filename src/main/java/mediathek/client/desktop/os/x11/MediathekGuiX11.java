@@ -1,4 +1,4 @@
-package mediathek.x11;
+package mediathek.client.desktop.os.x11;
 
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;

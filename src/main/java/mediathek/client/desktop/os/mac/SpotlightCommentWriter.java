@@ -1,4 +1,4 @@
-package mediathek.mac;
+package mediathek.client.desktop.os.mac;
 
 import javafx.application.Platform;
 import mediathek.util.constants.Konstanten;

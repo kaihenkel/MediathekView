@@ -1,4 +1,4 @@
-package mediathek.mac;
+package mediathek.client.desktop.os.mac;
 
 import java.io.BufferedReader;
 import java.io.File;

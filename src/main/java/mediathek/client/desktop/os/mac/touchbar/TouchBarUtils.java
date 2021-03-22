@@ -1,4 +1,4 @@
-package mediathek.mac.touchbar;
+package mediathek.client.desktop.os.mac.touchbar;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;

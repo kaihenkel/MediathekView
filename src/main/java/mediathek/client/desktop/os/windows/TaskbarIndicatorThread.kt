@@ -1,4 +1,4 @@
-package mediathek.windows
+package mediathek.client.desktop.os.windows
 
 import com.sun.jna.platform.win32.Kernel32
 import com.sun.jna.platform.win32.WinBase

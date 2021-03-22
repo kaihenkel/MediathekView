@@ -1,4 +1,4 @@
-package mediathek.mac.tabs;
+package mediathek.client.desktop.os.mac.tabs;
 
 import com.thizzer.jtouchbar.JTouchBar;
 import com.thizzer.jtouchbar.common.ImageName;
@@ -7,7 +7,7 @@ import com.thizzer.jtouchbar.item.view.TouchBarButton;
 import jiconfont.icons.font_awesome.FontAwesome;
 import mediathek.util.mv.Daten;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
-import mediathek.mac.touchbar.TouchBarUtils;
+import mediathek.client.desktop.os.mac.touchbar.TouchBarUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.FilmListUpdateType;
 import mediathek.tool.GuiFunktionen;

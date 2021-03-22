@@ -1,4 +1,4 @@
-package mediathek.mac;
+package mediathek.client.desktop.os.mac;
 
 import mediathek.util.mv.Daten;
 import mediathek.util.constants.Konstanten;
@@ -6,9 +6,9 @@ import mediathek.client.desktop.gui.actions.ShowAboutAction;
 import mediathek.client.desktop.gui.messages.DownloadFinishedEvent;
 import mediathek.client.desktop.gui.messages.DownloadStartEvent;
 import mediathek.client.desktop.gui.messages.InstallTabSwitchListenerEvent;
-import mediathek.mac.tabs.TabDownloadsMac;
-import mediathek.mac.tabs.TabFilmeMac;
-import mediathek.mac.touchbar.TouchBarUtils;
+import mediathek.client.desktop.os.mac.tabs.TabDownloadsMac;
+import mediathek.client.desktop.os.mac.tabs.TabFilmeMac;
+import mediathek.client.desktop.os.mac.touchbar.TouchBarUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.tool.notification.INotificationCenter;
 import mediathek.tool.notification.MacNotificationCenter;

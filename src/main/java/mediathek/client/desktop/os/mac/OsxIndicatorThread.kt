@@ -1,4 +1,4 @@
-package mediathek.mac
+package mediathek.client.desktop.os.mac
 
 import mediathek.tool.threads.IndicatorThread
 import java.awt.Taskbar
