@@ -2,7 +2,7 @@ package mediathek.client.desktop.javafx.InfoLabel;
 
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
-import mediathek.daten.DownloadStartInfo;
+import mediathek.server.daten.DownloadStartInfo;
 
 public class WaitingLabel extends Label {
     public WaitingLabel() {

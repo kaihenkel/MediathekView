@@ -1,6 +1,6 @@
 package mediathek.server.controller;
 
-import mediathek.daten.DatenDownload;
+import mediathek.server.daten.DatenDownload;
 import mediathek.tool.TimerPool;
 import org.apache.commons.io.FileUtils;
 

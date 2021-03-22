@@ -1,11 +1,11 @@
-package mediathek.daten;
+package mediathek.server.daten;
 
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.server.controller.history.SeenHistoryController;
 import mediathek.server.controller.starter.Start;
 import mediathek.util.config.StandardLocations;
-import mediathek.daten.abo.DatenAbo;
+import mediathek.server.daten.abo.DatenAbo;
 import mediathek.client.desktop.gui.messages.RestartDownloadEvent;
 import mediathek.client.desktop.gui.messages.StartEvent;
 import mediathek.tool.*;

@@ -4,8 +4,8 @@ import javafx.embed.swing.JFXPanel;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
-import mediathek.daten.DatenFilm;
-import mediathek.daten.DatenPset;
+import mediathek.server.daten.DatenFilm;
+import mediathek.server.daten.DatenPset;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.tool.GuiFunktionen;
 

@@ -4,7 +4,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.constants.MVColor;
 import mediathek.server.controller.starter.Start;
-import mediathek.daten.DatenDownload;
+import mediathek.server.daten.DatenDownload;
 import mediathek.tool.table.MVTable;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;

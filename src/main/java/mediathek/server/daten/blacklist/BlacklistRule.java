@@ -1,4 +1,4 @@
-package mediathek.daten.blacklist;
+package mediathek.server.daten.blacklist;
 
 import mediathek.tool.Filter;
 import org.jetbrains.annotations.NotNull;

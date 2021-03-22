@@ -1,4 +1,4 @@
-package mediathek.daten;
+package mediathek.server.daten;
 
 import mediathek.util.config.MVConfig;
 import mediathek.util.config.StandardLocations;

@@ -1,7 +1,7 @@
 package mediathek.tool
 
-import mediathek.daten.DatenDownload
-import mediathek.daten.DatenFilm
+import mediathek.server.daten.DatenDownload
+import mediathek.server.daten.DatenFilm
 import okhttp3.HttpUrl
 import okhttp3.HttpUrl.Companion.toHttpUrl
 import org.apache.commons.io.FileUtils

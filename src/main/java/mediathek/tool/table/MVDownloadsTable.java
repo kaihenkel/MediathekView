@@ -2,7 +2,7 @@ package mediathek.tool.table;
 
 import mediathek.util.mv.Daten;
 import mediathek.util.config.MVConfig;
-import mediathek.daten.DatenDownload;
+import mediathek.server.daten.DatenDownload;
 import mediathek.client.desktop.gui.messages.DownloadQueueRankChangedEvent;
 import mediathek.tool.MessageBus;
 import mediathek.tool.models.TModel;

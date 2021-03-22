@@ -1,6 +1,6 @@
 package mediathek.tool.models;
 
-import mediathek.daten.DatenFilm;
+import mediathek.server.daten.DatenFilm;
 import mediathek.tool.DatumFilm;
 import mediathek.tool.FilmSize;
 

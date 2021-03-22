@@ -1,4 +1,4 @@
-package mediathek.daten.abo;
+package mediathek.server.daten.abo;
 
 import mediathek.tool.GermanStringSorter;
 import org.apache.logging.log4j.LogManager;

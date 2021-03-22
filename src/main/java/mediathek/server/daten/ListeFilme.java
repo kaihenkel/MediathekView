@@ -1,4 +1,4 @@
-package mediathek.daten;
+package mediathek.server.daten;
 
 import ca.odell.glazedlists.BasicEventList;
 import ca.odell.glazedlists.EventList;

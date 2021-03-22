@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javafx.beans.property.BooleanProperty;
 import javafx.beans.property.SimpleBooleanProperty;
-import mediathek.daten.DatenFilm;
+import mediathek.server.daten.DatenFilm;
 
 /**
  * Bookmark data definition used to store movies

@@ -16,7 +16,7 @@ import javafx.scene.layout.Background;
 import javafx.scene.layout.BackgroundFill;
 import javafx.scene.layout.TilePane;
 import mediathek.util.mv.Daten;
-import mediathek.daten.DatenPset;
+import mediathek.server.daten.DatenPset;
 import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;

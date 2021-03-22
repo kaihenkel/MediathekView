@@ -1,6 +1,6 @@
 package mediathek.filmlisten;
 
-import mediathek.daten.ListeFilme;
+import mediathek.server.daten.ListeFilme;
 import mediathek.util.config.StandardLocations;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

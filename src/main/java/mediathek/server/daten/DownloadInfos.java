@@ -1,4 +1,4 @@
-package mediathek.daten;
+package mediathek.server.daten;
 
 import mediathek.util.mv.Daten;
 import mediathek.server.controller.starter.Start;

@@ -5,7 +5,7 @@ import jiconfont.swing.IconFontSwing;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.mv.Daten;
 import mediathek.util.config.MVConfig;
-import mediathek.daten.blacklist.BlacklistRule;
+import mediathek.server.daten.blacklist.BlacklistRule;
 import mediathek.util.res.GetFile;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
 import mediathek.filmeSuchen.ListenerFilmeLadenEvent;

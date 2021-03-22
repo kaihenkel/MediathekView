@@ -1,4 +1,4 @@
-package mediathek.daten;
+package mediathek.server.daten;
 
 public class DownloadStartInfo {
     public int total_starts = 0;

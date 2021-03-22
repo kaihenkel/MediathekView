@@ -9,7 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.text.*;
 import mediathek.util.constants.Konstanten;
-import mediathek.daten.DatenFilm;
+import mediathek.server.daten.DatenFilm;
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction;
 import mediathek.client.desktop.gui.dialog.DialogFilmBeschreibung;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;

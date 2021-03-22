@@ -1,7 +1,7 @@
 package mediathek.tool.cellrenderer;
 
 import mediathek.util.constants.Icons;
-import mediathek.daten.DatenPset;
+import mediathek.server.daten.DatenPset;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

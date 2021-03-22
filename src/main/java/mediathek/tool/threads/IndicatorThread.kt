@@ -2,7 +2,7 @@ package mediathek.tool.threads
 
 import mediathek.util.mv.Daten
 import mediathek.server.controller.starter.Start
-import mediathek.daten.DatenDownload
+import mediathek.server.daten.DatenDownload
 
 /**
  * Base class for platform-specific progress indicator threads
