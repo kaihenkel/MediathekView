@@ -3,7 +3,7 @@ package mediathek.util.tools.sender_icon_cache
 import com.google.common.cache.CacheBuilder
 import com.google.common.cache.CacheLoader.InvalidCacheLoadException
 import com.google.common.cache.LoadingCache
-import mediathek.client.desktop.gui.messages.SenderIconStyleChangedEvent
+import mediathek.util.messages.SenderIconStyleChangedEvent
 import mediathek.util.config.ApplicationConfiguration
 import mediathek.util.tools.MessageBus
 import mediathek.util.tools.TimerPool

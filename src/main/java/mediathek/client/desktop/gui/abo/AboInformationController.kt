@@ -4,7 +4,7 @@ import javafx.fxml.FXML
 import javafx.fxml.Initializable
 import javafx.scene.control.Label
 import mediathek.util.daten.Daten
-import mediathek.client.desktop.gui.messages.AboListChangedEvent
+import mediathek.util.messages.AboListChangedEvent
 import mediathek.client.desktop.javafx.tool.JavaFxUtils
 import mediathek.util.tools.MessageBus
 import net.engio.mbassy.listener.Handler

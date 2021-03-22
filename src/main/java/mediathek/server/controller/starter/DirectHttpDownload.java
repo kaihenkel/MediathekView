@@ -9,7 +9,7 @@ import mediathek.server.controller.ThrottlingInputStream;
 import mediathek.util.daten.DatenDownload;
 import mediathek.client.desktop.gui.dialog.DialogContinueDownload;
 import mediathek.client.desktop.gui.dialog.MeldungDownloadfehler;
-import mediathek.client.desktop.gui.messages.*;
+import mediathek.util.messages.*;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.*;
 import mediathek.util.tools.MVSubtitle;

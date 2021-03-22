@@ -4,7 +4,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
-import mediathek.client.desktop.gui.messages.ProgramLocationChangedEvent;
+import mediathek.util.messages.ProgramLocationChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.MVMessageDialog;
 import mediathek.util.tools.MessageBus;

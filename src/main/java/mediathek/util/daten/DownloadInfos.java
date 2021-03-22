@@ -1,8 +1,8 @@
 package mediathek.util.daten;
 
 import mediathek.server.controller.starter.Start;
-import mediathek.client.desktop.gui.messages.DownloadInfoUpdateAvailableEvent;
-import mediathek.client.desktop.gui.messages.TimerEvent;
+import mediathek.util.messages.DownloadInfoUpdateAvailableEvent;
+import mediathek.util.messages.TimerEvent;
 import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 

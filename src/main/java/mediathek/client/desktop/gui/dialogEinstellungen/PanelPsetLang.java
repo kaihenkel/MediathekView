@@ -16,7 +16,7 @@ import mediathek.util.daten.ListePset;
 import mediathek.util.res.GetFile;
 import mediathek.client.desktop.gui.PanelVorlage;
 import mediathek.client.desktop.gui.dialog.DialogHilfe;
-import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
+import mediathek.util.messages.ProgramSetChangedEvent;
 import mediathek.client.desktop.javafx.tool.JFXHiddenApplication;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;

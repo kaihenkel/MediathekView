@@ -6,7 +6,7 @@ import mediathek.util.daten.Daten;
 import mediathek.util.daten.ListePsetVorlagen;
 import mediathek.util.res.GetFile;
 import mediathek.client.desktop.gui.dialog.DialogHilfe;
-import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
+import mediathek.util.messages.ProgramSetChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.GuiFunktionenProgramme;
 import mediathek.util.tools.MessageBus;

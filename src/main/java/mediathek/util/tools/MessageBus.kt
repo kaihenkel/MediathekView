@@ -1,6 +1,6 @@
 package mediathek.util.tools
 
-import mediathek.client.desktop.gui.messages.BaseEvent
+import mediathek.util.messages.BaseEvent
 import net.engio.mbassy.bus.MBassador
 import net.engio.mbassy.bus.config.BusConfiguration
 import net.engio.mbassy.bus.config.Feature

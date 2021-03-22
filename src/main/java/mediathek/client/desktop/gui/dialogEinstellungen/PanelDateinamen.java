@@ -6,7 +6,7 @@ import mediathek.util.daten.Daten;
 import mediathek.util.constants.Icons;
 import mediathek.util.config.MVConfig;
 import mediathek.client.desktop.gui.PanelVorlage;
-import mediathek.client.desktop.gui.messages.ReplaceListChangedEvent;
+import mediathek.util.messages.ReplaceListChangedEvent;
 import mediathek.util.tools.MessageBus;
 import mediathek.util.tools.NoSelectionErrorDialog;
 import mediathek.util.tools.ReplaceList;

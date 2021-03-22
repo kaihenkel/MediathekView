@@ -7,7 +7,7 @@ import mediathek.util.daten.DatenProg;
 import mediathek.util.daten.DatenPset;
 import mediathek.util.daten.ListePset;
 import mediathek.client.desktop.gui.PanelVorlage;
-import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
+import mediathek.util.messages.ProgramSetChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.MessageBus;
 import mediathek.util.tools.TextCopyPasteHandler;

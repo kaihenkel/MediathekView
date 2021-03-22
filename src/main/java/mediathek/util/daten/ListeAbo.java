@@ -20,12 +20,11 @@
 package mediathek.util.daten;
 
 import com.google.common.base.Stopwatch;
-import mediathek.util.daten.Daten;
 import mediathek.util.config.MVConfig;
 import mediathek.util.daten.abo.DatenAbo;
 import mediathek.util.daten.abo.FilmLengthState;
 import mediathek.client.desktop.gui.dialog.DialogEditAbo;
-import mediathek.client.desktop.gui.messages.AboListChangedEvent;
+import mediathek.util.messages.AboListChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.*;
 import mediathek.util.tools.FilenameUtils;

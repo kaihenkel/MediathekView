@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.history;
 
-import mediathek.client.desktop.gui.messages.history.AboHistoryChangedEvent;
+import mediathek.util.messages.history.AboHistoryChangedEvent;
 import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 

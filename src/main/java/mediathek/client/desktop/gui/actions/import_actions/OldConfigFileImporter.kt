@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.actions.import_actions
 import mediathek.util.daten.Daten
 import mediathek.util.daten.abo.DatenAbo
 import mediathek.util.daten.blacklist.BlacklistRule
-import mediathek.client.desktop.gui.messages.ReplaceListChangedEvent
+import mediathek.util.messages.ReplaceListChangedEvent
 import mediathek.util.tools.MessageBus
 import mediathek.util.tools.ReplaceList
 import org.apache.commons.lang3.tuple.ImmutableTriple

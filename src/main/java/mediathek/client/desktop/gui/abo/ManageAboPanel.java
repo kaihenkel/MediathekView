@@ -11,7 +11,7 @@ import mediathek.util.daten.abo.AboTags;
 import mediathek.util.daten.abo.DatenAbo;
 import mediathek.client.desktop.gui.actions.CreateNewAboAction;
 import mediathek.client.desktop.gui.dialog.DialogEditAbo;
-import mediathek.client.desktop.gui.messages.AboListChangedEvent;
+import mediathek.util.messages.AboListChangedEvent;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.Datum;

@@ -27,7 +27,7 @@ import mediathek.client.desktop.gui.actions.ShowFilmInformationAction;
 import mediathek.client.desktop.gui.dialog.DialogBeendenZeit;
 import mediathek.client.desktop.gui.dialog.DialogEditAbo;
 import mediathek.client.desktop.gui.dialog.DialogEditDownload;
-import mediathek.client.desktop.gui.messages.*;
+import mediathek.util.messages.*;
 import mediathek.client.desktop.gui.tabs.AGuiTabPanel;
 import mediathek.client.desktop.gui.toolbar.FXDownloadToolBar;
 import mediathek.client.desktop.javafx.descriptionPanel.DescriptionPanelController;

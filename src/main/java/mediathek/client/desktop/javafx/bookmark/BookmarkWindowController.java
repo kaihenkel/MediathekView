@@ -38,7 +38,7 @@ import mediathek.util.daten.DatenFilm;
 import mediathek.util.daten.DatenPset;
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction;
 import mediathek.client.desktop.gui.dialog.DialogAddMoreDownload;
-import mediathek.client.desktop.gui.messages.DownloadListChangedEvent;
+import mediathek.util.messages.DownloadListChangedEvent;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.javafx.tool.TableViewColumnContextMenuHelper;

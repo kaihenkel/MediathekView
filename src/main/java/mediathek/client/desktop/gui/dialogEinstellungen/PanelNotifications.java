@@ -4,7 +4,7 @@
 
 package mediathek.client.desktop.gui.dialogEinstellungen;
 
-import mediathek.client.desktop.gui.messages.NotificationCenterChangeEvent;
+import mediathek.util.messages.NotificationCenterChangeEvent;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.tools.MessageBus;
 import net.miginfocom.layout.AC;

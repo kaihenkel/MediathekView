@@ -23,7 +23,7 @@ import com.google.common.cache.CacheBuilder;
 import com.google.common.cache.CacheLoader;
 import com.google.common.cache.LoadingCache;
 import mediathek.client.desktop.config.CommandLineConfig;
-import mediathek.client.desktop.gui.messages.DownloadProgressChangedEvent;
+import mediathek.util.messages.DownloadProgressChangedEvent;
 import mediathek.util.tools.MVFilmSize;
 import mediathek.util.tools.MessageBus;
 import org.apache.commons.lang3.StringUtils;

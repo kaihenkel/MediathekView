@@ -4,7 +4,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.config.MVConfig;
 import mediathek.server.controller.SenderFilmlistLoadApprover;
-import mediathek.client.desktop.gui.messages.FilmListImportTypeChangedEvent;
+import mediathek.util.messages.FilmListImportTypeChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.*;
 import mediathek.util.tools.swing.MultilineLabel;
