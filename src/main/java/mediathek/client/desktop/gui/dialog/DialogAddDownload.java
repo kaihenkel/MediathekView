@@ -13,7 +13,7 @@ import mediathek.client.desktop.gui.messages.DownloadListChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.*;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.tools.EscapeKeyHandler;
 import mediathek.util.tools.FilenameUtils;
 import mediathek.util.tools.MVMessageDialog;

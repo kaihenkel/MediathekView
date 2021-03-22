@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.dialogEinstellungen.allgemein;
 
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.client.desktop.gui.messages.*;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;

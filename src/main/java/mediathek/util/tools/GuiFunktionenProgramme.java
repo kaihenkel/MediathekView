@@ -1,13 +1,12 @@
 package mediathek.util.tools;
 
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.server.daten.DatenPset;
 import mediathek.server.daten.ListePset;
 import mediathek.client.desktop.gui.dialogEinstellungen.DialogImportPset;
-import mediathek.util.tools.http.MVHttpClient;
 import mediathek.util.tools.http.MVHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;

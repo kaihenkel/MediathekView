@@ -1,7 +1,7 @@
 package mediathek.client.desktop.javafx.filterpanel;
 
 import javafx.collections.ListChangeListener;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import org.controlsfx.control.CheckListView;
 
 public class SenderListBox extends CheckListView<String> {

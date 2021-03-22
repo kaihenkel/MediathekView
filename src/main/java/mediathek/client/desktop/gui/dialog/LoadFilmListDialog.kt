@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.dialog
 
-import mediathek.util.mv.Daten
+import mediathek.util.daten.Daten
 import mediathek.util.constants.Konstanten
 import mediathek.client.desktop.gui.actions.DisposeDialogAction
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelFilmlisteLaden

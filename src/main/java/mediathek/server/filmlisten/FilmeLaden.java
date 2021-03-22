@@ -3,7 +3,7 @@ package mediathek.server.filmlisten;
 import com.google.common.base.Stopwatch;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.StandardLocations;
 import mediathek.server.daten.DatenFilm;

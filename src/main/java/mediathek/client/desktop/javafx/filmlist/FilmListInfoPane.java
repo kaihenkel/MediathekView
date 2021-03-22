@@ -2,7 +2,7 @@ package mediathek.client.desktop.javafx.filmlist;
 
 import javafx.application.Platform;
 import javafx.scene.layout.HBox;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.server.filmeSuchen.ListenerFilmeLaden;
 import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.javafx.CenteredBorderPane;

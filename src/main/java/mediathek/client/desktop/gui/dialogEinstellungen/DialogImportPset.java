@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.dialogEinstellungen;
 
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.server.daten.ListePset;
 import mediathek.util.tools.EscapeKeyHandler;
 

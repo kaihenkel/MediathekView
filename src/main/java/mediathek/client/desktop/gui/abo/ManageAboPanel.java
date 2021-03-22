@@ -6,7 +6,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.HBox;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.server.daten.abo.AboTags;
 import mediathek.server.daten.abo.DatenAbo;
 import mediathek.client.desktop.gui.actions.CreateNewAboAction;

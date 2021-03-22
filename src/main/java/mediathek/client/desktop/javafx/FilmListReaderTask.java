@@ -1,7 +1,7 @@
 package mediathek.client.desktop.javafx;
 
 import javafx.concurrent.Task;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.server.filmlisten.reader.FilmListReader;
 import mediathek.client.desktop.gui.messages.FilmListReadStartEvent;
 import mediathek.util.config.ApplicationConfiguration;

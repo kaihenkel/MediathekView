@@ -4,7 +4,7 @@ import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.util.config.StandardLocations;

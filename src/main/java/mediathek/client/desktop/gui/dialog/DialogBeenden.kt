@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.dialog
 import jiconfont.icons.font_awesome.FontAwesome
 import jiconfont.swing.IconFontSwing
 import mediathek.client.desktop.gui.mainwindow.MediathekGui
-import mediathek.util.mv.Daten
+import mediathek.util.daten.Daten
 
 import mediathek.client.desktop.javafx.AppTerminationIndefiniteProgress
 import mediathek.util.tools.EscapeKeyHandler

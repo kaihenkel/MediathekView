@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.dialogEinstellungen;
 
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.constants.MVColor;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.MVC;

@@ -1,6 +1,6 @@
 package mediathek.client.desktop.javafx.filmlist;
 
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.client.desktop.javafx.tool.ComputedLabel;
 
 /**

@@ -27,7 +27,7 @@ import mediathek.util.tools.migrator.SettingsMigrator;
 import mediathek.util.tools.swing.SwingUIFontChanger;
 import mediathek.util.tools.swing.ThreadCheckingRepaintManager;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.client.desktop.os.windows.MediathekGuiWindows;
 import mediathek.client.desktop.os.x11.MediathekGuiX11;
 import org.apache.commons.io.FileUtils;

@@ -2,7 +2,7 @@ package mediathek.server.controller.starter;
 
 import com.google.common.util.concurrent.RateLimiter;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
 import mediathek.server.controller.MVBandwidthCountingInputStream;
 import mediathek.server.controller.ThrottlingInputStream;

@@ -13,7 +13,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.config.MVConfig;
 import mediathek.server.controller.history.SeenHistoryController;
 import mediathek.server.controller.starter.Start;

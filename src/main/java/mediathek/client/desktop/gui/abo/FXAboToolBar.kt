@@ -7,7 +7,7 @@ import javafx.fxml.Initializable
 import javafx.scene.control.Button
 import javafx.scene.control.ComboBox
 import javafx.scene.control.ToolBar
-import mediathek.util.mv.Daten
+import mediathek.util.daten.Daten
 import mediathek.util.tools.SenderList
 import org.apache.logging.log4j.LogManager
 import java.io.IOException

@@ -53,7 +53,7 @@ import mediathek.client.desktop.gui.update.ProgramUpdateCheck;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.constants.Icons;
 import mediathek.util.constants.Konstanten;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.res.GetIcon;
 import mediathek.util.tools.FilmListUpdateType;
 import net.engio.mbassy.listener.Handler;

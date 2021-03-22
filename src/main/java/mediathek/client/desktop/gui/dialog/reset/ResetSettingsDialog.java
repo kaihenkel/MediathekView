@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.dialog.reset;
 
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.client.desktop.gui.dialog.StandardCloseDialog;
 
 import javax.swing.*;

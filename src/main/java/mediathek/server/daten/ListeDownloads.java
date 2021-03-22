@@ -19,7 +19,7 @@
  */
 package mediathek.server.daten;
 
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.server.controller.starter.Start;

@@ -10,7 +10,7 @@ import javafx.stage.Modality;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.constants.Icons;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
@@ -34,7 +34,6 @@ import mediathek.client.desktop.javafx.descriptionPanel.DescriptionPanelControll
 import mediathek.client.desktop.javafx.downloadtab.DownloadTabInformationLabel;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.util.tools.*;
 import mediathek.util.tools.*;
 import mediathek.util.tools.cellrenderer.CellRendererDownloads;
 import mediathek.util.tools.listener.BeobTableHeader;

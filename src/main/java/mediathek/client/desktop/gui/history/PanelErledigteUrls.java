@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.history;
 
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.server.controller.history.AboHistoryController;
 import mediathek.server.controller.history.MVUsedUrlModelHelper;
 import mediathek.util.tools.GuiFunktionen;

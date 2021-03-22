@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.dialog;
 
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.util.config.MVConfig;
 import mediathek.server.daten.ListePset;
 import mediathek.server.daten.ListePsetVorlagen;

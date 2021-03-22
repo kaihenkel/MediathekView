@@ -12,7 +12,7 @@ import javafx.scene.paint.Color;
 import javafx.scene.paint.Stop;
 import javafx.util.Duration;
 import mediathek.server.controller.starter.Start;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import mediathek.server.daten.DatenDownload;
 import mediathek.server.daten.ListeDownloads;
 import mediathek.client.desktop.gui.messages.BandwidthMonitorStateChangedEvent;

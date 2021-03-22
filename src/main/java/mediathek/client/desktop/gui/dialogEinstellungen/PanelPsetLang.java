@@ -29,7 +29,7 @@ import mediathek.util.tools.models.TModel;
 import mediathek.util.tools.table.MVProgTable;
 import mediathek.util.tools.table.MVPsetTable;
 import mediathek.util.tools.table.MVTable;
-import mediathek.util.mv.Daten;
+import mediathek.util.daten.Daten;
 import net.engio.mbassy.listener.Handler;
 import org.apache.commons.lang3.SystemUtils;
 
