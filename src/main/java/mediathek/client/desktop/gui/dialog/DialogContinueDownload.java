@@ -1,7 +1,7 @@
 package mediathek.client.desktop.gui.dialog;
 
 import mediathek.util.constants.Konstanten;
-import mediathek.server.daten.DatenDownload;
+import mediathek.util.daten.DatenDownload;
 import mediathek.util.tools.EscapeKeyHandler;
 import mediathek.util.tools.MVMessageDialog;
 

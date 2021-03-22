@@ -1,4 +1,4 @@
-package mediathek.server.daten.abo
+package mediathek.util.daten.abo
 
 import java.util.*
 

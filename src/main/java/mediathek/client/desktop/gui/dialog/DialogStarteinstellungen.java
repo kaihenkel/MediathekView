@@ -2,8 +2,8 @@ package mediathek.client.desktop.gui.dialog;
 
 import mediathek.util.daten.Daten;
 import mediathek.util.config.MVConfig;
-import mediathek.server.daten.ListePset;
-import mediathek.server.daten.ListePsetVorlagen;
+import mediathek.util.daten.ListePset;
+import mediathek.util.daten.ListePsetVorlagen;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelEinstellungenGeo;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelProgrammPfade;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelPsetKurz;

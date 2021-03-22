@@ -1,6 +1,6 @@
 package mediathek.util.tools.table;
 
-import mediathek.server.daten.DatenPset;
+import mediathek.util.daten.DatenPset;
 import mediathek.util.tools.models.TModel;
 
 public class MVPsetTable extends MVTable {

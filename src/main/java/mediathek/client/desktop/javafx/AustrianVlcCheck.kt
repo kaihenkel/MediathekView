@@ -7,7 +7,7 @@ import javafx.scene.control.Hyperlink
 import javafx.scene.control.Label
 import javafx.scene.layout.FlowPane
 import mediathek.util.constants.Konstanten
-import mediathek.server.daten.GeoblockingField
+import mediathek.util.daten.GeoblockingField
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction
 import mediathek.client.desktop.gui.mainwindow.MediathekGui
 import mediathek.util.config.ApplicationConfiguration

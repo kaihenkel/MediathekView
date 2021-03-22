@@ -17,13 +17,12 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.server.daten;
+package mediathek.util.daten;
 
-import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.server.controller.starter.Start;
-import mediathek.server.daten.abo.DatenAbo;
+import mediathek.util.daten.abo.DatenAbo;
 import mediathek.client.desktop.gui.dialog.DialogAboNoSet;
 import mediathek.client.desktop.gui.messages.ButtonStartEvent;
 import mediathek.client.desktop.gui.messages.DownloadListChangedEvent;

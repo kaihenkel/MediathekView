@@ -1,6 +1,5 @@
-package mediathek.server.daten;
+package mediathek.util.daten;
 
-import mediathek.util.daten.Daten;
 import mediathek.server.controller.starter.Start;
 import mediathek.client.desktop.gui.messages.DownloadInfoUpdateAvailableEvent;
 import mediathek.client.desktop.gui.messages.TimerEvent;

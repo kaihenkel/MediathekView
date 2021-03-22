@@ -19,7 +19,7 @@
  */
 package mediathek.server.filmlisten;
 
-import mediathek.server.daten.ListeFilme;
+import mediathek.util.daten.ListeFilme;
 import mediathek.server.filmeSuchen.ListenerFilmeLaden;
 import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.server.filmlisten.reader.FilmListReader;

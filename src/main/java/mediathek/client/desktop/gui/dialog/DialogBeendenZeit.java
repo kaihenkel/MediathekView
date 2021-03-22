@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.dialog;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.daten.Daten;
-import mediathek.server.daten.DatenDownload;
+import mediathek.util.daten.DatenDownload;
 import mediathek.util.res.GetFile;
 import mediathek.client.desktop.javafx.AppTerminationIndefiniteProgress;
 import mediathek.util.tools.EscapeKeyHandler;

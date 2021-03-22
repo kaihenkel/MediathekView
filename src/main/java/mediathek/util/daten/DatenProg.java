@@ -1,4 +1,4 @@
-package mediathek.server.daten;
+package mediathek.util.daten;
 
 import mediathek.util.tools.GuiFunktionenProgramme;
 import org.jetbrains.annotations.NotNull;

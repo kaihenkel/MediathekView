@@ -1,5 +1,5 @@
 
-package mediathek.server.daten;
+package mediathek.util.daten;
 
 import mediathek.util.constants.Konstanten;
 import mediathek.util.res.GetFile;

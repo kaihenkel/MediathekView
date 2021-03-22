@@ -4,7 +4,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
-import mediathek.server.daten.DatenDownload;
+import mediathek.util.daten.DatenDownload;
 import mediathek.util.tools.EscapeKeyHandler;
 
 import javax.swing.*;

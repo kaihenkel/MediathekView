@@ -1,8 +1,6 @@
 package mediathek.util.tools.models;
 
-import mediathek.server.daten.DatenDownload;
-import mediathek.util.tools.Datum;
-import mediathek.util.tools.MVFilmSize;
+import mediathek.util.daten.DatenDownload;
 import mediathek.util.tools.Datum;
 import mediathek.util.tools.MVFilmSize;
 

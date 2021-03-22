@@ -17,9 +17,8 @@
  // *    You should have received a copy of the GNU General Public License
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.server.daten;
+package mediathek.util.daten;
 
-import mediathek.util.daten.Daten;
 import mediathek.util.tools.GuiFunktionenProgramme;
 import mediathek.util.tools.MVMessageDialog;
 import org.apache.commons.lang3.SystemUtils;

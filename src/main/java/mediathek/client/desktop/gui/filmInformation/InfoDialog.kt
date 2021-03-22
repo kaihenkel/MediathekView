@@ -8,7 +8,7 @@ import javafx.geometry.Pos
 import javafx.scene.Scene
 import javafx.scene.control.*
 import javafx.scene.image.ImageView
-import mediathek.server.daten.DatenFilm
+import mediathek.util.daten.DatenFilm
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction
 import mediathek.client.desktop.javafx.tool.JavaFxUtils
 import mediathek.util.config.ApplicationConfiguration

@@ -3,9 +3,9 @@ package mediathek.server.controller.starter;
 import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
 import mediathek.server.controller.history.SeenHistoryController;
-import mediathek.server.daten.DatenDownload;
-import mediathek.server.daten.DatenFilm;
-import mediathek.server.daten.DatenPset;
+import mediathek.util.daten.DatenDownload;
+import mediathek.util.daten.DatenFilm;
+import mediathek.util.daten.DatenPset;
 import mediathek.client.desktop.gui.messages.ButtonStartEvent;
 import mediathek.client.desktop.gui.messages.DownloadProgressChangedEvent;
 import mediathek.client.desktop.gui.messages.StartEvent;
@@ -356,7 +356,7 @@ public class StarterClass {
         /**
          * This will start the download process.
          *
-         * @param datenDownload The {@link mediathek.server.daten.DatenDownload} info object for download.
+         * @param datenDownload The {@link mediathek.util.daten.DatenDownload} info object for download.
          */
         private void launchDownloadThread(DatenDownload datenDownload) {
             datenDownload.start.startZeit = new Datum();

@@ -1,4 +1,4 @@
-package mediathek.server.daten.abo
+package mediathek.util.daten.abo
 
 enum class FilmLengthState {
     MINIMUM, MAXIMUM

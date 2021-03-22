@@ -1,7 +1,7 @@
-package mediathek.server.daten.blacklist;
+package mediathek.util.daten.blacklist;
 
 import mediathek.util.config.MVConfig;
-import mediathek.server.daten.DatenFilm;
+import mediathek.util.daten.DatenFilm;
 import mediathek.util.tools.Filter;
 import org.apache.commons.lang3.StringUtils;
 

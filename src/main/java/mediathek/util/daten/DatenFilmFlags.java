@@ -1,4 +1,4 @@
-package mediathek.server.daten;
+package mediathek.util.daten;
 
 public enum DatenFilmFlags {
     /**

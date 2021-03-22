@@ -1,4 +1,4 @@
-package mediathek.server.daten;
+package mediathek.util.daten;
 
 //FIXME convert indices to int!!
 public class FilmResolution {

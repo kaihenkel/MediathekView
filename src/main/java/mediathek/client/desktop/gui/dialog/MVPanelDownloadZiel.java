@@ -5,7 +5,7 @@ import jiconfont.swing.IconFontSwing;
 import mediathek.util.constants.MVColor;
 import mediathek.util.config.MVConfig;
 import mediathek.util.config.StandardLocations;
-import mediathek.server.daten.DatenDownload;
+import mediathek.util.daten.DatenDownload;
 import mediathek.util.tools.FileSpecifier;
 import mediathek.util.tools.FilenameUtils;
 import mediathek.util.tools.GuiFunktionen;

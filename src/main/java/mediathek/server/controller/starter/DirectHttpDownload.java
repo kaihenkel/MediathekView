@@ -6,7 +6,7 @@ import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
 import mediathek.server.controller.MVBandwidthCountingInputStream;
 import mediathek.server.controller.ThrottlingInputStream;
-import mediathek.server.daten.DatenDownload;
+import mediathek.util.daten.DatenDownload;
 import mediathek.client.desktop.gui.dialog.DialogContinueDownload;
 import mediathek.client.desktop.gui.dialog.MeldungDownloadfehler;
 import mediathek.client.desktop.gui.messages.*;

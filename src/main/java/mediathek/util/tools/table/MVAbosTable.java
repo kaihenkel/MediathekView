@@ -1,7 +1,7 @@
 package mediathek.util.tools.table;
 
 import mediathek.util.config.MVConfig;
-import mediathek.server.daten.abo.DatenAbo;
+import mediathek.util.daten.abo.DatenAbo;
 import mediathek.util.tools.models.TModelAbo;
 
 public class MVAbosTable extends MVTable {

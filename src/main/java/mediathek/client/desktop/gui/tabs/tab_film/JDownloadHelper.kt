@@ -4,8 +4,8 @@ import javafx.application.Platform
 import javafx.scene.control.Alert
 import mediathek.util.constants.Konstanten
 import mediathek.server.controller.history.SeenHistoryController
-import mediathek.server.daten.DatenFilm
-import mediathek.server.daten.FilmResolution
+import mediathek.util.daten.DatenFilm
+import mediathek.util.daten.FilmResolution
 import mediathek.util.tools.http.MVHttpClient
 import mediathek.util.tools.javafx.FXErrorDialog
 import okhttp3.FormBody

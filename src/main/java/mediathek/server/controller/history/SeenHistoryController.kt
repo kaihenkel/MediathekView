@@ -2,7 +2,7 @@ package mediathek.server.controller.history
 
 import com.google.common.collect.Sets
 import mediathek.util.daten.Daten
-import mediathek.server.daten.DatenFilm
+import mediathek.util.daten.DatenFilm
 import mediathek.client.desktop.gui.messages.history.DownloadHistoryChangedEvent
 import mediathek.util.tools.MessageBus
 import mediathek.util.tools.sql.SqlDatabaseConfig

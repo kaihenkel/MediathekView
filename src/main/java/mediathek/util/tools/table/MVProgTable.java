@@ -1,6 +1,6 @@
 package mediathek.util.tools.table;
 
-import mediathek.server.daten.DatenProg;
+import mediathek.util.daten.DatenProg;
 import mediathek.util.tools.models.TModel;
 
 public class MVProgTable extends MVTable {

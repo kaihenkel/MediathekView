@@ -4,7 +4,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.constants.MVColor;
 import mediathek.util.config.MVConfig;
-import mediathek.server.daten.DatenPset;
+import mediathek.util.daten.DatenPset;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.tools.EscapeKeyHandler;

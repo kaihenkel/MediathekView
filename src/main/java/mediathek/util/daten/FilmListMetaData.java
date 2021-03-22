@@ -1,4 +1,4 @@
-package mediathek.server.daten;
+package mediathek.util.daten;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

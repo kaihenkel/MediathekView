@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.dialogEinstellungen;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.daten.Daten;
-import mediathek.server.daten.GeoblockingField;
+import mediathek.util.daten.GeoblockingField;
 import mediathek.util.res.GetFile;
 import mediathek.client.desktop.gui.dialog.DialogHilfe;
 import mediathek.client.desktop.gui.messages.BlacklistChangedEvent;

@@ -1,6 +1,6 @@
 package mSearch.daten;
 
-import mediathek.server.daten.DatenFilm;
+import mediathek.util.daten.DatenFilm;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;

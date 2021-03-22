@@ -1,7 +1,6 @@
 package mediathek.util.tools;
 
-import mediathek.server.daten.DatenDownload;
-import mediathek.util.tools.http.MVHttpClient;
+import mediathek.util.daten.DatenDownload;
 import mediathek.util.tools.http.MVHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;

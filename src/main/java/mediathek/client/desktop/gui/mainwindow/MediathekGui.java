@@ -32,7 +32,7 @@ import mediathek.client.desktop.gui.history.ResetDownloadHistoryAction;
 import mediathek.client.desktop.gui.messages.*;
 import mediathek.client.desktop.gui.tabs.tab_downloads.GuiDownloads;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
-import mediathek.server.daten.DatenDownload;
+import mediathek.util.daten.DatenDownload;
 import mediathek.server.filmeSuchen.ListenerFilmeLaden;
 import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.server.filmlisten.FilmeLaden;

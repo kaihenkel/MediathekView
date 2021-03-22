@@ -1,8 +1,8 @@
 package mediathek.util.tools.cellrenderer;
 
-import mediathek.server.daten.abo.AboTags;
-import mediathek.server.daten.abo.DatenAbo;
-import mediathek.server.daten.abo.FilmLengthState;
+import mediathek.util.daten.abo.AboTags;
+import mediathek.util.daten.abo.DatenAbo;
+import mediathek.util.daten.abo.FilmLengthState;
 import mediathek.util.tools.table.MVTable;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

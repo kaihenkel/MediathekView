@@ -17,11 +17,11 @@ package mediathek.server.controller;
 
 import mediathek.util.daten.Daten;
 import mediathek.util.config.MVConfig;
-import mediathek.server.daten.DatenDownload;
-import mediathek.server.daten.DatenProg;
-import mediathek.server.daten.DatenPset;
-import mediathek.server.daten.abo.DatenAbo;
-import mediathek.server.daten.blacklist.BlacklistRule;
+import mediathek.util.daten.DatenDownload;
+import mediathek.util.daten.DatenProg;
+import mediathek.util.daten.DatenPset;
+import mediathek.util.daten.abo.DatenAbo;
+import mediathek.util.daten.blacklist.BlacklistRule;
 import mediathek.util.tools.ReplaceList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

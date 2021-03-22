@@ -2,7 +2,7 @@ package mediathek.client.desktop.gui.dialog;
 
 import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
-import mediathek.server.daten.ListePsetVorlagen;
+import mediathek.util.daten.ListePsetVorlagen;
 import mediathek.util.tools.EscapeKeyHandler;
 import mediathek.util.tools.GuiFunktionenProgramme;
 import net.miginfocom.layout.AC;

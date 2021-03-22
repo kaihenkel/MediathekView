@@ -1,4 +1,4 @@
-package mediathek.server.daten;
+package mediathek.util.daten;
 
 public class GeoblockingField {
     public static final String GEO_DE = "DE"; // nur in .. zu sehen

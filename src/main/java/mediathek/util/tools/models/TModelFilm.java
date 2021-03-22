@@ -1,8 +1,7 @@
 package mediathek.util.tools.models;
 
-import mediathek.server.daten.DatenFilm;
+import mediathek.util.daten.DatenFilm;
 import mediathek.util.tools.DatumFilm;
-import mediathek.util.tools.FilmSize;
 import mediathek.util.tools.FilmSize;
 
 import javax.swing.table.AbstractTableModel;
