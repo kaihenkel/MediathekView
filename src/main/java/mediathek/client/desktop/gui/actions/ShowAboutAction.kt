@@ -2,7 +2,7 @@ package mediathek.client.desktop.gui.actions
 
 import mediathek.client.desktop.gui.dialog.about.AboutDialog
 import mediathek.client.desktop.gui.mainwindow.MediathekGui
-import mediathek.tool.GuiFunktionen
+import mediathek.util.tools.GuiFunktionen
 import java.awt.event.ActionEvent
 import javax.swing.AbstractAction
 

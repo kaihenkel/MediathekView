@@ -8,7 +8,7 @@ import mediathek.server.filmeSuchen.ListenerFilmeLaden;
 import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.gui.messages.TableModelChangeEvent;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 import org.apache.commons.configuration2.sync.LockMode;
 

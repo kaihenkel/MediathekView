@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.actions;
 import mediathek.util.config.MVConfig;
 import mediathek.client.desktop.gui.dialog.DialogProgrammOrdnerOeffnen;
 import mediathek.client.desktop.gui.messages.ProgramLocationChangedEvent;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

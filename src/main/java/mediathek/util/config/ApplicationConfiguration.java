@@ -2,7 +2,7 @@ package mediathek.util.config;
 
 import mediathek.util.constants.Konstanten;
 import mediathek.server.daten.GeoblockingField;
-import mediathek.tool.CustomConversionHandler;
+import mediathek.util.tools.CustomConversionHandler;
 import org.apache.commons.configuration2.Configuration;
 import org.apache.commons.configuration2.XMLConfiguration;
 import org.apache.commons.configuration2.event.ConfigurationEvent;

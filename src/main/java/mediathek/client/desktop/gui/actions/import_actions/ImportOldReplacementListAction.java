@@ -4,7 +4,7 @@ import javafx.application.Platform;
 import javafx.scene.control.Alert;
 import javafx.stage.FileChooser;
 import mediathek.util.constants.Konstanten;
-import mediathek.tool.javafx.FXErrorDialog;
+import mediathek.util.tools.javafx.FXErrorDialog;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

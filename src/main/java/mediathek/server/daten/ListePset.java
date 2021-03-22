@@ -5,8 +5,8 @@ import mediathek.util.config.StandardLocations;
 import mediathek.client.desktop.gui.dialog.DialogOk;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelProgrammPfade;
 import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
-import mediathek.tool.MessageBus;
-import mediathek.tool.models.TModel;
+import mediathek.util.tools.MessageBus;
+import mediathek.util.tools.models.TModel;
 import org.apache.commons.lang3.StringUtils;
 
 import javax.swing.*;

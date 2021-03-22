@@ -4,8 +4,8 @@ import com.google.common.collect.Sets
 import mediathek.util.mv.Daten
 import mediathek.server.daten.DatenFilm
 import mediathek.client.desktop.gui.messages.history.DownloadHistoryChangedEvent
-import mediathek.tool.MessageBus
-import mediathek.tool.sql.SqlDatabaseConfig
+import mediathek.util.tools.MessageBus
+import mediathek.util.tools.sql.SqlDatabaseConfig
 import org.apache.logging.log4j.LogManager
 import org.sqlite.SQLiteDataSource
 import java.nio.file.Files

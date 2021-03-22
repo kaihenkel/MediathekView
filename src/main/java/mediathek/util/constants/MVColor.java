@@ -20,7 +20,7 @@
 package mediathek.util.constants;
 
 import mediathek.util.config.MVConfig;
-import mediathek.tool.MVC;
+import mediathek.util.tools.MVC;
 
 import java.awt.*;
 import java.util.LinkedList;

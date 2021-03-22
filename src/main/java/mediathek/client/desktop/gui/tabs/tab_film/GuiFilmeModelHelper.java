@@ -6,8 +6,8 @@ import mediathek.server.daten.DatenFilm;
 import mediathek.server.daten.ListeFilme;
 import mediathek.client.desktop.javafx.filterpanel.FilmActionPanel;
 import mediathek.client.desktop.javafx.filterpanel.FilmLengthSlider;
-import mediathek.tool.Filter;
-import mediathek.tool.models.TModelFilm;
+import mediathek.util.tools.Filter;
+import mediathek.util.tools.models.TModelFilm;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.table.TableModel;

@@ -8,8 +8,8 @@ import mediathek.server.daten.DatenDownload;
 import mediathek.server.daten.DatenProg;
 import mediathek.server.daten.FilmResolution;
 import mediathek.util.res.GetFile;
-import mediathek.tool.EscapeKeyHandler;
-import mediathek.tool.MVMessageDialog;
+import mediathek.util.tools.EscapeKeyHandler;
+import mediathek.util.tools.MVMessageDialog;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

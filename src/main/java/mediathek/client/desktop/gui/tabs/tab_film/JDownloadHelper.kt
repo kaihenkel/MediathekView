@@ -6,8 +6,8 @@ import mediathek.util.constants.Konstanten
 import mediathek.server.controller.history.SeenHistoryController
 import mediathek.server.daten.DatenFilm
 import mediathek.server.daten.FilmResolution
-import mediathek.tool.http.MVHttpClient
-import mediathek.tool.javafx.FXErrorDialog
+import mediathek.util.tools.http.MVHttpClient
+import mediathek.util.tools.javafx.FXErrorDialog
 import okhttp3.FormBody
 import okhttp3.HttpUrl
 import okhttp3.HttpUrl.Companion.toHttpUrl

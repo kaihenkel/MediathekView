@@ -8,10 +8,10 @@ import mediathek.server.daten.abo.AboTags;
 import mediathek.server.daten.abo.DatenAbo;
 import mediathek.server.daten.abo.FilmLengthState;
 import mediathek.util.res.GetFile;
-import mediathek.tool.EscapeKeyHandler;
-import mediathek.tool.FilenameUtils;
-import mediathek.tool.GuiFunktionen;
-import mediathek.tool.MVMessageDialog;
+import mediathek.util.tools.EscapeKeyHandler;
+import mediathek.util.tools.FilenameUtils;
+import mediathek.util.tools.GuiFunktionen;
+import mediathek.util.tools.MVMessageDialog;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;

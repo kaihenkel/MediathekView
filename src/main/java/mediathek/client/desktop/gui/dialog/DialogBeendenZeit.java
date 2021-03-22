@@ -6,7 +6,7 @@ import mediathek.util.mv.Daten;
 import mediathek.server.daten.DatenDownload;
 import mediathek.util.res.GetFile;
 import mediathek.client.desktop.javafx.AppTerminationIndefiniteProgress;
-import mediathek.tool.EscapeKeyHandler;
+import mediathek.util.tools.EscapeKeyHandler;
 
 import javax.swing.*;
 import java.awt.*;

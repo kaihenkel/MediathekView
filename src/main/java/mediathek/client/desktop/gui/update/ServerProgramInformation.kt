@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.update
 
-import mediathek.tool.Version
+import mediathek.util.tools.Version
 
 data class ServerProgramInformation(val version: Version) {
     class ParserTags {

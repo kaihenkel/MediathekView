@@ -11,7 +11,8 @@ import mediathek.server.filmeSuchen.ListenerFilmeLaden;
 import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.gui.dialog.DialogHilfe;
 import mediathek.client.desktop.gui.messages.BlacklistChangedEvent;
-import mediathek.tool.*;
+import mediathek.util.tools.*;
+import mediathek.util.tools.Listener;
 import net.engio.mbassy.listener.Handler;
 import org.jdesktop.swingx.VerticalLayout;
 

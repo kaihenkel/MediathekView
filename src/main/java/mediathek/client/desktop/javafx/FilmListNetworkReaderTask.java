@@ -2,8 +2,8 @@ package mediathek.client.desktop.javafx;
 
 import javafx.concurrent.Task;
 import mediathek.util.mv.Daten;
-import mediathek.tool.FilmListUpdateType;
-import mediathek.tool.GuiFunktionen;
+import mediathek.util.tools.FilmListUpdateType;
+import mediathek.util.tools.GuiFunktionen;
 
 public class FilmListNetworkReaderTask extends Task<Void> {
 

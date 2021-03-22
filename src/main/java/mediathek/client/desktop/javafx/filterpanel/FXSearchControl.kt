@@ -6,7 +6,7 @@ import javafx.scene.Cursor
 import javafx.scene.control.Tooltip
 import javafx.scene.input.KeyCode
 import javafx.scene.input.KeyEvent
-import mediathek.tool.Filter
+import mediathek.util.tools.Filter
 import org.controlsfx.control.textfield.CustomTextField
 import org.controlsfx.glyphfont.FontAwesome
 import org.controlsfx.glyphfont.GlyphFontRegistry

@@ -5,7 +5,7 @@ import jiconfont.swing.IconFontSwing;
 import mediathek.util.config.MVConfig;
 import mediathek.util.res.GetFile;
 import mediathek.client.desktop.gui.dialog.DialogHilfe;
-import mediathek.tool.GuiFunktionenProgramme;
+import mediathek.util.tools.GuiFunktionenProgramme;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

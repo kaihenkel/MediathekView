@@ -1,6 +1,6 @@
 package mediathek.server.daten.blacklist;
 
-import mediathek.tool.Filter;
+import mediathek.util.tools.Filter;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;

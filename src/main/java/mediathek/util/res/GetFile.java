@@ -1,6 +1,6 @@
 package mediathek.util.res;
 
-import mediathek.tool.Functions;
+import mediathek.util.tools.Functions;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

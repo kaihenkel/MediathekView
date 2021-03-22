@@ -1,0 +1,10 @@
+package mediathek.util.tools;
+
+import java.util.UUID;
+
+public record FilterDTO(UUID id, String name) {
+    @Override
+    public String toString() {
+        return name;
+    }
+}

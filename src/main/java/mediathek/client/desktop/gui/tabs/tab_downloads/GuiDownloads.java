@@ -34,11 +34,12 @@ import mediathek.client.desktop.javafx.descriptionPanel.DescriptionPanelControll
 import mediathek.client.desktop.javafx.downloadtab.DownloadTabInformationLabel;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.tool.*;
-import mediathek.tool.cellrenderer.CellRendererDownloads;
-import mediathek.tool.listener.BeobTableHeader;
-import mediathek.tool.models.TModelDownload;
-import mediathek.tool.table.MVDownloadsTable;
+import mediathek.util.tools.*;
+import mediathek.util.tools.*;
+import mediathek.util.tools.cellrenderer.CellRendererDownloads;
+import mediathek.util.tools.listener.BeobTableHeader;
+import mediathek.util.tools.models.TModelDownload;
+import mediathek.util.tools.table.MVDownloadsTable;
 import net.engio.mbassy.listener.Handler;
 import net.miginfocom.layout.AC;
 import net.miginfocom.layout.CC;

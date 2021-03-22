@@ -1,10 +1,10 @@
 package mediathek.server.controller.history;
 
 import mediathek.util.config.StandardLocations;
-import mediathek.tool.FileUtils;
-import mediathek.tool.sql.SqlAutoRollback;
-import mediathek.tool.sql.SqlAutoSetAutoCommit;
-import mediathek.tool.sql.SqlDatabaseConfig;
+import mediathek.util.tools.FileUtils;
+import mediathek.util.tools.sql.SqlAutoRollback;
+import mediathek.util.tools.sql.SqlAutoSetAutoCommit;
+import mediathek.util.tools.sql.SqlDatabaseConfig;
 import okhttp3.HttpUrl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -7,8 +7,8 @@ import mediathek.client.desktop.gui.PanelVorlage;
 import mediathek.client.desktop.gui.dialogEinstellungen.allgemein.PanelEinstellungen;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.res.GetIcon;
-import mediathek.tool.EscapeKeyHandler;
-import mediathek.tool.GuiFunktionen;
+import mediathek.util.tools.EscapeKeyHandler;
+import mediathek.util.tools.GuiFunktionen;
 
 import javax.swing.*;
 import javax.swing.tree.DefaultMutableTreeNode;

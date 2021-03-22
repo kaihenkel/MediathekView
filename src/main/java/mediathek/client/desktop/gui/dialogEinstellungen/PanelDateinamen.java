@@ -7,11 +7,11 @@ import mediathek.util.constants.Icons;
 import mediathek.util.config.MVConfig;
 import mediathek.client.desktop.gui.PanelVorlage;
 import mediathek.client.desktop.gui.messages.ReplaceListChangedEvent;
-import mediathek.tool.MessageBus;
-import mediathek.tool.NoSelectionErrorDialog;
-import mediathek.tool.ReplaceList;
-import mediathek.tool.TextCopyPasteHandler;
-import mediathek.tool.models.NonEditableTableModel;
+import mediathek.util.tools.MessageBus;
+import mediathek.util.tools.NoSelectionErrorDialog;
+import mediathek.util.tools.ReplaceList;
+import mediathek.util.tools.TextCopyPasteHandler;
+import mediathek.util.tools.models.NonEditableTableModel;
 import net.engio.mbassy.listener.Handler;
 
 import javax.swing.*;

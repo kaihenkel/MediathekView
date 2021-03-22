@@ -20,7 +20,7 @@ import mediathek.server.daten.DatenPset;
 import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -5,7 +5,7 @@ import jiconfont.swing.IconFontSwing;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.server.daten.DatenDownload;
-import mediathek.tool.EscapeKeyHandler;
+import mediathek.util.tools.EscapeKeyHandler;
 
 import javax.swing.*;
 import java.awt.*;

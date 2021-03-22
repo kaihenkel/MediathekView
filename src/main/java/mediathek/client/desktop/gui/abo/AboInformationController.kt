@@ -6,7 +6,7 @@ import javafx.scene.control.Label
 import mediathek.util.mv.Daten
 import mediathek.client.desktop.gui.messages.AboListChangedEvent
 import mediathek.client.desktop.javafx.tool.JavaFxUtils
-import mediathek.tool.MessageBus
+import mediathek.util.tools.MessageBus
 import net.engio.mbassy.listener.Handler
 import java.net.URL
 import java.util.*

@@ -8,9 +8,9 @@ import mediathek.util.res.GetFile;
 import mediathek.client.desktop.gui.dialog.DialogHilfe;
 import mediathek.client.desktop.gui.messages.ProgramSetChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.tool.GuiFunktionenProgramme;
-import mediathek.tool.MessageBus;
-import mediathek.tool.swing.MultilineLabel;
+import mediathek.util.tools.GuiFunktionenProgramme;
+import mediathek.util.tools.MessageBus;
+import mediathek.util.tools.swing.MultilineLabel;
 import org.jdesktop.swingx.VerticalLayout;
 
 import javax.swing.*;

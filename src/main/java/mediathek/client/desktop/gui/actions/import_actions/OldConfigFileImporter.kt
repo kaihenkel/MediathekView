@@ -4,8 +4,8 @@ import mediathek.util.mv.Daten
 import mediathek.server.daten.abo.DatenAbo
 import mediathek.server.daten.blacklist.BlacklistRule
 import mediathek.client.desktop.gui.messages.ReplaceListChangedEvent
-import mediathek.tool.MessageBus
-import mediathek.tool.ReplaceList
+import mediathek.util.tools.MessageBus
+import mediathek.util.tools.ReplaceList
 import org.apache.commons.lang3.tuple.ImmutableTriple
 import org.apache.logging.log4j.LogManager
 import java.io.FileInputStream

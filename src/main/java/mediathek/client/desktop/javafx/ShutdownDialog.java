@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 import mediathek.client.desktop.javafx.tool.JFXHiddenApplication;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.tool.ShutdownState;
+import mediathek.util.tools.ShutdownState;
 import org.tbee.javafx.scene.layout.MigPane;
 
 import java.util.EnumSet;

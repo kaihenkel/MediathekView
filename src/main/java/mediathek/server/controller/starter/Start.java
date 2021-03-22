@@ -20,7 +20,7 @@
 package mediathek.server.controller.starter;
 
 import mediathek.server.controller.MVBandwidthCountingInputStream;
-import mediathek.tool.Datum;
+import mediathek.util.tools.Datum;
 
 public class Start {
 

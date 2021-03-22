@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.mainwindow;
 
-import mediathek.tool.TABS;
+import mediathek.util.tools.TABS;
 
 import javax.swing.*;
 import javax.swing.event.MenuEvent;

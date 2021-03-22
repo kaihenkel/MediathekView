@@ -2,8 +2,8 @@ package mediathek.client.desktop.gui.dialog;
 
 import mediathek.util.constants.Konstanten;
 import mediathek.server.daten.DatenDownload;
-import mediathek.tool.EscapeKeyHandler;
-import mediathek.tool.MVMessageDialog;
+import mediathek.util.tools.EscapeKeyHandler;
+import mediathek.util.tools.MVMessageDialog;
 
 import javax.swing.*;
 import java.awt.*;

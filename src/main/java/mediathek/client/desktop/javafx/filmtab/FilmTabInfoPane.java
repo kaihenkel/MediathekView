@@ -11,7 +11,7 @@ import mediathek.client.desktop.gui.messages.UpdateStatusBarLeftDisplayEvent;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.client.desktop.javafx.CenteredBorderPane;
 import mediathek.client.desktop.javafx.VerticalSeparator;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 
 public class FilmTabInfoPane extends HBox {

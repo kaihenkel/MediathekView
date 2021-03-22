@@ -5,7 +5,7 @@ import mediathek.util.mv.Daten;
 import mediathek.server.filmlisten.reader.FilmListReader;
 import mediathek.client.desktop.gui.messages.FilmListReadStartEvent;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 
 public class FilmListReaderTask extends Task<Void> {
     private final Daten daten;

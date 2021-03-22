@@ -20,8 +20,8 @@
 package mediathek.server.daten;
 
 import mediathek.util.mv.Daten;
-import mediathek.tool.GuiFunktionenProgramme;
-import mediathek.tool.MVMessageDialog;
+import mediathek.util.tools.GuiFunktionenProgramme;
+import mediathek.util.tools.MVMessageDialog;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

@@ -10,7 +10,7 @@ import mediathek.client.desktop.gui.messages.UpdateStatusBarLeftDisplayEvent;
 import mediathek.client.desktop.javafx.CenteredBorderPane;
 import mediathek.client.desktop.javafx.InfoLabel.*;
 import mediathek.client.desktop.javafx.VerticalSeparator;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 
 

@@ -19,7 +19,7 @@
  */
 package mediathek.util.constants;
 
-import mediathek.tool.Version;
+import mediathek.util.tools.Version;
 import okhttp3.HttpUrl;
 import org.apache.commons.io.FileUtils;
 

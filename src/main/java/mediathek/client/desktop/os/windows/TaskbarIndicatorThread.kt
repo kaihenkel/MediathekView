@@ -2,7 +2,7 @@ package mediathek.client.desktop.os.windows
 
 import com.sun.jna.platform.win32.Kernel32
 import com.sun.jna.platform.win32.WinBase
-import mediathek.tool.threads.IndicatorThread
+import mediathek.util.tools.threads.IndicatorThread
 import org.apache.logging.log4j.LogManager
 import java.awt.Taskbar
 import java.util.concurrent.TimeUnit

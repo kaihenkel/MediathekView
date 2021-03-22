@@ -28,7 +28,7 @@ import mediathek.server.daten.DatenPset;
 import mediathek.server.daten.abo.DatenAbo;
 import mediathek.server.daten.blacklist.BlacklistRule;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.tool.ReplaceList;
+import mediathek.util.tools.ReplaceList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

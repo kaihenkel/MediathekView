@@ -2,8 +2,8 @@ package mediathek.server.controller.history;
 
 import mediathek.util.config.StandardLocations;
 import mediathek.client.desktop.gui.messages.history.AboHistoryChangedEvent;
-import mediathek.tool.FileUtils;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.FileUtils;
+import mediathek.util.tools.MessageBus;
 import okhttp3.HttpUrl;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

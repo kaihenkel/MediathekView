@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.dialog;
 
-import mediathek.tool.EscapeKeyHandler;
+import mediathek.util.tools.EscapeKeyHandler;
 
 import javax.swing.*;
 import java.awt.*;

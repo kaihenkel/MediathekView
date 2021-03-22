@@ -2,10 +2,10 @@ package mediathek.server.daten;
 
 import mediathek.server.daten.abo.DatenAbo;
 import mediathek.client.desktop.javafx.bookmark.BookmarkData;
-import mediathek.tool.DatumFilm;
-import mediathek.tool.FileSize;
-import mediathek.tool.FilmSize;
-import mediathek.tool.GermanStringSorter;
+import mediathek.util.tools.DatumFilm;
+import mediathek.util.tools.FileSize;
+import mediathek.util.tools.FilmSize;
+import mediathek.util.tools.GermanStringSorter;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

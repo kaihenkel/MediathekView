@@ -8,9 +8,9 @@ import mediathek.server.daten.ListePset;
 import mediathek.server.daten.ListePsetVorlagen;
 import mediathek.client.desktop.gui.dialog.DialogNewSet;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.tool.GuiFunktionenProgramme;
-import mediathek.tool.NetUtils;
-import mediathek.tool.TimerPool;
+import mediathek.util.tools.GuiFunktionenProgramme;
+import mediathek.util.tools.NetUtils;
+import mediathek.util.tools.TimerPool;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

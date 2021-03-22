@@ -19,12 +19,13 @@ import mediathek.client.desktop.javafx.tool.JFXHiddenApplication;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.os.mac.MediathekGuiMac;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.tool.*;
-import mediathek.tool.affinity.Affinity;
-import mediathek.tool.javafx.FXErrorDialog;
-import mediathek.tool.migrator.SettingsMigrator;
-import mediathek.tool.swing.SwingUIFontChanger;
-import mediathek.tool.swing.ThreadCheckingRepaintManager;
+import mediathek.util.tools.*;
+import mediathek.util.tools.affinity.Affinity;
+import mediathek.util.tools.Functions;
+import mediathek.util.tools.javafx.FXErrorDialog;
+import mediathek.util.tools.migrator.SettingsMigrator;
+import mediathek.util.tools.swing.SwingUIFontChanger;
+import mediathek.util.tools.swing.ThreadCheckingRepaintManager;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.mv.Daten;
 import mediathek.client.desktop.os.windows.MediathekGuiWindows;
@@ -92,7 +93,7 @@ public class Main {
             var mediaDbPath = StandardLocations.getSettingsDirectory().resolve("mediadb.txt");
             if (Files.exists(mediaDbPath)) {
                 logger.info("Moving old unsupported media database to trash.");
-                mediathek.tool.FileUtils.moveToTrash(mediaDbPath);
+                mediathek.util.tools.FileUtils.moveToTrash(mediaDbPath);
             }
         }
         catch (IOException ignored) {

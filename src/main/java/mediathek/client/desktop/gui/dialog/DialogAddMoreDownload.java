@@ -7,9 +7,9 @@ import mediathek.util.config.MVConfig;
 import mediathek.server.daten.DatenPset;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.tool.EscapeKeyHandler;
-import mediathek.tool.FileDialogs;
-import mediathek.tool.FilenameUtils;
+import mediathek.util.tools.EscapeKeyHandler;
+import mediathek.util.tools.FileDialogs;
+import mediathek.util.tools.FilenameUtils;
 import org.apache.commons.configuration2.Configuration;
 import org.jdesktop.swingx.VerticalLayout;
 

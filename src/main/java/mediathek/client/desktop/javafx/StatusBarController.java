@@ -14,7 +14,7 @@ import mediathek.server.filmeSuchen.ListenerFilmeLaden;
 import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.javafx.filmlist.FilmListAgeLabel;
 import mediathek.client.desktop.javafx.filmlist.FilmListInfoPane;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 import org.controlsfx.control.StatusBar;
 
 public class StatusBarController {

@@ -3,9 +3,9 @@ package mediathek.server.daten;
 
 import mediathek.util.constants.Konstanten;
 import mediathek.util.res.GetFile;
-import mediathek.tool.NetUtils;
-import mediathek.tool.http.MVHttpClient;
-import mediathek.tool.models.TModel;
+import mediathek.util.tools.NetUtils;
+import mediathek.util.tools.http.MVHttpClient;
+import mediathek.util.tools.models.TModel;
 import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
@@ -25,7 +25,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static mediathek.tool.Functions.getOsString;
+import static mediathek.util.tools.Functions.getOsString;
 
 public class ListePsetVorlagen extends LinkedList<String[]> {
     public static final String BS_WIN_32 = "Windows-32Bit";

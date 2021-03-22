@@ -9,8 +9,8 @@ import mediathek.util.mv.Daten;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.client.desktop.os.mac.touchbar.TouchBarUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.tool.FilmListUpdateType;
-import mediathek.tool.GuiFunktionen;
+import mediathek.util.tools.FilmListUpdateType;
+import mediathek.util.tools.GuiFunktionen;
 
 import javax.swing.*;
 

@@ -4,7 +4,7 @@ import mediathek.util.mv.Daten;
 import mediathek.server.controller.starter.Start;
 import mediathek.client.desktop.gui.messages.DownloadInfoUpdateAvailableEvent;
 import mediathek.client.desktop.gui.messages.TimerEvent;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 
 import java.text.DecimalFormat;

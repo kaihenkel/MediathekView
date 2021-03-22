@@ -1,6 +1,6 @@
 package mediathek.server.daten.abo;
 
-import mediathek.tool.GermanStringSorter;
+import mediathek.util.tools.GermanStringSorter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;

@@ -7,7 +7,7 @@ import mediathek.server.daten.DatenFilm;
 import mediathek.server.daten.ListeFilme;
 import mediathek.client.desktop.gui.messages.FilmListWriteStartEvent;
 import mediathek.client.desktop.gui.messages.FilmListWriteStopEvent;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

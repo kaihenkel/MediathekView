@@ -8,12 +8,12 @@ import mediathek.client.desktop.gui.dialogEinstellungen.PanelEinstellungenGeo;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelProgrammPfade;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelPsetKurz;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelPsetLang;
-import mediathek.tool.GuiFunktionenProgramme;
+import mediathek.util.tools.GuiFunktionenProgramme;
 
 import javax.swing.*;
 import java.awt.*;
 
-import static mediathek.tool.Functions.getOs;
+import static mediathek.util.tools.Functions.getOs;
 
 public class DialogStarteinstellungen extends JDialog {
     private enum State { START, PFAD, PSET, FERTIG}

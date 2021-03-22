@@ -30,8 +30,8 @@ import mediathek.client.desktop.gui.messages.DownloadListChangedEvent;
 import mediathek.client.desktop.gui.messages.DownloadQueueRankChangedEvent;
 import mediathek.client.desktop.gui.messages.StartEvent;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.tool.MessageBus;
-import mediathek.tool.models.TModelDownload;
+import mediathek.util.tools.MessageBus;
+import mediathek.util.tools.models.TModelDownload;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

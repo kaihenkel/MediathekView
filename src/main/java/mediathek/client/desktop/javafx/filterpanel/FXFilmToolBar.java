@@ -5,8 +5,8 @@ import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.control.*;
-import mediathek.tool.FilterConfiguration;
-import mediathek.tool.FilterDTO;
+import mediathek.util.tools.FilterConfiguration;
+import mediathek.util.tools.FilterDTO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

@@ -18,7 +18,7 @@ import mediathek.server.daten.ListeDownloads;
 import mediathek.client.desktop.gui.messages.BandwidthMonitorStateChangedEvent;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.tool.MessageBus;
+import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 import org.apache.commons.configuration2.Configuration;
 import org.apache.commons.configuration2.sync.LockMode;

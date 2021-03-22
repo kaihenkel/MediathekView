@@ -2,7 +2,7 @@ package mediathek.client.desktop.gui.dialogEinstellungen;
 
 import mediathek.util.mv.Daten;
 import mediathek.server.daten.ListePset;
-import mediathek.tool.EscapeKeyHandler;
+import mediathek.util.tools.EscapeKeyHandler;
 
 import javax.swing.*;
 

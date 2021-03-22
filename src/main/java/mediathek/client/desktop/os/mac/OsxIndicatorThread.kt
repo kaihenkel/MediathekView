@@ -1,6 +1,6 @@
 package mediathek.client.desktop.os.mac
 
-import mediathek.tool.threads.IndicatorThread
+import mediathek.util.tools.threads.IndicatorThread
 import java.awt.Taskbar
 import java.util.concurrent.TimeUnit
 

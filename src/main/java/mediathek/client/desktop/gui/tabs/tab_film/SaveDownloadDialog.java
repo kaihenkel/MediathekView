@@ -7,7 +7,7 @@ import javafx.scene.layout.BorderPane;
 import mediathek.server.daten.DatenFilm;
 import mediathek.server.daten.DatenPset;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
-import mediathek.tool.GuiFunktionen;
+import mediathek.util.tools.GuiFunktionen;
 
 import javax.swing.*;
 import java.awt.*;
