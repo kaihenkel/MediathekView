@@ -1,7 +1,7 @@
 package mediathek.client.desktop.tools.table;
 
 import mediathek.util.daten.DatenProg;
-import mediathek.util.tools.models.TModel;
+import mediathek.client.desktop.tools.models.TModel;
 
 public class MVProgTable extends MVTable {
     private static final long serialVersionUID = -2363550088890708511L;

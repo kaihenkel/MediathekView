@@ -1,7 +1,7 @@
 package mediathek.client.desktop.tools.table;
 
-import mediathek.util.daten.DatenPset;
-import mediathek.util.tools.models.TModel;
+import mediathek.client.desktop.daten.DatenPset;
+import mediathek.client.desktop.tools.models.TModel;
 
 public class MVPsetTable extends MVTable {
     private static final long serialVersionUID = 7582553351667887172L;

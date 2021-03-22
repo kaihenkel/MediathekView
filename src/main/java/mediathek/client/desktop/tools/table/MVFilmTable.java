@@ -5,7 +5,7 @@ import mediathek.util.daten.DatenFilm;
 import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.tools.FilmSize;
-import mediathek.util.tools.models.TModelFilm;
+import mediathek.client.desktop.tools.models.TModelFilm;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

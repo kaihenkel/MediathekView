@@ -8,7 +8,7 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import mediathek.util.daten.DatenFilm;
-import mediathek.util.daten.DatenPset;
+import mediathek.client.desktop.daten.DatenPset;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.tools.sender_icon_cache.MVSenderIconCache;
 import mediathek.util.daten.Daten;

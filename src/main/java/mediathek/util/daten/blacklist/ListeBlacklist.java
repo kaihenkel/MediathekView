@@ -9,7 +9,7 @@ import mediathek.util.messages.BlacklistChangedEvent;
 import mediathek.client.desktop.javafx.filterpanel.ZeitraumSpinner;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.tools.Filter;
+import mediathek.client.desktop.tools.Filter;
 import mediathek.util.tools.MessageBus;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

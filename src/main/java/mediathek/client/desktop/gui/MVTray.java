@@ -1,7 +1,7 @@
 package mediathek.client.desktop.gui;
 
 import mediathek.util.daten.Daten;
-import mediathek.util.constants.Icons;
+import mediathek.client.desktop.constants.Icons;
 import mediathek.util.daten.DownloadStartInfo;
 import mediathek.util.messages.TimerEvent;
 import mediathek.util.messages.TrayIconEvent;

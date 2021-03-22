@@ -5,9 +5,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
 import mediathek.util.daten.DatenFilm;
-import mediathek.util.daten.DatenPset;
+import mediathek.client.desktop.daten.DatenPset;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
-import mediathek.util.tools.GuiFunktionen;
+import mediathek.client.desktop.tools.GuiFunktionen;
 
 import javax.swing.*;
 import java.awt.*;

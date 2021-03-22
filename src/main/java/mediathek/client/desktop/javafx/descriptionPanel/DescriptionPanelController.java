@@ -13,7 +13,7 @@ import mediathek.util.daten.DatenFilm;
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction;
 import mediathek.client.desktop.gui.dialog.DialogFilmBeschreibung;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.util.tools.GuiFunktionen;
+import mediathek.client.desktop.tools.GuiFunktionen;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;

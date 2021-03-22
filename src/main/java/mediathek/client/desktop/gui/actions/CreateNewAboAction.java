@@ -2,7 +2,7 @@ package mediathek.client.desktop.gui.actions;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.util.daten.ListeAbo;
+import mediathek.client.desktop.daten.ListeAbo;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

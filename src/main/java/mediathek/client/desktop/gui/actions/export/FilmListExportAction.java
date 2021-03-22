@@ -6,7 +6,7 @@ import mediathek.util.constants.Konstanten;
 import mediathek.client.desktop.javafx.tool.FXProgressPane;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.util.tools.FileDialogs;
+import mediathek.client.desktop.tools.FileDialogs;
 import org.controlsfx.control.StatusBar;
 
 import javax.swing.*;

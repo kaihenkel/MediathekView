@@ -2,8 +2,8 @@ package mediathek.client.desktop.gui.dialog;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.util.tools.EscapeKeyHandler;
-import mediathek.util.tools.MVMessageDialog;
+import mediathek.client.desktop.tools.EscapeKeyHandler;
+import mediathek.client.desktop.tools.MVMessageDialog;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

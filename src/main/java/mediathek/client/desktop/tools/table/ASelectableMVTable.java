@@ -1,6 +1,6 @@
 package mediathek.client.desktop.tools.table;
 
-import mediathek.util.tools.models.TModel;
+import mediathek.client.desktop.tools.models.TModel;
 
 /**
  * Base functions only used in Abos, Downloads and Film table

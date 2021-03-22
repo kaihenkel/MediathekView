@@ -9,6 +9,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.client.desktop.SplashScreen;
 import mediathek.client.desktop.config.CommandLineConfig;
+import mediathek.client.desktop.tools.UIProgressState;
 import mediathek.util.config.MVConfig;
 import mediathek.util.config.StandardLocations;
 import mediathek.util.constants.Konstanten;

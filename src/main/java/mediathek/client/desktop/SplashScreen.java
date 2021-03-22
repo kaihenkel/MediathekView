@@ -13,7 +13,7 @@ import mediathek.Main;
 import mediathek.util.constants.Konstanten;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.util.tools.TimerPool;
-import mediathek.util.tools.UIProgressState;
+import mediathek.client.desktop.tools.UIProgressState;
 import org.apache.commons.lang3.SystemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

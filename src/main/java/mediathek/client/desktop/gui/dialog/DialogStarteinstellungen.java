@@ -2,13 +2,13 @@ package mediathek.client.desktop.gui.dialog;
 
 import mediathek.util.daten.Daten;
 import mediathek.util.config.MVConfig;
-import mediathek.util.daten.ListePset;
-import mediathek.util.daten.ListePsetVorlagen;
+import mediathek.client.desktop.daten.ListePset;
+import mediathek.client.desktop.daten.ListePsetVorlagen;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelEinstellungenGeo;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelProgrammPfade;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelPsetKurz;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelPsetLang;
-import mediathek.util.tools.GuiFunktionenProgramme;
+import mediathek.client.desktop.tools.GuiFunktionenProgramme;
 
 import javax.swing.*;
 import java.awt.*;

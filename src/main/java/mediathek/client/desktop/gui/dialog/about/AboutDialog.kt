@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.dialog.about
 import javafx.embed.swing.JFXPanel
 import javafx.scene.Scene
 import mediathek.client.desktop.javafx.tool.JavaFxUtils
-import mediathek.util.tools.EscapeKeyHandler
+import mediathek.client.desktop.tools.EscapeKeyHandler
 import java.awt.BorderLayout
 import java.awt.Frame
 import javax.swing.JDialog

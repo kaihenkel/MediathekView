@@ -2,7 +2,7 @@ package mediathek.util.daten.blacklist;
 
 import mediathek.util.config.MVConfig;
 import mediathek.util.daten.DatenFilm;
-import mediathek.util.tools.Filter;
+import mediathek.client.desktop.tools.Filter;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.function.Predicate;

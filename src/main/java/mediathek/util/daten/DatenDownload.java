@@ -1,5 +1,7 @@
 package mediathek.util.daten;
 
+import mediathek.client.desktop.daten.DatenPset;
+import mediathek.client.desktop.tools.GuiFunktionen;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
 import mediathek.server.controller.history.SeenHistoryController;

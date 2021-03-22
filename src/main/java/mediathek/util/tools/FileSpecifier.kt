@@ -1,5 +1,6 @@
 package mediathek.util.tools
 
+import mediathek.client.desktop.tools.GuiFunktionen
 import org.apache.commons.lang3.SystemUtils
 import org.apache.logging.log4j.LogManager
 

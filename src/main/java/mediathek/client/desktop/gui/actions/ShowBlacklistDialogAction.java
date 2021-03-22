@@ -4,7 +4,7 @@ import mediathek.util.daten.Daten;
 import mediathek.client.desktop.gui.dialog.DialogLeer;
 import mediathek.client.desktop.gui.dialogEinstellungen.PanelBlacklist;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.util.res.GetIcon;
+import mediathek.client.desktop.tools.res.GetIcon;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

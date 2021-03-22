@@ -5,7 +5,7 @@ import mediathek.util.constants.Konstanten;
 import mediathek.server.controller.history.SeenHistoryController;
 import mediathek.util.daten.DatenDownload;
 import mediathek.util.daten.DatenFilm;
-import mediathek.util.daten.DatenPset;
+import mediathek.client.desktop.daten.DatenPset;
 import mediathek.util.messages.ButtonStartEvent;
 import mediathek.util.messages.DownloadProgressChangedEvent;
 import mediathek.util.messages.StartEvent;

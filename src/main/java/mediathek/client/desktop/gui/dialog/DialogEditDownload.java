@@ -2,14 +2,14 @@ package mediathek.client.desktop.gui.dialog;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
-import mediathek.util.constants.Icons;
+import mediathek.client.desktop.constants.Icons;
 import mediathek.server.controller.starter.Start;
 import mediathek.util.daten.DatenDownload;
 import mediathek.util.daten.DatenProg;
 import mediathek.util.daten.FilmResolution;
-import mediathek.util.res.GetFile;
-import mediathek.util.tools.EscapeKeyHandler;
-import mediathek.util.tools.MVMessageDialog;
+import mediathek.client.desktop.tools.res.GetFile;
+import mediathek.client.desktop.tools.EscapeKeyHandler;
+import mediathek.client.desktop.tools.MVMessageDialog;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

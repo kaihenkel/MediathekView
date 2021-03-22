@@ -12,7 +12,7 @@ import mediathek.util.daten.DatenFilm
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction
 import mediathek.client.desktop.javafx.tool.JavaFxUtils
 import mediathek.util.config.ApplicationConfiguration
-import mediathek.util.tools.GuiFunktionen
+import mediathek.client.desktop.tools.GuiFunktionen
 import mediathek.client.desktop.tools.sender_icon_cache.MVSenderIconCache
 import net.miginfocom.layout.CC
 import org.apache.commons.configuration2.sync.LockMode

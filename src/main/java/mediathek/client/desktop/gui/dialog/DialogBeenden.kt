@@ -6,8 +6,8 @@ import mediathek.client.desktop.gui.mainwindow.MediathekGui
 import mediathek.util.daten.Daten
 
 import mediathek.client.desktop.javafx.AppTerminationIndefiniteProgress
-import mediathek.util.tools.EscapeKeyHandler
-import mediathek.util.res.GetFile
+import mediathek.client.desktop.tools.EscapeKeyHandler
+import mediathek.client.desktop.tools.res.GetFile
 import java.awt.BorderLayout
 import java.awt.event.WindowAdapter
 import java.awt.event.WindowEvent

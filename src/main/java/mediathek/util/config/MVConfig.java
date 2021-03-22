@@ -1,7 +1,8 @@
 package mediathek.util.config;
 
 import mediathek.client.desktop.config.CommandLineConfig;
-import mediathek.util.tools.*;
+import mediathek.client.desktop.tools.GuiFunktionen;
+import mediathek.client.desktop.tools.GuiFunktionenProgramme;
 import mediathek.util.tools.FilmListUpdateType;
 import mediathek.util.tools.GermanStringSorter;
 import org.apache.commons.lang3.SystemUtils;

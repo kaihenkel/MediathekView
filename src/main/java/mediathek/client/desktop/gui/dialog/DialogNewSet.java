@@ -3,8 +3,8 @@ package mediathek.client.desktop.gui.dialog;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.util.daten.Daten;
-import mediathek.util.res.GetFile;
-import mediathek.util.tools.EscapeKeyHandler;
+import mediathek.client.desktop.tools.res.GetFile;
+import mediathek.client.desktop.tools.EscapeKeyHandler;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;

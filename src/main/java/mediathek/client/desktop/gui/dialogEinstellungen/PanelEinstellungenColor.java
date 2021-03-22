@@ -5,7 +5,7 @@ import mediathek.util.constants.MVColor;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.util.tools.MVC;
 import mediathek.client.desktop.tools.cellrenderer.CellRendererColor;
-import mediathek.util.tools.models.TModelColor;
+import mediathek.client.desktop.tools.models.TModelColor;
 import net.miginfocom.layout.AC;
 import net.miginfocom.layout.CC;
 import net.miginfocom.layout.LC;

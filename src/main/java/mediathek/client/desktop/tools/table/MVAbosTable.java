@@ -2,7 +2,7 @@ package mediathek.client.desktop.tools.table;
 
 import mediathek.util.config.MVConfig;
 import mediathek.util.daten.abo.DatenAbo;
-import mediathek.util.tools.models.TModelAbo;
+import mediathek.client.desktop.tools.models.TModelAbo;
 
 public class MVAbosTable extends MVTable {
     @Override

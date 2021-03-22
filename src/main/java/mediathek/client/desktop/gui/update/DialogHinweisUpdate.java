@@ -30,7 +30,7 @@ import javafx.scene.layout.CornerRadii;
 import javafx.scene.paint.Color;
 import mediathek.util.constants.Konstanten;
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction;
-import mediathek.util.tools.EscapeKeyHandler;
+import mediathek.client.desktop.tools.EscapeKeyHandler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

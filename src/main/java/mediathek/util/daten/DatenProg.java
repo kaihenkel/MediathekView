@@ -1,6 +1,6 @@
 package mediathek.util.daten;
 
-import mediathek.util.tools.GuiFunktionenProgramme;
+import mediathek.client.desktop.tools.GuiFunktionenProgramme;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;

@@ -8,8 +8,8 @@ import mediathek.util.constants.Konstanten;
 import mediathek.client.desktop.gui.actions.DisposeDialogAction;
 import mediathek.client.desktop.gui.dialog.ButtonFlowPanel;
 import mediathek.client.desktop.gui.dialog.ButtonPanel;
-import mediathek.util.tools.EscapeKeyHandler;
-import mediathek.util.tools.GuiFunktionen;
+import mediathek.client.desktop.tools.EscapeKeyHandler;
+import mediathek.client.desktop.tools.GuiFunktionen;
 import mediathek.util.tools.Version;
 
 import javax.swing.*;

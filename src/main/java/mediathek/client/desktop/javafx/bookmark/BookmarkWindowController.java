@@ -35,7 +35,7 @@ import mediathek.util.config.MVConfig;
 import mediathek.server.controller.history.SeenHistoryController;
 import mediathek.util.daten.DatenDownload;
 import mediathek.util.daten.DatenFilm;
-import mediathek.util.daten.DatenPset;
+import mediathek.client.desktop.daten.DatenPset;
 import mediathek.client.desktop.gui.actions.UrlHyperlinkAction;
 import mediathek.client.desktop.gui.dialog.DialogAddMoreDownload;
 import mediathek.util.messages.DownloadListChangedEvent;

@@ -14,7 +14,7 @@ import javafx.util.Duration;
 import mediathek.server.controller.starter.Start;
 import mediathek.util.daten.Daten;
 import mediathek.util.daten.DatenDownload;
-import mediathek.util.daten.ListeDownloads;
+import mediathek.client.desktop.daten.ListeDownloads;
 import mediathek.util.messages.BandwidthMonitorStateChangedEvent;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.util.config.ApplicationConfiguration;

@@ -3,7 +3,7 @@ package mediathek.client.desktop.javafx.InfoLabel;
 import javafx.scene.control.Label;
 import javafx.scene.control.Tooltip;
 import mediathek.util.daten.DownloadStartInfo;
-import mediathek.util.daten.ListeDownloads;
+import mediathek.client.desktop.daten.ListeDownloads;
 
 public class GesamtdownloadsLabel extends Label {
     public GesamtdownloadsLabel() {

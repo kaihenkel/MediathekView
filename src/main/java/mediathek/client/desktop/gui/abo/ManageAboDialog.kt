@@ -1,7 +1,7 @@
 package mediathek.client.desktop.gui.abo
 
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.tools.EscapeKeyHandler
+import mediathek.client.desktop.tools.EscapeKeyHandler
 import org.apache.commons.configuration2.sync.LockMode
 import java.awt.BorderLayout
 import java.awt.Frame

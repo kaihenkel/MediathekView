@@ -19,7 +19,7 @@ import mediathek.util.daten.Daten;
 import mediathek.util.config.MVConfig;
 import mediathek.util.daten.DatenDownload;
 import mediathek.util.daten.DatenProg;
-import mediathek.util.daten.DatenPset;
+import mediathek.client.desktop.daten.DatenPset;
 import mediathek.util.daten.abo.DatenAbo;
 import mediathek.util.daten.blacklist.BlacklistRule;
 import mediathek.util.tools.ReplaceList;

@@ -7,11 +7,11 @@ import mediathek.util.constants.MVColor;
 import mediathek.util.daten.abo.AboTags;
 import mediathek.util.daten.abo.DatenAbo;
 import mediathek.util.daten.abo.FilmLengthState;
-import mediathek.util.res.GetFile;
-import mediathek.util.tools.EscapeKeyHandler;
+import mediathek.client.desktop.tools.res.GetFile;
+import mediathek.client.desktop.tools.EscapeKeyHandler;
 import mediathek.util.tools.FilenameUtils;
-import mediathek.util.tools.GuiFunktionen;
-import mediathek.util.tools.MVMessageDialog;
+import mediathek.client.desktop.tools.GuiFunktionen;
+import mediathek.client.desktop.tools.MVMessageDialog;
 import org.jetbrains.annotations.NotNull;
 
 import javax.swing.*;
