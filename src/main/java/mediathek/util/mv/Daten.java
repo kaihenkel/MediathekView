@@ -5,7 +5,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ButtonType;
 import mediathek.Main;
-import mediathek.SplashScreen;
+import mediathek.client.desktop.SplashScreen;
 import mediathek.client.desktop.config.CommandLineConfig;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.constants.MVColor;

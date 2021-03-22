@@ -7,6 +7,7 @@ import javafx.scene.control.Alert;
 import javafx.stage.Modality;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
+import mediathek.client.desktop.SplashScreen;
 import mediathek.client.desktop.config.CommandLineConfig;
 import mediathek.util.config.MVConfig;
 import mediathek.util.config.StandardLocations;
@@ -60,7 +61,7 @@ import java.util.Optional;
 public class Main {
     private static final String MAC_SYSTEM_PROPERTY_APPLE_LAF_USE_SCREEN_MENU_BAR = "apple.laf.useScreenMenuBar";
     private static final Logger logger = LogManager.getLogger(Main.class);
-    public static Optional<SplashScreen> splashScreen = Optional.empty();
+    public static Optional<mediathek.client.desktop.SplashScreen> splashScreen = Optional.empty();
 
     static {
         // set up log4j callback registry
@@ -365,8 +366,8 @@ public class Main {
         setSystemLookAndFeel();
 
         if (!Functions.isDebuggerAttached()) {
-            splashScreen = Optional.of(new SplashScreen());
-            splashScreen.ifPresent(SplashScreen::show);
+            splashScreen = Optional.of(new mediathek.client.desktop.SplashScreen());
+            splashScreen.ifPresent(mediathek.client.desktop.SplashScreen::show);
         }
         else {
             logger.warn("Debugger detected -> Splash screen disabled...");
@@ -413,7 +414,7 @@ public class Main {
         }
         catch (Exception e) {
             logger.error("migrateSeenHistory", e);
-            splashScreen.ifPresent(SplashScreen::close);
+            splashScreen.ifPresent(mediathek.client.desktop.SplashScreen::close);
             FXErrorDialog.showErrorDialogWithoutParent(Konstanten.PROGRAMMNAME,
                             "Migration fehlgeschlagen",
                             """
@@ -496,7 +497,7 @@ public class Main {
         if (!daten.allesLaden()) {
             // erster Start
             ReplaceList.init(); // einmal ein Muster anlegen, für Linux/OS X ist es bereits aktiv!
-            Main.splashScreen.ifPresent(SplashScreen::close);
+            Main.splashScreen.ifPresent(mediathek.client.desktop.SplashScreen::close);
             //TODO replace with JavaFX dialog!!
             var dialog = new DialogStarteinstellungen(null);
             dialog.setVisible(true);

@@ -1,4 +1,4 @@
-package mediathek;
+package mediathek.client.desktop;
 
 import javafx.application.Platform;
 import javafx.fxml.FXML;
@@ -9,6 +9,7 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import mediathek.Main;
 import mediathek.util.constants.Konstanten;
 import mediathek.javafx.tool.JavaFxUtils;
 import mediathek.tool.TimerPool;
