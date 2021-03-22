@@ -1,4 +1,4 @@
-package mediathek.update;
+package mediathek.client.desktop.gui.update;
 
 import mediathek.util.mv.Daten;
 import mediathek.util.constants.Konstanten;

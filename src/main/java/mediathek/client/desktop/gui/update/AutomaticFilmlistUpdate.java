@@ -1,4 +1,4 @@
-package mediathek.update;
+package mediathek.client.desktop.gui.update;
 
 import mediathek.tool.TimerPool;
 import org.apache.logging.log4j.LogManager;

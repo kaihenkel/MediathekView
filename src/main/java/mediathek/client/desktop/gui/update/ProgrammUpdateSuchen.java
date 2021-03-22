@@ -1,4 +1,4 @@
-package mediathek.update;
+package mediathek.client.desktop.gui.update;
 
 import javafx.application.Platform;
 import javafx.scene.control.Alert;

@@ -1,4 +1,4 @@
-package mediathek.update;
+package mediathek.client.desktop.gui.update;
 
 import javafx.embed.swing.JFXPanel;
 import net.miginfocom.layout.AC;

@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.actions;
 
-import mediathek.update.ProgrammUpdateSuchen;
+import mediathek.client.desktop.gui.update.ProgrammUpdateSuchen;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

@@ -17,7 +17,7 @@
  *    You should have received a copy of the GNU General Public License
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.update;
+package mediathek.client.desktop.gui.update;
 
 import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
