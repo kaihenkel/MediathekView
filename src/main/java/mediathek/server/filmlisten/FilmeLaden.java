@@ -1,4 +1,4 @@
-package mediathek.filmlisten;
+package mediathek.server.filmlisten;
 
 import com.google.common.base.Stopwatch;
 import javafx.application.Platform;
@@ -10,7 +10,7 @@ import mediathek.server.daten.DatenFilm;
 import mediathek.server.daten.ListeFilme;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
 import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
-import mediathek.filmlisten.reader.FilmListReader;
+import mediathek.server.filmlisten.reader.FilmListReader;
 import mediathek.client.desktop.gui.actions.FilmListWriteWorkerTask;
 import mediathek.client.desktop.javafx.FilmListFilterTask;
 import mediathek.client.desktop.javafx.tool.FXProgressPane;

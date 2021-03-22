@@ -1,4 +1,4 @@
-package mediathek.filmlisten;
+package mediathek.server.filmlisten;
 
 import mediathek.server.daten.ListeFilme;
 import mediathek.util.config.StandardLocations;

@@ -1,7 +1,7 @@
 package mediathek.util.config
 
 import mediathek.util.constants.Konstanten
-import mediathek.filmlisten.FilmListDownloadType
+import mediathek.server.filmlisten.FilmListDownloadType
 import org.apache.commons.lang3.SystemUtils
 import org.apache.logging.log4j.LogManager
 import java.io.IOException

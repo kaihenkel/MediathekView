@@ -1,4 +1,4 @@
-package mediathek.filmlisten.reader;
+package mediathek.server.filmlisten.reader;
 
 import com.fasterxml.jackson.core.JsonFactory;
 import com.fasterxml.jackson.core.JsonParser;

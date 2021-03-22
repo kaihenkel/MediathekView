@@ -16,7 +16,7 @@ import mediathek.server.controller.history.AboHistoryController;
 import mediathek.server.controller.starter.StarterClass;
 import mediathek.server.daten.*;
 import mediathek.server.daten.blacklist.ListeBlacklist;
-import mediathek.filmlisten.FilmeLaden;
+import mediathek.server.filmlisten.FilmeLaden;
 import mediathek.client.desktop.javafx.bookmark.BookmarkDataList;
 import mediathek.client.desktop.javafx.tool.JFXHiddenApplication;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;

@@ -35,7 +35,7 @@ import mediathek.client.desktop.gui.tabs.tab_film.GuiFilme;
 import mediathek.server.daten.DatenDownload;
 import mediathek.filmeSuchen.ListenerFilmeLaden;
 import mediathek.filmeSuchen.ListenerFilmeLadenEvent;
-import mediathek.filmlisten.FilmeLaden;
+import mediathek.server.filmlisten.FilmeLaden;
 import mediathek.client.desktop.gui.dialog.DialogBeenden;
 import mediathek.client.desktop.javafx.*;
 import mediathek.client.desktop.javafx.tool.FXProgressPane;

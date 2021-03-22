@@ -1,4 +1,4 @@
-package mediathek.filmlisten.writer;
+package mediathek.server.filmlisten.writer;
 
 import com.fasterxml.jackson.core.JsonEncoding;
 import com.fasterxml.jackson.core.JsonFactory;
