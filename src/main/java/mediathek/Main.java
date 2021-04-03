@@ -13,7 +13,7 @@ import mediathek.client.desktop.tools.UIProgressState;
 import mediathek.util.config.MVConfig;
 import mediathek.util.config.StandardLocations;
 import mediathek.util.constants.Konstanten;
-import mediathek.server.controller.history.SeenHistoryMigrator;
+import mediathek.util.controller.history.SeenHistoryMigrator;
 import mediathek.client.desktop.gui.dialog.DialogStarteinstellungen;
 import mediathek.client.desktop.javafx.AustrianVlcCheck;
 import mediathek.client.desktop.javafx.tool.JFXHiddenApplication;

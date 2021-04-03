@@ -11,7 +11,7 @@ import javafx.scene.Scene;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.Stop;
 import javafx.util.Duration;
-import mediathek.server.controller.starter.Start;
+import mediathek.util.controller.starter.Start;
 import mediathek.util.daten.Daten;
 import mediathek.util.daten.DatenDownload;
 import mediathek.client.desktop.daten.ListeDownloads;

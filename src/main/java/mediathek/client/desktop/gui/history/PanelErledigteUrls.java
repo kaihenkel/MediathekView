@@ -1,8 +1,8 @@
 package mediathek.client.desktop.gui.history;
 
 import mediathek.util.daten.Daten;
-import mediathek.server.controller.history.AboHistoryController;
-import mediathek.server.controller.history.MVUsedUrlModelHelper;
+import mediathek.util.controller.history.AboHistoryController;
+import mediathek.util.controller.history.MVUsedUrlModelHelper;
 import mediathek.client.desktop.tools.GuiFunktionen;
 import mediathek.client.desktop.tools.models.NonEditableTableModel;
 import net.miginfocom.layout.AC;

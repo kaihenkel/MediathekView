@@ -21,7 +21,7 @@ package mediathek.client.desktop.daten;
 
 import mediathek.util.constants.Konstanten;
 import mediathek.util.config.MVConfig;
-import mediathek.server.controller.starter.Start;
+import mediathek.util.controller.starter.Start;
 import mediathek.util.daten.*;
 import mediathek.util.daten.abo.DatenAbo;
 import mediathek.client.desktop.gui.dialog.DialogAboNoSet;
@@ -443,7 +443,7 @@ public class ListeDownloads extends LinkedList<DatenDownload> {
     /**
      * Return a List of all not yet finished downloads.
      *
-     * @param quelle Use QUELLE_XXX constants from {@link mediathek.server.controller.starter.Start}.
+     * @param quelle Use QUELLE_XXX constants from {@link Start}.
      * @return A list with all download objects.
      */
     public synchronized List<DatenDownload> getListOfStartsNotFinished(int quelle) {

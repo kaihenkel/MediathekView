@@ -1,6 +1,6 @@
 package mediathek.client.desktop.gui.history
 
-import mediathek.server.controller.history.SeenHistoryController
+import mediathek.util.controller.history.SeenHistoryController
 import java.awt.event.ActionEvent
 import javax.swing.AbstractAction
 import javax.swing.Action

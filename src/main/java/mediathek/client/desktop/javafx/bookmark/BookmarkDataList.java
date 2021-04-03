@@ -9,7 +9,7 @@ import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import mediathek.util.daten.Daten;
-import mediathek.server.controller.history.SeenHistoryController;
+import mediathek.util.controller.history.SeenHistoryController;
 import mediathek.util.daten.DatenFilm;
 import mediathek.util.daten.ListeFilme;
 import mediathek.server.filmeSuchen.ListenerFilmeLaden;

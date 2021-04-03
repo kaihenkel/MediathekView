@@ -17,9 +17,9 @@
  *    You should have received a copy of the GNU General Public License
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.server.controller.starter;
+package mediathek.util.controller.starter;
 
-import mediathek.server.controller.MVBandwidthCountingInputStream;
+import mediathek.util.controller.MVBandwidthCountingInputStream;
 import mediathek.util.tools.Datum;
 
 public class Start {

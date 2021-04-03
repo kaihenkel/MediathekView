@@ -1,7 +1,7 @@
 package mediathek.client.desktop.tools.cellrenderer;
 
 import mediathek.util.constants.MVColor;
-import mediathek.server.controller.starter.Start;
+import mediathek.util.controller.starter.Start;
 import mediathek.util.messages.GeoStateChangedEvent;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.tools.MessageBus;

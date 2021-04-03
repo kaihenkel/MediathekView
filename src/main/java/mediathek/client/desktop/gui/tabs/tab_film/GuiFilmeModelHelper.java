@@ -1,7 +1,7 @@
 package mediathek.client.desktop.gui.tabs.tab_film;
 
 import javafx.collections.ObservableList;
-import mediathek.server.controller.history.SeenHistoryController;
+import mediathek.util.controller.history.SeenHistoryController;
 import mediathek.util.daten.DatenFilm;
 import mediathek.util.daten.ListeFilme;
 import mediathek.client.desktop.javafx.filterpanel.FilmActionPanel;

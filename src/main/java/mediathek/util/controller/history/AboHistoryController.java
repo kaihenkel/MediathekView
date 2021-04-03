@@ -1,4 +1,4 @@
-package mediathek.server.controller.history;
+package mediathek.util.controller.history;
 
 import mediathek.util.config.StandardLocations;
 import mediathek.util.messages.history.AboHistoryChangedEvent;

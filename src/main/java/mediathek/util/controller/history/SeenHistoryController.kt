@@ -1,4 +1,4 @@
-package mediathek.server.controller.history
+package mediathek.util.controller.history
 
 import com.google.common.collect.Sets
 import mediathek.util.daten.Daten

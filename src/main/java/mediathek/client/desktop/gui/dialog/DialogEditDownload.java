@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.dialog;
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
 import mediathek.client.desktop.constants.Icons;
-import mediathek.server.controller.starter.Start;
+import mediathek.util.controller.starter.Start;
 import mediathek.util.daten.DatenDownload;
 import mediathek.util.daten.DatenProg;
 import mediathek.util.daten.FilmResolution;

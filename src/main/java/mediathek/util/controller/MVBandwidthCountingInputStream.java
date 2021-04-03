@@ -1,4 +1,4 @@
-package mediathek.server.controller;
+package mediathek.util.controller;
 
 import mediathek.util.daten.DatenDownload;
 import mediathek.util.tools.TimerPool;

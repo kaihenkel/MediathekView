@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 
-import static mediathek.server.controller.starter.RuntimeExec.TRENNER_PROG_ARRAY;
+import static mediathek.util.controller.starter.RuntimeExec.TRENNER_PROG_ARRAY;
 
 public class DatenProg implements Comparable<DatenProg> {
 

@@ -1,7 +1,7 @@
-package mediathek.server.controller.starter;
+package mediathek.util.controller.starter;
 
 import mediathek.util.daten.Daten;
-import mediathek.server.controller.starter.DirectHttpDownload.HttpDownloadState;
+import mediathek.util.controller.starter.DirectHttpDownload.HttpDownloadState;
 import mediathek.util.daten.DatenDownload;
 import mediathek.client.desktop.gui.dialog.DialogContinueDownload;
 import mediathek.client.desktop.gui.dialog.MeldungDownloadfehler;

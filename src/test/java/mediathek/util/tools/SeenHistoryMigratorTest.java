@@ -1,8 +1,7 @@
 package mediathek.util.tools;
 
 
-import mediathek.server.controller.history.SeenHistoryMigrator;
-import mediathek.util.tools.sql.SqlDatabaseConfig;
+import mediathek.util.controller.history.SeenHistoryMigrator;
 import mediathek.util.tools.sql.SqlDatabaseConfig;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

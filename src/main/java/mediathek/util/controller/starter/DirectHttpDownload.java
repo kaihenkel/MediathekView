@@ -1,11 +1,11 @@
-package mediathek.server.controller.starter;
+package mediathek.util.controller.starter;
 
 import com.google.common.util.concurrent.RateLimiter;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
-import mediathek.server.controller.MVBandwidthCountingInputStream;
-import mediathek.server.controller.ThrottlingInputStream;
+import mediathek.util.controller.MVBandwidthCountingInputStream;
+import mediathek.util.controller.ThrottlingInputStream;
 import mediathek.util.daten.DatenDownload;
 import mediathek.client.desktop.gui.dialog.DialogContinueDownload;
 import mediathek.client.desktop.gui.dialog.MeldungDownloadfehler;

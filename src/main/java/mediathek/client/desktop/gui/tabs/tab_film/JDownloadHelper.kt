@@ -3,7 +3,7 @@ package mediathek.client.desktop.gui.tabs.tab_film
 import javafx.application.Platform
 import javafx.scene.control.Alert
 import mediathek.util.constants.Konstanten
-import mediathek.server.controller.history.SeenHistoryController
+import mediathek.util.controller.history.SeenHistoryController
 import mediathek.util.daten.DatenFilm
 import mediathek.util.daten.FilmResolution
 import mediathek.util.tools.http.MVHttpClient

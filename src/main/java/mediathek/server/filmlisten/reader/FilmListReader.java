@@ -6,7 +6,7 @@ import com.fasterxml.jackson.core.JsonToken;
 import com.google.common.base.Stopwatch;
 import mediathek.client.desktop.config.CommandLineConfig;
 import mediathek.util.constants.Konstanten;
-import mediathek.server.controller.SenderFilmlistLoadApprover;
+import mediathek.util.controller.SenderFilmlistLoadApprover;
 import mediathek.util.daten.DatenFilm;
 import mediathek.util.daten.ListeFilme;
 import mediathek.server.filmeSuchen.ListenerFilmeLaden;

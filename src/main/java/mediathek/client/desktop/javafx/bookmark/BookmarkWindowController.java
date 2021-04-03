@@ -32,7 +32,7 @@ import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.javafx.IconNode;
 import mediathek.util.daten.Daten;
 import mediathek.util.config.MVConfig;
-import mediathek.server.controller.history.SeenHistoryController;
+import mediathek.util.controller.history.SeenHistoryController;
 import mediathek.util.daten.DatenDownload;
 import mediathek.util.daten.DatenFilm;
 import mediathek.client.desktop.daten.DatenPset;

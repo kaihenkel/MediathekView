@@ -2,7 +2,7 @@ package mediathek.client.desktop.gui.tabs;
 
 import com.thizzer.jtouchbar.JTouchBar;
 import mediathek.util.daten.Daten;
-import mediathek.server.controller.history.SeenHistoryController;
+import mediathek.util.controller.history.SeenHistoryController;
 import mediathek.util.daten.DatenFilm;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 

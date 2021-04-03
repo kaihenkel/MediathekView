@@ -1,8 +1,8 @@
-package mediathek.server.controller.starter;
+package mediathek.util.controller.starter;
 
 import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
-import mediathek.server.controller.history.SeenHistoryController;
+import mediathek.util.controller.history.SeenHistoryController;
 import mediathek.util.daten.DatenDownload;
 import mediathek.util.daten.DatenFilm;
 import mediathek.client.desktop.daten.DatenPset;
