@@ -8,7 +8,7 @@ import mediathek.util.config.MVConfig;
 import mediathek.client.desktop.constants.Icons;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.constants.MVColor;
-import mediathek.server.controller.IoXmlSchreiben;
+import mediathek.util.controller.IoXmlSchreiben;
 import mediathek.server.controller.starter.RuntimeExec;
 import mediathek.util.daten.DatenProg;
 import mediathek.client.desktop.daten.DatenPset;

@@ -13,13 +13,13 @@
  * You should have received a copy of the GNU General Public License along with this program. If
  * not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.server.controller;
+package mediathek.util.controller;
 
-import mediathek.util.daten.Daten;
+import mediathek.client.desktop.daten.DatenPset;
 import mediathek.util.config.MVConfig;
+import mediathek.util.daten.Daten;
 import mediathek.util.daten.DatenDownload;
 import mediathek.util.daten.DatenProg;
-import mediathek.client.desktop.daten.DatenPset;
 import mediathek.util.daten.abo.DatenAbo;
 import mediathek.util.daten.blacklist.BlacklistRule;
 import mediathek.util.tools.ReplaceList;

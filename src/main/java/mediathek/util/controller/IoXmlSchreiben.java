@@ -17,7 +17,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.server.controller;
+package mediathek.util.controller;
 
 import mediathek.util.daten.Daten;
 import mediathek.util.constants.Konstanten;
