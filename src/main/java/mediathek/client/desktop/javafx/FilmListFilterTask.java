@@ -3,8 +3,6 @@ package mediathek.client.desktop.javafx;
 import javafx.concurrent.Task;
 import mediathek.util.daten.Daten;
 import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
-import mediathek.util.messages.FilmListReadStopEvent;
-import mediathek.util.tools.MessageBus;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,9 +20,6 @@ public class FilmListFilterTask extends Task<Void> {
     @Override
     protected Void call() {
         logger.trace("FilmListFilterTask started");
-
-        if (submitEvent)
-            MessageBus.getMessageBus().publishAsync(new FilmListReadStopEvent());
 
         updateMessage("Themen suchen");
         updateProgress(-1, 4);

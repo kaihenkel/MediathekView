@@ -3,9 +3,7 @@ package mediathek.client.desktop.javafx;
 import javafx.concurrent.Task;
 import mediathek.util.daten.Daten;
 import mediathek.server.filmlisten.reader.FilmListReader;
-import mediathek.util.messages.FilmListReadStartEvent;
 import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.tools.MessageBus;
 
 public class FilmListReaderTask extends Task<Void> {
     private final Daten daten;
@@ -17,8 +15,6 @@ public class FilmListReaderTask extends Task<Void> {
 
     @Override
     protected Void call() {
-        MessageBus.getMessageBus().publishAsync(new FilmListReadStartEvent());
-
         updateProgress(-1, 4);
         updateMessage("Lese lokale Filmliste");
         try (FilmListReader reader = new FilmListReader()) {
