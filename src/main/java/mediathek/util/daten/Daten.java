@@ -7,7 +7,7 @@ import javafx.scene.control.ButtonType;
 import mediathek.Main;
 import mediathek.client.desktop.SplashScreen;
 import mediathek.client.desktop.config.CommandLineConfig;
-import mediathek.client.desktop.daten.ListeAbo;
+import mediathek.util.daten.abo.ListeAbo;
 import mediathek.client.desktop.daten.ListeDownloads;
 import mediathek.client.desktop.daten.ListePset;
 import mediathek.util.constants.Konstanten;

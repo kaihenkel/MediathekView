@@ -17,7 +17,7 @@
  *    You should have received a copy of the GNU General Public License
  *    along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-package mediathek.client.desktop.daten;
+package mediathek.util.daten.abo;
 
 import com.google.common.base.Stopwatch;
 import mediathek.client.desktop.tools.Filter;
@@ -25,8 +25,6 @@ import mediathek.util.config.MVConfig;
 import mediathek.util.daten.Daten;
 import mediathek.util.daten.DatenFilm;
 import mediathek.util.daten.ListeFilme;
-import mediathek.util.daten.abo.DatenAbo;
-import mediathek.util.daten.abo.FilmLengthState;
 import mediathek.client.desktop.gui.dialog.DialogEditAbo;
 import mediathek.util.messages.AboListChangedEvent;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
