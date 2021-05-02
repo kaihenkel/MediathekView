@@ -11,7 +11,12 @@ import mediathek.util.daten.DatenFilm;
 import mediathek.util.daten.ListeFilme;
 import mediathek.server.filmeSuchen.ListenerFilmeLaden;
 import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadFailedEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadProgressEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadStartEvent;
 import mediathek.util.tools.InputStreamProgressMonitor;
+import mediathek.util.tools.MessageBus;
 import mediathek.util.tools.ProgressMonitorInputStream;
 import mediathek.util.tools.TrailerTeaserChecker;
 import mediathek.util.tools.http.MVHttpClient;
@@ -488,6 +493,7 @@ public class FilmListReader implements AutoCloseable {
 
     private void notifyStart(String url) {
         progress = 0;
+        MessageBus.getMessageBus().publishAsync(new FilmListReadStartEvent(url));
         for (ListenerFilmeLaden l : listeners.getListeners(ListenerFilmeLaden.class)) {
             l.start(new ListenerFilmeLadenEvent(url, "", max, 0, false));
         }
@@ -498,12 +504,9 @@ public class FilmListReader implements AutoCloseable {
         if (progress > max) {
             progress = max;
         }
-        for (ListenerFilmeLaden l : listeners.getListeners(ListenerFilmeLaden.class)) {
-            progressEvent.senderUrl = url;
-            progressEvent.progress = progress;
-            progressEvent.max = max;
-            l.progress(progressEvent);
-        }
+        MessageBus.getMessageBus().publishAsync(
+                new FilmListReadProgressEvent(url, "Download", progress, max)
+        );
     }
 
     private void notifyFertig(String url, ListeFilme liste) {
@@ -511,12 +514,10 @@ public class FilmListReader implements AutoCloseable {
                 .format(LocalDateTime.ofInstant(Instant.now(), ZoneId.systemDefault())));
         logger.info("  erstellt am: {}", liste.metaData().getGenerationDateTimeAsString());
         logger.info("  Anzahl Filme: {}", liste.size());
-        for (ListenerFilmeLaden l : listeners.getListeners(ListenerFilmeLaden.class)) {
-            progressEvent.senderUrl = url;
-            progressEvent.text = "";
-            progressEvent.max = max;
-            progressEvent.progress = progress;
-            l.fertig(progressEvent);
+        if (liste.isEmpty()) {
+            MessageBus.getMessageBus().publishAsync(new FilmListReadFailedEvent(url));
+        } else {
+            MessageBus.getMessageBus().publishAsync(new FilmListReadCompleteEvent(url));
         }
     }
 
