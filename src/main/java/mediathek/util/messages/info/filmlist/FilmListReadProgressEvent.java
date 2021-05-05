@@ -2,19 +2,19 @@ package mediathek.util.messages.info.filmlist;
 
 public class FilmListReadProgressEvent extends FilmListReadEvent {
 
-    private final String title;
+    private final String text;
     private final int progress;
     private final int max;
 
-    public FilmListReadProgressEvent(String url, String title, int progress, int max) {
+    public FilmListReadProgressEvent(String url, String text, int progress, int max) {
         super(url);
-        this.title = title;
+        this.text = text;
         this.progress = progress;
         this.max = max;
     }
 
-    public String getTitle() {
-        return title;
+    public String getText() {
+        return text;
     }
 
     public int getProgress() {
@@ -23,5 +23,13 @@ public class FilmListReadProgressEvent extends FilmListReadEvent {
 
     public int getMax() {
         return max;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", title='" + text + '\'' +
+                ", progress=" + progress +
+                ", max=" + max;
     }
 }

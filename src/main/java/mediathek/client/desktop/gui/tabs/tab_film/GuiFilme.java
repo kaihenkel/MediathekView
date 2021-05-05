@@ -23,8 +23,6 @@ import mediathek.util.daten.*;
 import mediathek.client.desktop.daten.ListePset;
 import mediathek.util.daten.abo.DatenAbo;
 import mediathek.util.daten.blacklist.BlacklistRule;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.gui.TabPaneIndex;
 import mediathek.client.desktop.gui.actions.ShowBlacklistDialogAction;
 import mediathek.client.desktop.gui.actions.ShowFilmInformationAction;
@@ -42,6 +40,8 @@ import mediathek.client.desktop.javafx.filmtab.FilmTabInfoPane;
 import mediathek.client.desktop.javafx.filterpanel.FilmActionPanel;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadStartEvent;
 import mediathek.util.tools.*;
 import mediathek.client.desktop.tools.cellrenderer.CellRendererFilme;
 import mediathek.client.desktop.tools.listener.BeobTableHeader;
@@ -411,19 +411,6 @@ public class GuiFilme extends AGuiTabPanel {
 
     private void start_init() {
         showDescriptionPanel();
-        daten.getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-            @Override
-            public void start(ListenerFilmeLadenEvent event) {
-                loadTable();
-            }
-
-            @Override
-            public void fertig(ListenerFilmeLadenEvent event) {
-                loadTable();
-                Platform.runLater(() -> fap.updateThemaBox());
-            }
-        });
-
         setupKeyMapping();
 
         tabelle.setModel(new TModelFilm());
@@ -493,6 +480,19 @@ public class GuiFilme extends AGuiTabPanel {
     @Handler
     private void handleStartEvent(StartEvent msg) {
         SwingUtilities.invokeLater(this::setInfoStatusbar);
+    }
+
+    @Handler
+    private void handleFilmListReadStart(FilmListReadStartEvent event) {
+        SwingUtilities.invokeLater(this::loadTable);
+    }
+
+    @Handler
+    private void handleFilmListReadComplete(FilmListReadCompleteEvent event) {
+        SwingUtilities.invokeLater(() -> {
+            loadTable();
+            fap.updateThemaBox();
+        });
     }
 
     private synchronized void saveFilm(DatenPset pSet) {

@@ -44,8 +44,6 @@ import mediathek.client.desktop.javafx.tool.JFXHiddenApplication;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.util.controller.history.SeenHistoryController;
 import mediathek.util.controller.starter.Start;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.server.filmlisten.FilmeLaden;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.client.desktop.constants.Icons;
@@ -53,6 +51,8 @@ import mediathek.util.constants.Konstanten;
 import mediathek.util.daten.Daten;
 import mediathek.util.daten.DatenDownload;
 import mediathek.client.desktop.tools.res.GetIcon;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadStartEvent;
 import mediathek.util.tools.*;
 import mediathek.client.desktop.tools.notification.GenericNotificationCenter;
 import mediathek.client.desktop.tools.notification.INotificationCenter;
@@ -174,9 +174,6 @@ public class MediathekGui extends JFrame {
 
         Main.splashScreen.ifPresent(s -> s.update(UIProgressState.CREATE_STATUS_BAR));
         createStatusBar();
-
-        Main.splashScreen.ifPresent(s -> s.update(UIProgressState.SETUP_FILM_LISTENERS));
-        setupFilmListListener();
 
         Main.splashScreen.ifPresent(s -> s.update(UIProgressState.LOAD_TABS));
         initTabs();
@@ -438,7 +435,7 @@ public class MediathekGui extends JFrame {
             FilmListNetworkReaderTask networkTask = new FilmListNetworkReaderTask();
             networkTask.setOnRunning(e -> progressPane.bindTask(networkTask));
 
-            FilmListFilterTask filterTask = new FilmListFilterTask(true);
+            FilmListFilterTask filterTask = new FilmListFilterTask();
             filterTask.setOnRunning(e -> progressPane.bindTask(filterTask));
             final EventHandler<WorkerStateEvent> workerStateEventEventHandler = e -> getStatusBarController().getStatusBar().getRightItems().remove(progressPane);
             filterTask.setOnSucceeded(workerStateEventEventHandler);
@@ -545,42 +542,38 @@ public class MediathekGui extends JFrame {
         SwingUtilities.invokeLater(() -> addComponentListener(new WindowLocationConfigSaverListener()));
     }
 
-    private void setupFilmListListener() {
-        daten.getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-            @Override
-            public void start(ListenerFilmeLadenEvent event) {
-                loadFilmListAction.setEnabled(false);
-            }
+    @Handler
+    private void handleFilmListReadStartEvent(FilmListReadStartEvent event) {
+        SwingUtilities.invokeLater(() -> loadFilmListAction.setEnabled(false));
+    }
 
-            @Override
-            public void fertig(ListenerFilmeLadenEvent event) {
-                loadFilmListAction.setEnabled(true);
-                daten.allesSpeichern(); // damit nichts verlorengeht
-            }
-
-            @Override
-            public void fertigOnlyOne(ListenerFilmeLadenEvent event) {
-                setupAutomaticFilmlistReload();
-            }
-        });
+    @Handler
+    private void handleFilmListReadCompleteEvent(FilmListReadCompleteEvent event) {
+        SwingUtilities.invokeLater(() -> loadFilmListAction.setEnabled(true));
+        if (!event.isFailed()) {
+            setupAutomaticFilmlistReload();
+            daten.allesSpeichern(); // damit nichts verlorengeht
+        }
     }
 
     /**
      * Reload filmlist every 24h when in automatic mode.
      */
     private void setupAutomaticFilmlistReload() {
-        final AutomaticFilmlistUpdate.IUpdateAction performUpdate = () -> {
-            if (GuiFunktionen.getFilmListUpdateType() == FilmListUpdateType.AUTOMATIC) {
-                //if downloads are running, don´t update
-                if (daten.getListeDownloads().unfinishedDownloads() == 0) {
-                    FilmeLaden filmeLaden = new FilmeLaden(daten);
-                    filmeLaden.loadFilmlist("", false);
+        if (automaticFilmlistUpdate == null) {
+            final AutomaticFilmlistUpdate.IUpdateAction performUpdate = () -> {
+                if (GuiFunktionen.getFilmListUpdateType() == FilmListUpdateType.AUTOMATIC) {
+                    //if downloads are running, don´t update
+                    if (daten.getListeDownloads().unfinishedDownloads() == 0) {
+                        FilmeLaden filmeLaden = new FilmeLaden(daten);
+                        filmeLaden.loadFilmlist("", false);
+                    }
                 }
-            }
-        };
+            };
 
-        automaticFilmlistUpdate = new AutomaticFilmlistUpdate(performUpdate);
-        automaticFilmlistUpdate.start();
+            automaticFilmlistUpdate = new AutomaticFilmlistUpdate(performUpdate);
+            automaticFilmlistUpdate.start();
+        }
     }
 
     protected void initWindowListenerForTray() {

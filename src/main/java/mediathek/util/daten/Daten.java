@@ -88,7 +88,7 @@ public class Daten {
 
         listeFilmeNachBlackList = new ListeFilme();
         listeBlacklist = new ListeBlacklist();
-        listeBookmarkList = BookmarkDataList.getInstance(this);
+        listeBookmarkList = BookmarkDataList.getInstance();
 
         listePset = new ListePset();
 

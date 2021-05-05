@@ -14,19 +14,19 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.Tooltip;
 import javafx.util.Duration;
 import javafx.util.StringConverter;
+import mediathek.client.desktop.gui.actions.ManageAboAction;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
 import mediathek.client.desktop.tools.Filter;
 import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.config.FilterConfiguration;
 import mediathek.util.daten.Daten;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
-import mediathek.client.desktop.gui.actions.ManageAboAction;
 import mediathek.util.messages.FilmListWriteStartEvent;
 import mediathek.util.messages.FilmListWriteStopEvent;
-import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.util.tools.*;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadStartEvent;
 import mediathek.util.tools.FilterDTO;
 import mediathek.util.tools.GermanStringSorter;
+import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -94,7 +94,7 @@ public class FilmActionPanel {
     setupDeleteCurrentFilterButton();
     setupAddNewFilterButton();
 
-      MessageBus.getMessageBus().subscribe(this);
+    MessageBus.getMessageBus().subscribe(this);
   }
 
   private void setupAddNewFilterButton() {
@@ -301,12 +301,22 @@ public class FilmActionPanel {
 
   @Handler
   private void handleFilmlistWriteStartEvent(FilmListWriteStartEvent e) {
-    Platform.runLater(() -> toolBar.btnDownloadFilmList.setDisable(true));
+    SwingUtilities.invokeLater(() -> toolBar.btnDownloadFilmList.setDisable(true));
   }
 
   @Handler
   private void handleFilmlistWriteStopEvent(FilmListWriteStopEvent e) {
-    Platform.runLater(() -> toolBar.btnDownloadFilmList.setDisable(false));
+    SwingUtilities.invokeLater(() -> toolBar.btnDownloadFilmList.setDisable(false));
+  }
+
+  @Handler
+  private void handleFilmListReadStart(FilmListReadStartEvent event) {
+      SwingUtilities.invokeLater(() -> toolBar.setDisable(true));
+  }
+
+  @Handler
+  private void handleFilmListReadComplete(FilmListReadCompleteEvent event) {
+      SwingUtilities.invokeLater(() -> toolBar.setDisable(false));;
   }
 
     private void searchFieldFinalAction() {
@@ -465,19 +475,6 @@ public class FilmActionPanel {
         setupSearchThroughDescriptionButton();
 
         setupShowBookmarkedMoviesButton();
-
-        Daten.getInstance().getFilmeLaden().addAdListener(
-                new ListenerFilmeLaden() {
-                    @Override
-                    public void start(ListenerFilmeLadenEvent event) {
-                        Platform.runLater(() -> toolBar.setDisable(true));
-                    }
-
-                    @Override
-                    public void fertig(ListenerFilmeLadenEvent event) {
-                        Platform.runLater(() -> toolBar.setDisable(false));
-                    }
-                });
 
         return new Scene(toolBar);
     }

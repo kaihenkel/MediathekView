@@ -12,8 +12,9 @@ import mediathek.util.daten.Daten;
 import mediathek.util.controller.history.SeenHistoryController;
 import mediathek.util.daten.DatenFilm;
 import mediathek.util.daten.ListeFilme;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.tools.MessageBus;
+import net.engio.mbassy.listener.Handler;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,6 +23,7 @@ import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.concurrent.Executors;
 
 /**
  * Stores a full list of bookmarked movies. 
@@ -32,30 +34,21 @@ public class BookmarkDataList
   private final ObservableList<BookmarkData> olist;
   private static BookmarkDataList instance;
   
-  private BookmarkDataList(Daten daten) {
+  private BookmarkDataList() {
+    MessageBus.getMessageBus().subscribe(this);
     olist = FXCollections.observableArrayList((BookmarkData data) -> new Observable[]{
       data.getSeenProperty()
     });
-
-    if (daten != null) {
-      // Wait until film liste is ready and update references
-      daten.getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-        @Override
-        public void fertig(ListenerFilmeLadenEvent event) {
-          Runnable r = () -> updateBookMarksFromFilmList();
-          new Thread(r).start();
-        }
-      });
-    }
   }
+
+
   
   /**
    * Return singleton
-   * @param daten Reference to Daten object used by list
    * @return exisitng or new instance
    */
-  public static BookmarkDataList getInstance(Daten daten) {
-    return instance == null ? instance = new BookmarkDataList(daten) : instance;
+  public static BookmarkDataList getInstance() {
+    return instance == null ? instance = new BookmarkDataList() : instance;
   }
   
   /**
@@ -237,13 +230,21 @@ public class BookmarkDataList
     }
     return result;
   }
-  
+
+  @Handler
+  private void handleFilmListReadComplete(FilmListReadCompleteEvent event) {
+    logger.debug("handling {}", event);
+    if (!event.isFailed()) {
+      Executors.newSingleThreadExecutor().submit(this::updateBookMarksFromFilmList);
+    }
+  }
+
   /**
    * Updates the stored bookmark data reference with actual film list
    * and links the entries
    * Executed in background
    */
-  public void updateBookMarksFromFilmList() {
+  private void updateBookMarksFromFilmList() {
     Iterator<BookmarkData> iterator = olist.iterator();
     ListeFilme listefilme = Daten.getInstance().getListeFilme();
     DatenFilm filmdata;

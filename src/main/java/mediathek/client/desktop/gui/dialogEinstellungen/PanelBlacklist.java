@@ -2,20 +2,19 @@ package mediathek.client.desktop.gui.dialogEinstellungen;
 
 import jiconfont.icons.font_awesome.FontAwesome;
 import jiconfont.swing.IconFontSwing;
+import mediathek.client.desktop.gui.dialog.DialogHilfe;
 import mediathek.client.desktop.tools.Filter;
 import mediathek.client.desktop.tools.GuiFunktionen;
-import mediathek.client.desktop.tools.TextCopyPasteHandler;
-import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.daten.Daten;
-import mediathek.util.config.MVConfig;
-import mediathek.util.daten.blacklist.BlacklistRule;
-import mediathek.client.desktop.tools.res.GetFile;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
-import mediathek.client.desktop.gui.dialog.DialogHilfe;
-import mediathek.util.messages.BlacklistChangedEvent;
-import mediathek.util.tools.*;
 import mediathek.client.desktop.tools.Listener;
+import mediathek.client.desktop.tools.TextCopyPasteHandler;
+import mediathek.client.desktop.tools.res.GetFile;
+import mediathek.util.config.ApplicationConfiguration;
+import mediathek.util.config.MVConfig;
+import mediathek.util.daten.Daten;
+import mediathek.util.daten.blacklist.BlacklistRule;
+import mediathek.util.messages.BlacklistChangedEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 import org.jdesktop.swingx.VerticalLayout;
 
@@ -61,17 +60,16 @@ public class PanelBlacklist extends JPanel {
                 init_();
             }
         });
-        daten.getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-            @Override
-            public void fertig(ListenerFilmeLadenEvent event) {
-                comboThemaLaden();
-            }
-        });
     }
 
     @Handler
     private void handleBlacklistChangedEvent(BlacklistChangedEvent e) {
         SwingUtilities.invokeLater(this::init_);
+    }
+
+    @Handler
+    private void handleFilmListReadComplete(FilmListReadCompleteEvent event) {
+        comboThemaLaden();
     }
 
     private void init_() {

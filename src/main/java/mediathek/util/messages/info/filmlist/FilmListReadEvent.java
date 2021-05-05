@@ -12,4 +12,9 @@ public abstract class FilmListReadEvent implements InfomationEvent {
     public String getUrl() {
         return url;
     }
+
+    @Override
+    public String toString() {
+        return this.getClass().getSimpleName() + " url: " + url;
+    }
 }

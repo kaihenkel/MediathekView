@@ -10,11 +10,13 @@ import javafx.scene.layout.Pane;
 import javafx.scene.layout.Region;
 import mediathek.client.desktop.config.CommandLineConfig;
 import mediathek.util.daten.Daten;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.javafx.filmlist.FilmListAgeLabel;
 import mediathek.client.desktop.javafx.filmlist.FilmListInfoPane;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadProgressEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadStartEvent;
 import mediathek.util.tools.MessageBus;
+import net.engio.mbassy.listener.Handler;
 import org.controlsfx.control.StatusBar;
 
 public class StatusBarController {
@@ -34,29 +36,43 @@ public class StatusBarController {
         MessageBus.getMessageBus().subscribe(this);
 
         createProgressPane();
+    }
 
-        daten.getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-            @Override
-            public void start(ListenerFilmeLadenEvent event) {
-                addProgressItems();
+    @Handler
+    private void handleFilmListReadStart(FilmListReadStartEvent event) {
+        addProgressItems();
+        if (CommandLineConfig.isDebugModeEnabled()) {
+            Platform.runLater(() -> statusBar.setText(event.getUrl()));
+        }
+    }
 
-                if (CommandLineConfig.isDebugModeEnabled())
-                    Platform.runLater(() -> statusBar.setText(event.senderUrl));
+    @Handler
+    private void handleFilmListReadProgress(FilmListReadProgressEvent event) {
+        Platform.runLater(() -> {
+            if (!progressBar.isVisible()) {
+                progressBar.setVisible(true);
             }
 
-            @Override
-            public void progress(ListenerFilmeLadenEvent event) {
-                updateProgressBar(event);
-            }
+            if (event.getMax() == 0 || event.getProgress() == event.getMax()) {
+                progressBar.setProgress(-1d);
+            } else {
+                final double max = event.getMax();
+                final double progress = event.getProgress();
 
-            @Override
-            public void fertig(ListenerFilmeLadenEvent event) {
-                Platform.runLater(() -> progressBar.setProgress(0d));
-                removeProgressItems();
-                if (CommandLineConfig.isDebugModeEnabled())
-                    Platform.runLater(() -> statusBar.setText(""));
+                progressBar.setProgress(progress / max);
             }
+            progressLabel.setText(event.getText());
         });
+    }
+
+    @Handler
+    private void handleFilListReadComplete(FilmListReadCompleteEvent event) {
+        Platform.runLater(() -> progressBar.setProgress(0d));
+        removeProgressItems();
+        if (CommandLineConfig.isDebugModeEnabled()) {
+            Platform.runLater(() -> statusBar.setText(""));
+        }
+
     }
 
     public FilmListAgeLabel getFilmlistAgeLabel() {
@@ -79,22 +95,6 @@ public class StatusBarController {
         progressPane = hb;
     }
 
-    private void updateProgressBar(ListenerFilmeLadenEvent event) {
-        Platform.runLater(() -> {
-            if (!progressBar.isVisible())
-                progressBar.setVisible(true);
-
-            if (event.max == 0 || event.progress == event.max) {
-                progressBar.setProgress(-1d);
-            } else {
-                final double max = event.max;
-                final double progress = event.progress;
-
-                progressBar.setProgress(progress / max);
-            }
-            progressLabel.setText(event.text);
-        });
-    }
 
     private void addProgressItems() {
         Platform.runLater(() -> {

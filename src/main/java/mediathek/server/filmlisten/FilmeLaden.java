@@ -3,25 +3,26 @@ package mediathek.server.filmlisten;
 import com.google.common.base.Stopwatch;
 import javafx.application.Platform;
 import javafx.scene.control.Alert;
-import mediathek.util.daten.Daten;
-import mediathek.util.constants.Konstanten;
-import mediathek.util.config.StandardLocations;
-import mediathek.util.daten.DatenFilm;
-import mediathek.util.daten.ListeFilme;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
-import mediathek.server.filmlisten.reader.FilmListReader;
 import mediathek.client.desktop.gui.actions.FilmListWriteWorkerTask;
+import mediathek.client.desktop.gui.mainwindow.MediathekGui;
+import mediathek.client.desktop.javafx.FXErrorDialog;
 import mediathek.client.desktop.javafx.FilmListFilterTask;
 import mediathek.client.desktop.javafx.tool.FXProgressPane;
 import mediathek.client.desktop.javafx.tool.JFXHiddenApplication;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
-import mediathek.client.desktop.gui.mainwindow.MediathekGui;
-import mediathek.util.config.ApplicationConfiguration;
-import mediathek.util.tools.FilmListUpdateType;
 import mediathek.client.desktop.tools.GuiFunktionen;
+import mediathek.server.filmlisten.reader.FilmListReader;
+import mediathek.util.config.ApplicationConfiguration;
+import mediathek.util.config.StandardLocations;
+import mediathek.util.constants.Konstanten;
+import mediathek.util.daten.Daten;
+import mediathek.util.daten.DatenFilm;
+import mediathek.util.daten.ListeFilme;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.tools.FilmListUpdateType;
+import mediathek.util.tools.MessageBus;
 import mediathek.util.tools.http.MVHttpClient;
-import mediathek.client.desktop.javafx.FXErrorDialog;
+import net.engio.mbassy.listener.Handler;
 import okhttp3.HttpUrl;
 import okhttp3.Request;
 import okhttp3.Response;
@@ -29,7 +30,6 @@ import okhttp3.ResponseBody;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.swing.*;
 import javax.swing.event.EventListenerList;
 import java.io.IOException;
 import java.net.UnknownHostException;
@@ -57,31 +57,12 @@ public class FilmeLaden {
     private final ListeFilme diffListe = new ListeFilme();
     private final Daten daten;
     private final ImportFilmliste importFilmliste;
-    private final EventListenerList listeners = new EventListenerList();
     private boolean istAmLaufen;
-    private boolean onlyOne;
 
     public FilmeLaden(Daten aDaten) {
+        MessageBus.getMessageBus().subscribe(this);
         daten = aDaten;
         importFilmliste = new ImportFilmliste();
-        importFilmliste.addAdListener(new ListenerFilmeLaden() {
-            @Override
-            public synchronized void start(ListenerFilmeLadenEvent event) {
-                notifyStart(event);
-            }
-
-            @Override
-            public synchronized void progress(ListenerFilmeLadenEvent event) {
-                notifyProgress(event);
-            }
-
-            @Override
-            public synchronized void fertig(ListenerFilmeLadenEvent event) {
-                // Ergebnisliste listeFilme eintragen -> Feierabend!
-                logger.trace("Filme laden, ende");
-                undEnde(event);
-            }
-        });
     }
 
     private void showNoUpdateAvailableDialog() {
@@ -259,11 +240,8 @@ public class FilmeLaden {
         }
     }
 
-    public void addAdListener(ListenerFilmeLaden listener) {
-        listeners.add(ListenerFilmeLaden.class, listener);
-    }
-
-    private void undEnde(ListenerFilmeLadenEvent event) {
+    @Handler
+    private void handleFilListReadComplete(FilmListReadCompleteEvent event) {
         // Abos eintragen in der gesamten Liste vor Blacklist da das nur beim Ändern der Filmliste oder
         // beim Ändern von Abos gemacht wird
 
@@ -293,7 +271,7 @@ public class FilmeLaden {
         final var ui = MediathekGui.ui();
 
         istAmLaufen = false;
-        if (event.fehler) {
+        if (event.isFailed()) {
             logger.info("");
             logger.info("Filmliste laden war fehlerhaft, alte Liste wird wieder geladen");
             Platform.runLater(() -> {
@@ -306,10 +284,9 @@ public class FilmeLaden {
             // dann die alte Liste wieder laden
             listeFilme.clear();
 
-            try (FilmListReader reader = new FilmListReader()) {
-                final int num_days = ApplicationConfiguration.getConfiguration().getInt(ApplicationConfiguration.FilmList.LOAD_NUM_DAYS, 0);
-                reader.readFilmListe(Daten.getDateiFilmliste(), listeFilme, num_days);
-            }
+            FilmListReader reader = new FilmListReader();
+            final int num_days = ApplicationConfiguration.getConfiguration().getInt(ApplicationConfiguration.FilmList.LOAD_NUM_DAYS, 0);
+            reader.readFilmListe(Daten.getDateiFilmliste(), listeFilme, num_days);
             logger.info("");
 
             writeFilmList = false;
@@ -326,7 +303,7 @@ public class FilmeLaden {
         JavaFxUtils.invokeInFxThreadAndWait(() -> {
             FXProgressPane hb = new FXProgressPane();
 
-            FilmListFilterTask task = new FilmListFilterTask(true);
+            FilmListFilterTask task = new FilmListFilterTask();
             task.setOnRunning(e -> {
                 ui.getStatusBarController().getStatusBar().getRightItems().add(hb);
                 hb.lb.textProperty().bind(task.messageProperty());
@@ -371,52 +348,5 @@ public class FilmeLaden {
         logger.debug("findAndMarkNewFilms() took: {}", stopwatch);
 
         hashSet.clear();
-    }
-
-    public void notifyStart(ListenerFilmeLadenEvent e) {
-        try {
-            SwingUtilities.invokeLater(() -> {
-                for (ListenerFilmeLaden l : listeners.getListeners(ListenerFilmeLaden.class)) {
-                    l.start(e);
-                }
-            });
-        } catch (Exception ex) {
-            logger.error(ex);
-        }
-    }
-
-    public void notifyProgress(ListenerFilmeLadenEvent e) {
-        try {
-            SwingUtilities.invokeLater(() -> {
-                for (ListenerFilmeLaden l : listeners.getListeners(ListenerFilmeLaden.class)) {
-                    l.progress(e);
-                }
-            });
-        } catch (Exception ex) {
-            logger.error(ex);
-        }
-    }
-
-    public void notifyFertig(ListenerFilmeLadenEvent e) {
-        final var listListeners = listeners.getListeners(ListenerFilmeLaden.class);
-
-        try {
-            SwingUtilities.invokeLater(() -> {
-                for (ListenerFilmeLaden lst : listListeners) {
-                    lst.fertig(e);
-                }
-            });
-
-            if (!onlyOne) {
-                onlyOne = true;
-                SwingUtilities.invokeLater(() -> {
-                    for (ListenerFilmeLaden lst : listListeners) {
-                        lst.fertigOnlyOne(e);
-                    }
-                });
-            }
-        } catch (Exception ex) {
-            logger.error(ex);
-        }
     }
 }

@@ -4,10 +4,10 @@ import javafx.application.Platform;
 import javafx.embed.swing.JFXPanel;
 import javafx.scene.Scene;
 import mediathek.util.daten.Daten;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.util.messages.TableModelChangeEvent;
 import mediathek.util.config.ApplicationConfiguration;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadStartEvent;
 import mediathek.util.tools.MessageBus;
 import net.engio.mbassy.listener.Handler;
 import org.apache.commons.configuration2.sync.LockMode;
@@ -39,26 +39,23 @@ public class SwingFilterDialog extends JDialog {
 
         MessageBus.getMessageBus().subscribe(this);
 
-        Daten.getInstance().getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-            @Override
-            public void start(ListenerFilmeLadenEvent event) {
-                final boolean enabled = false;
-                setEnabled(enabled);
-                fxPanel.setEnabled(enabled);
-            }
-
-            @Override
-            public void fertig(ListenerFilmeLadenEvent event) {
-                final boolean enabled = true;
-                setEnabled(enabled);
-                fxPanel.setEnabled(enabled);
-            }
-        });
     }
 
     @Handler
     private void handleTableModelChangeEvent(TableModelChangeEvent e) {
         SwingUtilities.invokeLater(() -> setEnabled(!e.active));
+    }
+
+    @Handler
+    private void handleFilmListReadStart(FilmListReadStartEvent event) {
+        setEnabled(false);
+        SwingUtilities.invokeLater(() -> fxPanel.setEnabled(false));
+    }
+
+    @Handler
+    private void handleFilmListReadComplete(FilmListReadCompleteEvent event) {
+        setEnabled(true);
+        SwingUtilities.invokeLater(() -> fxPanel.setEnabled(true));
     }
 
     private void restoreDialogVisibility() {

@@ -9,10 +9,7 @@ import mediathek.util.constants.Konstanten;
 import mediathek.util.controller.SenderFilmlistLoadApprover;
 import mediathek.util.daten.DatenFilm;
 import mediathek.util.daten.ListeFilme;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
-import mediathek.util.messages.info.filmlist.FilmListReadFailedEvent;
 import mediathek.util.messages.info.filmlist.FilmListReadProgressEvent;
 import mediathek.util.messages.info.filmlist.FilmListReadStartEvent;
 import mediathek.util.tools.InputStreamProgressMonitor;
@@ -48,12 +45,11 @@ import java.time.format.DateTimeFormatter;
 import java.util.Optional;
 import java.util.concurrent.TimeUnit;
 
-public class FilmListReader implements AutoCloseable {
+public class FilmListReader {
     private static final int PROGRESS_MAX = 100;
     private static final Logger logger = LogManager.getLogger(FilmListReader.class);
     private static final String THEMA_LIVE = "Livestream";
     private final EventListenerList listeners = new EventListenerList();
-    private final ListenerFilmeLadenEvent progressEvent = new ListenerFilmeLadenEvent("", "Download", 0, 0, false);
     private final int max;
     private final TrailerTeaserChecker ttc = new TrailerTeaserChecker();
     /**
@@ -67,20 +63,6 @@ public class FilmListReader implements AutoCloseable {
 
     public FilmListReader() {
         max = PROGRESS_MAX;
-    }
-
-    public void addAdListener(ListenerFilmeLaden listener) {
-        listeners.add(ListenerFilmeLaden.class, listener);
-    }
-
-    /**
-     * Remove all registered listeners when we do not need them anymore.
-     */
-    private void removeRegisteredListeners() {
-        ListenerFilmeLaden[] list = listeners.getListeners(ListenerFilmeLaden.class);
-        for (ListenerFilmeLaden lst : list) {
-            listeners.remove(ListenerFilmeLaden.class, lst);
-        }
     }
 
     private InputStream selectDecompressor(String source, InputStream in) throws Exception {
@@ -390,7 +372,7 @@ public class FilmListReader implements AutoCloseable {
         }
     }
 
-    public void readFilmListe(String source, final ListeFilme listeFilme, int days) {
+    public boolean readFilmListe(String source, final ListeFilme listeFilme, int days) {
         try {
             logger.trace("Liste Filme lesen von: {}", source);
             listeFilme.clear();
@@ -410,6 +392,7 @@ public class FilmListReader implements AutoCloseable {
         }
 
         notifyFertig(source, listeFilme);
+        return progress > 0;
     }
 
     /**
@@ -494,9 +477,6 @@ public class FilmListReader implements AutoCloseable {
     private void notifyStart(String url) {
         progress = 0;
         MessageBus.getMessageBus().publishAsync(new FilmListReadStartEvent(url));
-        for (ListenerFilmeLaden l : listeners.getListeners(ListenerFilmeLaden.class)) {
-            l.start(new ListenerFilmeLadenEvent(url, "", max, 0, false));
-        }
     }
 
     private void notifyProgress(String url, int iProgress) {
@@ -510,20 +490,12 @@ public class FilmListReader implements AutoCloseable {
     }
 
     private void notifyFertig(String url, ListeFilme liste) {
-        logger.info("Liste Filme gelesen am: {}", DateTimeFormatter.ofPattern("dd.MM.yyyy, HH:mm")
-                .format(LocalDateTime.ofInstant(Instant.now(), ZoneId.systemDefault())));
-        logger.info("  erstellt am: {}", liste.metaData().getGenerationDateTimeAsString());
-        logger.info("  Anzahl Filme: {}", liste.size());
-        if (liste.isEmpty()) {
-            MessageBus.getMessageBus().publishAsync(new FilmListReadFailedEvent(url));
-        } else {
-            MessageBus.getMessageBus().publishAsync(new FilmListReadCompleteEvent(url));
-        }
-    }
-
-    @Override
-    public void close() {
-        removeRegisteredListeners();
+        logger.info("Read complete at {} created {} total {}",
+                    DateTimeFormatter.ofPattern("dd.MM.yyyy, HH:mm").format(LocalDateTime.ofInstant(Instant.now(), ZoneId.systemDefault())),
+                    liste.metaData().getGenerationDateTimeAsString(),
+                    liste.size()
+                );
+        MessageBus.getMessageBus().publishAsync(new FilmListReadCompleteEvent(url, progress == 0));
     }
 
     class ProgressMonitor implements InputStreamProgressMonitor {

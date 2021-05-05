@@ -3,11 +3,12 @@ package mediathek.client.desktop.javafx.filmlist;
 import javafx.application.Platform;
 import javafx.scene.layout.HBox;
 import mediathek.util.daten.Daten;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.javafx.CenteredBorderPane;
 import mediathek.client.desktop.javafx.VerticalSeparator;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadStartEvent;
 import mediathek.util.tools.MessageBus;
+import net.engio.mbassy.listener.Handler;
 
 import javax.swing.*;
 
@@ -22,23 +23,7 @@ public class FilmListInfoPane extends HBox {
     public FilmListInfoPane(Daten daten) {
         super();
         setSpacing(4d);
-
-        SwingUtilities.invokeLater(() -> daten.getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-            @Override
-            public void start(ListenerFilmeLadenEvent event) {
-                MessageBus.getMessageBus().unsubscribe(this);
-                Platform.runLater(() -> setVisible(false));
-            }
-
-            @Override
-            public void fertig(ListenerFilmeLadenEvent event) {
-                MessageBus.getMessageBus().subscribe(this);
-                Platform.runLater(() -> {
-                    filmListCreationDateLabel.computeCreationDate();
-                    setVisible(true);
-                });
-            }
-        }));
+        MessageBus.getMessageBus().subscribe(this);
 
         filmListCreationDateLabel = new FilmListCreationDateLabel(daten);
 
@@ -50,5 +35,18 @@ public class FilmListInfoPane extends HBox {
 
     public FilmListAgeLabel getFilmListAgeLabel() {
         return filmListAgeLabel;
+    }
+
+    @Handler
+    private void handleFilmListReadStart(FilmListReadStartEvent event) {
+        Platform.runLater(() -> setVisible(false));
+    }
+
+    @Handler
+    private void handleFilmListReadComplete(FilmListReadCompleteEvent event) {
+        Platform.runLater(() -> {
+            filmListCreationDateLabel.computeCreationDate();
+            setVisible(true);
+        });
     }
 }

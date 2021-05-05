@@ -10,15 +10,13 @@ class FilmeImportierenAutoThread extends Thread {
     private final ListeFilme listeFilme;
     private final ListeFilme listeFilmeDiff;
     private final int days;
-    private final IAction onFinished;
     private final IDownloadAction downloadAction;
 
     public FilmeImportierenAutoThread(ListeFilme listeFilme, ListeFilme listeFilmeDiff, int days,
-                                      IDownloadAction downloadAction, IAction onFinished) {
+                                      IDownloadAction downloadAction) {
         this.listeFilme = listeFilme;
         this.listeFilmeDiff = listeFilmeDiff;
         this.days = days;
-        this.onFinished = onFinished;
         this.downloadAction = downloadAction;
 
         setName("FilmeImportierenAutoThread");
@@ -46,6 +44,5 @@ class FilmeImportierenAutoThread extends Thread {
             /* listeFilme ist schon wieder null -> "FilmeLaden" */
             logger.warn("Es konnten keine Filme geladen werden!");
         }
-        onFinished.onFinished(ret);
     }
 }

@@ -22,8 +22,6 @@ import mediathek.util.daten.DatenDownload;
 import mediathek.util.daten.DatenFilm;
 import mediathek.client.desktop.daten.DatenPset;
 import mediathek.util.daten.abo.DatenAbo;
-import mediathek.server.filmeSuchen.ListenerFilmeLaden;
-import mediathek.server.filmeSuchen.ListenerFilmeLadenEvent;
 import mediathek.client.desktop.gui.TabPaneIndex;
 import mediathek.client.desktop.gui.actions.ShowFilmInformationAction;
 import mediathek.client.desktop.gui.dialog.DialogBeendenZeit;
@@ -36,6 +34,9 @@ import mediathek.client.desktop.javafx.descriptionPanel.DescriptionPanelControll
 import mediathek.client.desktop.javafx.downloadtab.DownloadTabInformationLabel;
 import mediathek.client.desktop.javafx.tool.JavaFxUtils;
 import mediathek.client.desktop.gui.mainwindow.MediathekGui;
+import mediathek.util.messages.info.filmlist.FilmListReadCompleteEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadEvent;
+import mediathek.util.messages.info.filmlist.FilmListReadStartEvent;
 import mediathek.util.tools.*;
 import mediathek.client.desktop.tools.cellrenderer.CellRendererDownloads;
 import mediathek.client.desktop.tools.listener.BeobTableHeader;
@@ -125,6 +126,8 @@ public class GuiDownloads extends AGuiTabPanel {
     private TModelDownload model;
     private DownloadTabInformationLabel filmInfoLabel;
     private MVDownloadsTable tabelle;
+    private FXDownloadToolBar toolBar;
+    private JMenuItem miUpdateDownloads;
 
     public GuiDownloads(Daten aDaten, MediathekGui mediathekGui) {
         super();
@@ -174,7 +177,7 @@ public class GuiDownloads extends AGuiTabPanel {
 
     private void setupToolBar() {
         JavaFxUtils.invokeInFxThreadAndWait(() -> {
-            var toolBar = new FXDownloadToolBar();
+            toolBar = new FXDownloadToolBar();
             toolBar.btnFilmInfo.setOnAction(e -> SwingUtilities.invokeLater(() -> MediathekGui.ui().getFilmInfoDialog().showInfo()));
             toolBar.btnUpdateDownloads.setOnAction(e -> SwingUtilities.invokeLater(this::updateDownloads));
             toolBar.btnStartAllDownloads.setOnAction(e -> SwingUtilities.invokeLater(() -> starten(true)));
@@ -183,19 +186,6 @@ public class GuiDownloads extends AGuiTabPanel {
             toolBar.btnRemoveDownload.setOnAction(e -> SwingUtilities.invokeLater(() -> downloadLoeschen(true)));
             toolBar.btnCleanup.setOnAction(e -> SwingUtilities.invokeLater(this::cleanupDownloads));
             toolBar.btnFilter.setOnAction(e -> SwingUtilities.invokeLater(() -> MessageBus.getMessageBus().publishAsync(new DownloadFilterVisibilityChangedEvent())));
-
-            Daten.getInstance().getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-                @Override
-                public void start(ListenerFilmeLadenEvent event) {
-                    Platform.runLater(() -> toolBar.btnUpdateDownloads.setDisable(true));
-                }
-
-                @Override
-                public void fertig(ListenerFilmeLadenEvent event) {
-                    Platform.runLater(() -> toolBar.btnUpdateDownloads.setDisable(false));
-                }
-            });
-
             toolBarPanel.setScene(new Scene(toolBar));
         });
     }
@@ -399,21 +389,10 @@ public class GuiDownloads extends AGuiTabPanel {
         JMenuItem miStopWaitingDownloads = new JMenuItem("Wartende Downloads stoppen");
         miStopWaitingDownloads.addActionListener(e -> stopAllWaitingDownloads());
 
-        JMenuItem miUpdateDownloads = new JMenuItem("Liste der Downloads aktualisieren");
+        miUpdateDownloads = new JMenuItem("Liste der Downloads aktualisieren");
         miUpdateDownloads.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_W, KeyEvent.CTRL_DOWN_MASK));
         miUpdateDownloads.setIcon(IconFontSwing.buildIcon(FontAwesome.REFRESH, 16));
         miUpdateDownloads.addActionListener(e -> updateDownloads());
-        daten.getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-            @Override
-            public void start(ListenerFilmeLadenEvent event) {
-                miUpdateDownloads.setEnabled(false);
-            }
-
-            @Override
-            public void fertig(ListenerFilmeLadenEvent event) {
-                miUpdateDownloads.setEnabled(true);
-            }
-        });
 
         JMenuItem miCleanupDownloads = new JMenuItem(MENU_ITEM_TEXT_CLEANUP_DOWNLOADS);
         miCleanupDownloads.setIcon(IconFontSwing.buildIcon(FontAwesome.ERASER, 16));
@@ -615,23 +594,6 @@ public class GuiDownloads extends AGuiTabPanel {
         jSplitPane1.setDividerLocation(location);
 
         setupInfoPanel();
-        daten.getFilmeLaden().addAdListener(new ListenerFilmeLaden() {
-            @Override
-            public void start(ListenerFilmeLadenEvent event) {
-                loadFilmlist = true;
-            }
-
-            @Override
-            public void fertig(ListenerFilmeLadenEvent event) {
-                loadFilmlist = false;
-                daten.getListeDownloads().filmEintragen();
-                if (Boolean.parseBoolean(MVConfig.get(MVConfig.Configs.SYSTEM_ABOS_SOFORT_SUCHEN))) {
-                    updateDownloads();
-                } else {
-                    reloadTable(); // damit die Filmnummern richtig angezeigt werden
-                }
-            }
-        });
     }
 
     private void setupInfoPanel() {
@@ -782,6 +744,30 @@ public class GuiDownloads extends AGuiTabPanel {
         SwingUtilities.invokeLater(() -> {
             tabelle.fireTableDataChanged(true);
             setInfo();
+        });
+    }
+
+    @Handler
+    private void handleListReadStart(FilmListReadStartEvent event) {
+        SwingUtilities.invokeLater(() -> {
+            loadFilmlist = true;
+            toolBar.btnUpdateDownloads.setDisable(true);
+            miUpdateDownloads.setEnabled(false);
+        });
+    }
+    @Handler
+    private void handleListReadComplete(FilmListReadCompleteEvent event) {
+        SwingUtilities.invokeLater(() ->  {
+            loadFilmlist = false;
+            toolBar.btnUpdateDownloads.setDisable(false);
+            miUpdateDownloads.setEnabled(true);
+
+            daten.getListeDownloads().filmEintragen();
+            if (Boolean.parseBoolean(MVConfig.get(MVConfig.Configs.SYSTEM_ABOS_SOFORT_SUCHEN))) {
+                updateDownloads();
+            } else {
+                reloadTable(); // damit die Filmnummern richtig angezeigt werden
+            }
         });
     }
 
