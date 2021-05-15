@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonToken;
 import com.google.common.base.Stopwatch;
 import mediathek.client.desktop.config.CommandLineConfig;
+import mediathek.util.config.ApplicationConfiguration;
 import mediathek.util.constants.Konstanten;
 import mediathek.util.controller.SenderFilmlistLoadApprover;
 import mediathek.util.daten.DatenFilm;
@@ -17,7 +18,6 @@ import mediathek.util.tools.MessageBus;
 import mediathek.util.tools.ProgressMonitorInputStream;
 import mediathek.util.tools.TrailerTeaserChecker;
 import mediathek.util.tools.http.MVHttpClient;
-import mediathek.util.config.ApplicationConfiguration;
 import okhttp3.Request;
 import okhttp3.Response;
 import okhttp3.ResponseBody;
@@ -28,7 +28,6 @@ import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.tukaani.xz.XZInputStream;
 
-import javax.swing.event.EventListenerList;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
@@ -49,7 +48,6 @@ public class FilmListReader {
     private static final int PROGRESS_MAX = 100;
     private static final Logger logger = LogManager.getLogger(FilmListReader.class);
     private static final String THEMA_LIVE = "Livestream";
-    private final EventListenerList listeners = new EventListenerList();
     private final int max;
     private final TrailerTeaserChecker ttc = new TrailerTeaserChecker();
     /**
