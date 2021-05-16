@@ -23,7 +23,7 @@ public class FilmListFilterTask extends Task<Void> {
 
         updateMessage("Alle Filter anwenden");
         updateProgress(-1, 4);
-        daten.getListeBlacklist().filterListe();
+        daten.getListeBlacklist().filterListAndNotifyListeners();
 
         logger.trace("FilmListFilterTask finished");
 

@@ -794,7 +794,7 @@ public class GuiFilme extends AGuiTabPanel {
             // reset sender filter first
             fap.senderList.getCheckModel().clearChecks();
             SwingUtilities.invokeLater(() -> {
-                daten.getListeBlacklist().filterListe();
+                daten.getListeBlacklist().filterListAndNotifyListeners();
                 loadTable();
             });
         });

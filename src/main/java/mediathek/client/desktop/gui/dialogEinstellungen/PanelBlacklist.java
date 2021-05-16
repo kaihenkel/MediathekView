@@ -69,7 +69,7 @@ public class PanelBlacklist extends JPanel {
 
     @Handler
     private void handleFilmListReadComplete(FilmListReadCompleteEvent event) {
-        comboThemaLaden();
+        SwingUtilities.invokeLater(this::comboThemaLaden);
     }
 
     private void init_() {
@@ -83,7 +83,7 @@ public class PanelBlacklist extends JPanel {
         jCheckBoxGeo.setSelected(config.getBoolean(ApplicationConfiguration.BLACKLIST_DO_NOT_SHOW_GEOBLOCKED_FILMS,false));
         jCheckBoxGeo.addActionListener(e -> {
             config.setProperty(ApplicationConfiguration.BLACKLIST_DO_NOT_SHOW_GEOBLOCKED_FILMS, jCheckBoxGeo.isSelected());
-            notifyBlacklistChanged();
+            daten.getListeBlacklist().filterListAndNotifyListeners();
         });
 
         try {
@@ -106,15 +106,15 @@ public class PanelBlacklist extends JPanel {
         jRadioButtonWhitelist.setSelected(Boolean.parseBoolean(MVConfig.get(MVConfig.Configs.SYSTEM_BLACKLIST_IST_WHITELIST)));
         jRadioButtonWhitelist.addActionListener(e -> {
             MVConfig.add(MVConfig.Configs.SYSTEM_BLACKLIST_IST_WHITELIST, Boolean.toString(jRadioButtonWhitelist.isSelected()));
-            notifyBlacklistChanged();
+            daten.getListeBlacklist().filterListAndNotifyListeners();
         });
         jRadioButtonBlacklist.addActionListener(e -> {
             MVConfig.add(MVConfig.Configs.SYSTEM_BLACKLIST_IST_WHITELIST, Boolean.toString(jRadioButtonWhitelist.isSelected()));
-            notifyBlacklistChanged();
+            daten.getListeBlacklist().filterListAndNotifyListeners();
         });
         jCheckBoxZukunftNichtAnzeigen.addActionListener(e -> {
             MVConfig.add(MVConfig.Configs.SYSTEM_BLACKLIST_ZUKUNFT_NICHT_ANZEIGEN, Boolean.toString(jCheckBoxZukunftNichtAnzeigen.isSelected()));
-            notifyBlacklistChanged();
+            daten.getListeBlacklist().filterListAndNotifyListeners();
         });
         jCheckBoxAbo.addActionListener(e -> {
             MVConfig.add(MVConfig.Configs.SYSTEM_BLACKLIST_AUCH_ABO, Boolean.toString(jCheckBoxAbo.isSelected()));
@@ -128,7 +128,7 @@ public class PanelBlacklist extends JPanel {
         });
         jCheckBoxBlacklistEingeschaltet.addActionListener(e -> {
             MVConfig.add(MVConfig.Configs.SYSTEM_BLACKLIST_ON, Boolean.toString(jCheckBoxBlacklistEingeschaltet.isSelected()));
-            notifyBlacklistChanged();
+            daten.getListeBlacklist().filterListAndNotifyListeners();
         });
         jButtonHinzufuegen.addActionListener(e -> {
             String se = Objects.requireNonNull(jComboBoxSender.getSelectedItem()).toString();
@@ -157,7 +157,7 @@ public class PanelBlacklist extends JPanel {
                     bl.arr[BlacklistRule.BLACKLIST_THEMA_TITEL] = thti;
                     tabelleLaden();
                     jTableBlacklist.addRowSelectionInterval(row, row);
-                    notifyBlacklistChanged();
+                    daten.getListeBlacklist().filterListAndNotifyListeners();
                 }
             }
 
@@ -213,7 +213,7 @@ public class PanelBlacklist extends JPanel {
             }
             if (!jSliderMinuten.getValueIsAdjusting()) {
                 MVConfig.add(MVConfig.Configs.SYSTEM_BLACKLIST_FILMLAENGE, String.valueOf(jSliderMinuten.getValue()));
-                notifyBlacklistChanged();
+                daten.getListeBlacklist().filterListAndNotifyListeners();
             }
         });
 
@@ -226,11 +226,6 @@ public class PanelBlacklist extends JPanel {
 
         handler = new TextCopyPasteHandler<>(jTextFieldTitel);
         jTextFieldTitel.setComponentPopupMenu(handler.getPopupMenu());
-    }
-
-    private void notifyBlacklistChanged() {
-        daten.getListeBlacklist().filterListe();
-        MessageBus.getMessageBus().publishAsync(new BlacklistChangedEvent());
     }
 
     private void comboThemaLaden() {

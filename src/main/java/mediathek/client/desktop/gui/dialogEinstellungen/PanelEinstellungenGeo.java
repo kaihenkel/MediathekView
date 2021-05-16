@@ -72,6 +72,7 @@ public class PanelEinstellungenGeo extends JPanel {
     private void filterBlacklistAndNotifyChanges() {
         final var daten = Daten.getInstance();
 
+        // TODO validate order matters, use daten.getListeBlacklist().filterListAndNotifyListeners();
         daten.getListeBlacklist().filterListe();
         MessageBus.getMessageBus().publishAsync(new GeoStateChangedEvent());
         MessageBus.getMessageBus().publishAsync(new BlacklistChangedEvent());

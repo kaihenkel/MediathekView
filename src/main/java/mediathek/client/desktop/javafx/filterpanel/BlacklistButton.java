@@ -49,8 +49,7 @@ public class BlacklistButton extends Button {
         activeProperty.setValue(isOn);
         activeProperty.addListener((observable, oldValue, newValue) -> SwingUtilities.invokeLater(() -> {
             MVConfig.add(MVConfig.Configs.SYSTEM_BLACKLIST_ON, Boolean.toString(newValue));
-            daten.getListeBlacklist().filterListe();
-            messageBus.publishAsync(new BlacklistChangedEvent());
+            daten.getListeBlacklist().filterListAndNotifyListeners();
         }));
 
         setOnAction(value -> activeProperty.setValue(!activeProperty.getValue()));

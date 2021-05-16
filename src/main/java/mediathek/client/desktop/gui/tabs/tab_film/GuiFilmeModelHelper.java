@@ -243,17 +243,16 @@ public class GuiFilmeModelHelper {
      * @return the filtered table model.
      */
     public TableModel getFilteredTableModel() {
-        if (!listeFilme.isEmpty()) {
-            if (noFiltersAreSet()) {
-                //adjust initial capacity
-                filmModel = new TModelFilm(listeFilme.size());
-                filmModel.addAll(listeFilme);
-            } else {
-                performTableFiltering();
-            }
-        } else
+        if (listeFilme.isEmpty()) {
             return new TModelFilm();
-
+        }
+        if (noFiltersAreSet()) {
+            //adjust initial capacity
+            filmModel = new TModelFilm(listeFilme.size());
+            filmModel.addAll(listeFilme);
+        } else {
+            performTableFiltering();
+        }
         return filmModel;
     }
 }

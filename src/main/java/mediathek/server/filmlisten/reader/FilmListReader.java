@@ -493,7 +493,7 @@ public class FilmListReader {
                     liste.metaData().getGenerationDateTimeAsString(),
                     liste.size()
                 );
-        MessageBus.getMessageBus().publishAsync(new FilmListReadCompleteEvent(url, progress == 0));
+        MessageBus.getMessageBus().publishAsync(new FilmListReadCompleteEvent(url, progress == 0, liste.size()));
     }
 
     class ProgressMonitor implements InputStreamProgressMonitor {
